@@ -1,0 +1,23 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{impostazioni/impostazioniTikz}
+\begin{document}
+  		\begin{tikzpicture}
+    
+    		\node[start-end]  (1) {Inizio};
+    		\node[operation,below= 1cm of 1,text width=3cm](2) {Scomponi il numero in fattori primi};
+    
+    		\node[decision,below= 1cm of 2,text width=3cm](3) {I numeri dati sono finiti};
+    		\node[operation,below=1cm of 3, text width=3cm](4) {Allineo le scomposizioni ottenute};
+    		\node[operation,below=1cm of 4, text width=3cm](5) {Prendo i fattori comuni e non comuni con il maggiore esponente};
+    		\node[input,below =1cm of 5, text width=3cm](6) {mcm=prodotto dei fattori trovati};
+    		\node[start-end, below=1cm of 6]  (7) {Fine};
+    		\foreach \x /\y in{1/2,2/3,4/5,5/6,6/7}
+    		      \path[linea] (\x) edge node {} (\y);
+    	\path[linea] (3) edge node [left] {SI} (4);
+    \path [linea] (3.west)  -|  node [above left]  {NO}+(-1cm,0)  |-  (2);
+
+
+    	\end{tikzpicture}
+\end{document}

@@ -1,0 +1,36 @@
+% Tikz File 'mytikz.tex'
+\documentclass{standalone}
+%\input{../../Mod_base/grafica}
+\input{../Mod_base/grafica}
+
+%\usetikzlibrary{...}
+\begin{document}
+\begin{tikzpicture}
+\node (a) {$(A$};
+\node (p1)[right of=a, node distance=15]{$+$};
+\node (b)[right of=p1, node distance=15]{$B$};
+\node (p2)[right of=b, node distance=15]{$+$};
+\node (c)[right of=p2, node distance=15]{$C)^2$};
+\node (R)[right of=c, node distance=15]{$=$};
+\node (aq)[right of=R, node distance=15]{$A^2$};
+\node (p3)[right of=aq, node distance=15]{$+$};
+\node (bq)[right of=p3, node distance=15]{$B^2$};
+\node (p4)[right of=bq, node distance=15]{$+$};
+\node (cq)[right of=p4, node distance=15]{$C^2$};
+\node (p5)[right of=cq, node distance=15]{$+$};
+\node (ab)[right of=p5, node distance=15]{$2AB$};
+\node (p6)[right of=ab, node distance=15]{$+$};
+\node (ac)[right of=p6, node distance=15]{$2AC$};
+\node (p7)[right of=ac, node distance=15]{$+$};
+\node (bc)[right of=p7, node distance=15]{$2BC$};
+\path (a.north) edge [bend left=45,-triangle 90](aq.north);
+\path (a.north) edge [bend left=45,-triangle 90](ab.north);
+\path (a.north) edge [bend left=45,-triangle 90](ac.north);
+\path(b.south)edge [bend right=45,-triangle 90](bq.south);
+\path(b.south)edge [bend right=45,-triangle 90](ab.south);
+\path(b.south)edge [bend right=45,-triangle 90](bc.south);
+\path(c.south)edge [bend right=45,-triangle 90](cq.south);
+\path(c.south)edge [bend right=45,-triangle 90](ac.south);
+\path(c.north)edge [bend left=45,-triangle 90](bc.north);
+\end{tikzpicture}
+\end{document}

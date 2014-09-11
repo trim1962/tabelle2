@@ -1,0 +1,251 @@
+\chapter{Somme, prodotti e frazioni}
+\label{sec:prodottiEDivisioni}
+\section{Segni}
+\label{sec:segnioperazioni}
+\begin{table}[H]
+	\begin{subtable}[b]{.5\linewidth}
+		\centering
+		$
+		\begin{array}{lcc}
+		\toprule
+		operazione&&segno\\
+		\midrule
+		\bm{(-a)\cdot(-b)}&&+(a)\cdot(b)\\
+		\midrule
+		\bm{(+a)\cdot(-b)}&&-(a)\cdot(b)\\
+		\midrule
+		\bm{(-a)\cdot(+b)}&&-(a)\cdot(b)\\
+		\midrule
+		\bm{(+a)\cdot(+b)}&&+(a)\cdot(b)\\
+		\bottomrule
+		\end{array}
+		$
+		\caption{Segno prodotto algebrico}\label{tab:segnoprodottoalgebrico}
+	\end{subtable}%
+	\begin{subtable}[b]{.5\linewidth}
+		\centering
+		$
+		\begin{array}{lcc}
+		\toprule
+		operazione&&segno\\
+		\midrule
+		\bm{(-a)\div(-b)}&&+(a)\div(b)\\
+		\midrule
+		\bm{(+a)\div(-b)}&&-(a)\div(b)\\
+		\midrule
+		\bm{(-a)\div(+b)}&&-(a)\div(b)\\
+		\midrule
+		\bm{(+a)\div(+b)}&&+(a)\div(b)\\
+		\bottomrule
+		\end{array}
+		$
+		\caption{Segno divisione algebrica}\label{tab:segnodivisioneoalgebrica}
+	\end{subtable}
+	\begin{subtable}[b]{\linewidth}
+		\centering
+		$
+		\begin{array}{lcc}
+		\toprule
+		operazione&&segno\\
+		\midrule
+		\bm{-a-b}&&-\\
+		\midrule
+		\multirow{3}*{$\bm{-a+b}$}&\abs{a}>\abs{b}&-\\
+		&\abs{a}=\abs{b}&0\\
+		&\abs{a}<\abs{b}&+\\
+		\midrule
+		\multirow{3}*{$\bm{+a-b}$}&\abs{a}>\abs{b}&+\\
+		&\abs{a}=\abs{b}&0\\
+		&\abs{a}<\abs{b}&-\\
+		\midrule
+		\bm{+a+b}&&+\\
+		\bottomrule
+		\end{array}
+		$
+		\caption{Segno somma algebrica}\label{tab:segnosommaalgebrica}
+	\end{subtable}
+	\caption{Segni}
+	\label{Tab:Segni operazioni}
+	
+\end{table}
+%\begin{table}[H]
+%\centering
+%
+%\subfloat[][Segno prodotto algebrico\label{tab:segnoprodottoalgebrico}]{
+%$
+%\begin{array}{lcc}
+%\toprule
+%operazione&&segno\\
+%\midrule
+%\bm{(-a)\cdot(-b)}&&+(a)\cdot(b)\\
+%\midrule
+%\bm{(+a)\cdot(-b)}&&-(a)\cdot(b)\\
+%\midrule
+%\bm{(-a)\cdot(+b)}&&-(a)\cdot(b)\\
+%\midrule
+%\bm{(+a)\cdot(+b)}&&+(a)\cdot(b)\\
+%\bottomrule
+%\end{array}
+%$
+%}\qquad
+%\subfloat[][Segno divisione algebrica\label{tab:segnodivisioneoalgebrica}]{
+%$
+%\begin{array}{lcc}
+%\toprule
+%operazione&&segno\\
+%\midrule
+%\bm{(-a)\div(-b)}&&+(a)\div(b)\\
+%\midrule
+%\bm{(+a)\div(-b)}&&-(a)\div(b)\\
+%\midrule
+%\bm{(-a)\div(+b)}&&-(a)\div(b)\\
+%\midrule
+%\bm{(+a)\div(+b)}&&+(a)\div(b)\\
+%\bottomrule
+%\end{array}
+%$
+%}\\
+%\subfloat[][Segno somma algebrica\label{tab:segnosommaalgebrica}]{
+%$
+%\begin{array}{lcc}
+%\toprule
+%operazione&&segno\\
+%\midrule
+%\bm{-a-b}&&-\\
+%\midrule
+%\multirow{3}*{$\bm{-a+b}$}&\abs{a}>\abs{b}&-\\
+%&\abs{a}=\abs{b}&0\\
+%&\abs{a}<\abs{b}&+\\
+%\midrule
+%\multirow{3}*{$\bm{+a-b}$}&\abs{a}>\abs{b}&+\\
+%&\abs{a}=\abs{b}&0\\
+%&\abs{a}<\abs{b}&-\\
+%\midrule
+%\bm{+a+b}&&+\\
+%\bottomrule
+%\end{array}
+%$
+%}
+%\caption{Segni}
+%\label{Tab:Segni operazioni}
+%\end{table}
+\section{Precedenze}
+\label{sec:Precedenze operazioni}
+\begin{table}[H]
+	\begin{subtable}[b]{.5\linewidth}
+		\centering
+		\begin{tabular}{cl}
+			\toprule
+			precedenza&operazione\\
+			\midrule
+			\phantom{$\Bigl($}1&potenza\\[.4cm]
+			\phantom{$\Bigl[$}2& prodotto divisione\\[.4cm]
+			\phantom{$\Bigl\{$}3& somma sottrazione\\[.4cm]
+			\bottomrule
+		\end{tabular}
+		\caption{Precedenza operazioni}\label{tab:precedenzaoperazioni}
+	\end{subtable}%
+	\begin{subtable}[b]{.5\linewidth}
+		\centering
+		\begin{tabular}{cl}
+			\toprule
+			precedenza&parentesi\\
+			\midrule
+			1&$\Bigl(\dots\Bigr)$\\[.4cm]
+			2& $\Bigl[\dots\Bigr]$\\[.4cm]
+			3& $\Bigl\{\dots\Bigr\}$\\[.4cm]
+			\bottomrule
+		\end{tabular}
+		\caption{Precedenza parentesi}\label{tab:precedenzaparentesi}
+	\end{subtable}
+	\caption{Precedenze}
+	\label{Tab:precedenze}
+\end{table}
+%\begin{table}[H]
+%\centering
+%\subfloat[][Precedenza operazioni\label{tab:precedenzaoperazioni}]{
+%\begin{tabular}{cl}
+%\toprule
+%precedenza&operazione\\
+%\midrule
+%\phantom{$\Bigl($}1&potenza\\[.4cm]
+%\phantom{$\Bigl[$}2& prodotto divisione\\[.4cm]
+%\phantom{$\Bigl\{$}3& somma sottrazione\\[.4cm]
+%\bottomrule
+%\end{tabular}
+%
+%}\qquad
+%\subfloat[][Precedenza parentesi\label{tab:precedenzaparentesi}]{
+%\begin{tabular}{cl}
+%\toprule
+%precedenza&parentesi\\
+%\midrule
+%1&$\Bigl(\dots\Bigr)$\\[.4cm]
+%2& $\Bigl[\dots\Bigr]$\\[.4cm]
+%3& $\Bigl\{\dots\Bigr\}$\\[.4cm]
+%\bottomrule
+%\end{tabular}
+%}
+%\caption{Precedenze}
+%\label{Tab:precedenze}
+%\end{table}
+\section{Somme prodotti divisioni}
+\label{sec:sommeprodottidivisioni}
+\begin{table}[H]
+\centering
+\begin{tabular}{LL}
+\toprule
+a+b=b+a&b\cdot a=a\cdot b\\[.6cm]
+a+a=2a&a\cdot a=a^2\\[.6cm]
+a^n+a^m=a^n+a^m&a^n\cdot a^m=a^{n+m}\\[.6cm]
+a+1=a+1&a\cdot1=a\\[.6cm]
+1+a=1+a&1\cdot a=a\\[.6cm]
+a+0=a&a\cdot 0=0\\[.6cm]
+0+a=a&0\cdot a=0\\[.6cm]
+\bottomrule
+		\end{tabular}
+	\caption{Somme, prodotti}
+	\label{tab:prodottimonomi}
+\end{table}
+\begin{table}[H]
+\centering
+\begin{tabular}{LL}
+\toprule
+(a+b)(c+d)=ac+ad+bc+bd&(a-b)(a+b)=a^2-b^2\\[.6cm]
+(a+b)^2=a^2+2ab+b^2&(a-b)^2=a^2-2ab+b^2\\[.6cm]
+(a+b)^2=(a+b)(a+b)&(a-b)^2=(a-b)(a-b)\\[.6cm]
+c(a+b)^2=c(a^2+2ab+b^2)& -(a-b+c)=-a+b-c\\[.6cm]
+c(a-b)(a+b)=c(a^2-b^2)&a(b+c)=ab+bc\\[.6cm]
+		(a+b)^3=a^3+3a^2b+3ab^2+b^3&(a-b)^3=a^3-3a^2b+3ab^2-b^3\\
+\bottomrule
+		\end{tabular}
+	\caption{Prodotti notevoli}
+	\label{tab:prodotti}
+\end{table}
+\begin{table}[H]
+\centering
+\begin{tabular}{LL}
+\toprule
+		a:b=\dfrac{a}{b} \quad b\neq 0 & \dfrac{1}{n}a=\dfrac{a}{n}\quad n\neq 0\\[.6cm]
+\dfrac{a}{b}=a:b \quad b\neq 0 & \dfrac{a}{n}=\dfrac{1}{n}a\quad n\neq 0\\[.6cm]
+\dfrac{a}{b}:\dfrac{c}{d}=\dfrac{a}{b}\cdot\dfrac{d}{c}\quad b\neq 0\quad c\neq 0\quad d\neq 0&\dfrac{a}{a}=1\quad a\neq 0\\[.6cm]
+		
+		\dfrac{a}{b}\cdot c=\dfrac{ac}{b} \quad b\neq 0&\dfrac{a}{b}\cdot\dfrac{c}{d}=\dfrac{a\cdot c}{b\cdot d} \quad b\neq 0\quad d\neq 0\\[.6cm]
+		
+		 -\dfrac{a+b}{c}=+\dfrac{-a-b}{c}\quad c\neq 0&\dfrac{a}{b-c}=-\dfrac{a}{c-b}\quad b\neq c  \\[.6cm]
+		
+		%\dfrac{a}{c}+\dfrac{b}{c}=\dfrac{a+b}{c}&\dfrac{a}{b}+\dfrac{c}{d}=\dfrac{[\dfrac{mcm(bd)}{b}\cdot a]+[\dfrac{mcm(bd)}{d}\cdot c]}{mcm(bd)}\\[.6cm]
+\dfrac{a}{c}+\dfrac{b}{c}=\dfrac{a+b}{c}&\dfrac{a}{b}+\dfrac{c}{d}=\dfrac{[(mcm(bd)\div b)\cdot a]+[(mcm(bd)\div d)\cdot c]}{mcm(bd)}\\[.6cm]
+ 
+\dfrac{a}{b}+c=\dfrac{a+bc}{b}&\dfrac{1}{a}(b+c)=\dfrac{b}{a}+\dfrac{c}{a}\\[.6cm]
+		\bottomrule
+		\end{tabular}
+	\caption{frazioni}
+	\label{tab:prodottifrazioni}
+\end{table}
+\begin{esempio}
+Bisogna stare molto attenti alle divisioni 
+\[\dfrac{3}{4}a^5b^6:\dfrac{3}{14}a^3b^3=\overbrace{\dfrac{3}{4}a^5b^6\cdot\dfrac{14}{3}a^3b^3}^{\text{Errore grave}}=\dfrac{7}{2}a^8b^9 \]
+La procedura corretta è la seguente:
+\[\dfrac{3}{4}a^5b^6:\dfrac{3}{14}a^3b^3=\overbrace{\dfrac{3a^5b^6}{4}\cdot\dfrac{14}{3a^3b^3    }}^{\text{Corretto}}=\dfrac{7}{2}a^2b^3 \]
+\end{esempio}

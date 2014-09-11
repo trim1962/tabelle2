@@ -1,0 +1,100 @@
+\documentclass{standalone}
+
+\input{../Mod_base/grafica}
+
+%\usetikzlibrary{...}
+\begin{document}
+\begin{tikzpicture}
+\tikzset{notondo/.style={circle}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[pos=0.55,fill=black!20];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+
+
+\draw[linea](4.5,0.2)--(4.5,-8);
+\draw[linea](4.5,-0.2)--(6.5,-0.2);
+
+\pgfmathsetmacro{\moltiplicatore}{1.8};
+\pgfmathsetmacro{\deltaa}{0};
+\pgfmathsetmacro{\deltab}{-1*\moltiplicatore};
+\pgfmathsetmacro{\deltac}{-2*\moltiplicatore};
+\pgfmathsetmacro{\deltad}{-3*\moltiplicatore};
+\pgfmathsetmacro{\deltae}{-4*\moltiplicatore};
+
+%posizionamento coefficienti in alto
+\foreach \n/\x/\st/\co in{
+a0/0/notondo/x^{4},
+a1/1/notondo/0,
+a2/2/notondo/0,
+a3/3/notondo/+2x,
+a4/4/notondo/+1,
+a5/5/notondo/x^2,
+a6/6/notondo/+1}
+\node[\st] (\n) at (\x,\deltaa){$\co$};
+
+%%posizionamento coefficienti in alto
+%\foreach \n/\x/\st/\co in{
+%b0/0/notondo/x^{4},
+%b2/2/notondo/x^2,
+%b5/5/notondo/x^2,
+%b6/6/notondo/-1%
+%}
+%\node[\st] (\n) at (\x,\deltab){$\co$};
+
+%%%posizionamento coefficienti in alto
+%\foreach \n/\x/\st/\co in{
+%c0/0/notondo/0,
+%c2/2/tondo/-x^2%
+%}
+%\node[\st] (\n) at (\x,\deltac){$\co$};
+%%
+
+%%%posizionamento coefficienti in alto
+%\foreach \n/\x/\st/\co in{
+%d2/2/tondo/-x^2,
+%d4/4/tondo/-1%
+%}
+%\node[\st] (\n) at (\x,\deltad){$\co$};
+%
+%%posizionamento coefficienti in alto
+%\foreach \n/\x/\st/\co in{
+%e4/4/notondo/2,
+%e2/2/notondo/0%,
+%}
+%\node[\st] (\n) at (\x,\deltae){$\co$};
+
+%\draw[linea](b0.south)to (b2.south);
+%\draw[linea](d2.south)to (d4.south);
+%\draw[freccialta] (a0) to node[etichetta]{:}(a5);
+
+%\draw[freccia] (a5) to node[etichetta]{=}(b5);
+%\draw[freccia] (b5) to node[etichetta]{*}(a5);
+%\draw[freccia] (a5) to node[etichetta]{=}(b0);
+%\draw[freccia] (b5) to node[etichetta]{*}(a6);
+%\draw[freccia] (a6) to node[etichetta]{=}(b2);
+
+%\draw[freccia] (a0) to node[etichetta]{-}(b0);
+%\draw[freccia] (b0) to node[etichetta]{=}(c0);
+%\draw[freccia] (a2) to node[etichetta]{-}(b2);
+%\draw[freccia] (b2) to node[etichetta]{=}(c2);
+
+%\draw[freccia] (c2) to node[etichetta]{:}(a5);
+%\draw[freccia] (a5) to node[etichetta]{=}(b6);
+%
+%\draw[freccia] (b6) to node[etichetta]{*}(a5);
+%\draw[freccia] (a5) to node[etichetta]{=}(d2);
+%%
+%\draw[freccia] (b6) to node[etichetta]{*}(a6);
+%\draw[freccia] (a6) to node[etichetta]{=}(d4);
+%7
+%\draw[freccia] (c2) to node[etichetta]{-}(d2);
+%\draw[freccia] (a4) to node[etichetta]{-}(d4);
+%%
+%\draw[freccia] (d2) to node[etichetta]{=}(e2);
+%\draw[freccia] (d4) to node[etichetta]{=}(e4);
+\end{tikzpicture}
+\end{document}

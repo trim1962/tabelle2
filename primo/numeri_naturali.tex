@@ -1,0 +1,421 @@
+\chapter{Numeri Naturali}
+\label{cha:NumeriNaturali}
+I numeri naturali  \index{Numeri!Naturali} sono un insieme numerico.  Questo insieme, $\N=\Set{0,1,2,3,\dots,}$ è  costituito da un numero infinito di elementi. Tutti i numeri naturali hanno, tranne lo zero, un precedente ed un successivo. Possiamo, quindi definire per i numeri naturali un ordine\index{Numeri!Naturali!ordinati}.  L'insieme dei numeri naturali\index{Numeri!Naturali!discerti} è discreto nel senso che fra un numero e il suo successivo non vi è nessun altro elemento dell'insieme. Una rappresentazione dell'inseme  è la retta orientata\nobs\vref{fig:NumeriNaturaliRetta} dove i numeri sono ordinati dal minore al maggiore secondo il verso della retta. 
+\section{Operazioni}
+Prima di parlare di operazioni in $\N$ spendiamo due parole sul concetto di operazione. In matematica, un'operazione è una relazione che lega, in generale, due elementi a un elemento detto risultato come nella figura\nobs\vref{fig:Nat_operazione_binaria}. Operazioni di questo tipo vengono dette binarie. Esistono anche operazioni unarie come per esempio il cambio di segno, il quadrato di un numero eccetera in questo caso abbiamo un elemento in ingresso e uno in uscita. Le operazioni si dividono in interne o esterne a seconda che il risultato appartenga o no all'insieme dei valori in ingresso. L'ordine con cui sono scritte è importante. La regola prevede che vengano eseguite andando da sinistra verso destra. Per variare l'ordine di esecuzione sono introdotte le parentesi che indicano cosa debba essere eseguita per prima.
+\begin{figure} 
+	\centering
+\includestandalone[width=.9\textwidth]{primo/numeri_naturali/N_rettaOrientata}
+	\caption{Retta orientata}
+	\label{fig:NumeriNaturaliRetta}\end{figure}
+\begin{figure} 
+	\centering
+\includestandalone[width=.9\textwidth]{primo/mappe/mappe_concettuali_1}
+	\caption{Numeri Naturali}
+	\label{fig:NumeriNaturali}\end{figure}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+\includestandalone[width=.9\textwidth]{primo/numeri_naturali/Operazione_binaria_}
+	\caption{Operazione Binaria}
+	\label{fig:Nat_operazione_binaria}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+	\centering
+\includestandalone[width=.9\textwidth]{primo/numeri_naturali/Operazione_unaria_}
+	\caption{Operazione Unaria}
+	\label{fig:Nat_operazione_unaria}
+	\end{subfigure}
+		\caption{Operazioni}
+	\label{fig:OPerzionicasogen}
+\end{figure}
+\begin{figure} 
+\begin{subfigure}[b]{.5\linewidth}
+		\centering
+\includestandalone[width=.9\textwidth]{primo/numeri_naturali/Operazione_Addizione_}
+	\caption{Operazione addizione}
+	\label{fig:Nat_operazione_Addizione}
+\end{subfigure}%
+\begin{subfigure}[b]{.5\linewidth}
+	\centering
+\includestandalone[width=.9\textwidth]{primo/numeri_naturali/Operazione_Sottrazione_}
+	\caption{Operazione sottrazione}
+	\label{fig:Nat_operazione_Sottrazione}
+\end{subfigure}
+	\begin{subfigure}[b]{.5\linewidth}
+	\centering
+\includestandalone[width=.9\textwidth]{primo/numeri_naturali/Operazione_Moltiplicazione_}
+	\caption{Operazione moltiplicazione}
+	\label{fig:Nat_operazione_Moltiplicazione}
+	\end{subfigure}
+	\begin{subfigure}[b]{.5\linewidth}
+	\centering
+\includestandalone[width=.9\textwidth]{primo/numeri_naturali/Operazione_Divisione_}
+	\caption{Operazione divisione}
+	\label{fig:Nat_operazione_Divisione}
+	\end{subfigure}
+		\begin{subfigure}[b]{.5\linewidth}
+		\centering
+	\includestandalone[width=.9\textwidth]{primo/numeri_naturali/Operazione_Potenza_}
+		\caption{Operazione potenza}
+		\label{fig:Nat_operazione_Potenza}
+		\end{subfigure}
+	\caption{Operazioni in $\N$}
+	\label{fig:OperazioniinN}
+\end{figure}
+\subsection{Addizione}
+\label{sec:NumerinatADD}
+L'addizione\index{Operazione!addizione} è una operazione binaria\nobs\vref{fig:Nat_operazione_Addizione}  interna in $\N$. I termini in ingresso si dicono addendi\index{Operazione!addizione!addendo}, il risultato somma\index{Operazione!addizione!somma}. L'operazione di  addizione è commutativa\index{Operazione!addizione!commutativa} cioè cambiando l'ordine degli addendi il risultato non cambia. \[2+3=3+2=5\] L'operazione ha un elemento neutro\index{Operazione!addizione!elemento neutro} lo zero. L'addizione dell'elemento neutro e di un addendo ha per somma l'addendo  \[4+0=0+4=4\]. L'addizione è associativa\index{Operazione!addizione!associativa}. Nell'addizione tre numeri è ossibile sostiuire a due numeri la loro somma che il risultato non  cambia.\[2+3+4=(2+3)+4=2+(3+4)\] La tabella\nobs\vref{fig:ProprietaAddizione} riepiloga i risultati.
+\begin{figure} %
+	\centering
+\includestandalone[width=.9\textwidth]{primo/mappe/mappe_concettuali_2}
+	\caption{Proprietà addizione}
+	\label{fig:ProprietaAddizione}\end{figure}
+\subsection{Sottrazione}
+\label{sec:NumerinatDiff}
+La sottrazione\index{Operazione!sottrazione} è una operazione binaria \nobs\vref{fig:Nat_operazione_Sottrazione} non sempre interna in $\N$. I termini in ingresso si dicono minuendo\index{Operazione!sottrazione!minuendo} e sottraendo\index{Operazione!sottrazione!sottraendo}, il risultato differenza\index{Operazione!sottrazione!differenza}. Se il sottraendo è maggiore del minuendo l'operazione è esterna. Se il minuendo è uguale al sottraendo la differenza è zero. La sottrazione non è commutativa \[3-2\neq2-3\] e neppure associativa \[(4-3)-2\neq4-(3-2)\]
+ L'operazione gode della proprietà invariantiva\index{Operazione!sottrazione!invariantiva}, per cui aggiungendo o sottraendo la stessa quantità al minuendo e al sottraendo la differenza non cambia\nobs\vref{fig:ProprietaSottrazione}.  
+\begin{figure} %
+	\centering
+\includestandalone[width=\textwidth]{primo/mappe/mappe_concettuali_3}
+	\caption{Proprietà Sottrazione}
+	\label{fig:ProprietaSottrazione}\end{figure}
+\subsection{Moltiplicazione}
+\label{sec:NumerinatMolt}
+\begin{figure} %
+	\centering
+\includestandalone[width=\textwidth]{primo/mappe/mappe_concettuali_4}
+	\caption{Proprietà Moltipplicazione}
+	\label{fig:ProprietaMoltiplicazione}\end{figure}
+La moltiplicazione\index{Operazione!moltiplicazione} è una operazione binaria\nobs\vref{fig:Nat_operazione_Moltiplicazione}  interna in $\N$. I termini in ingresso si dicono fattori\index{Operazione!moltiplicazione!fattore}, il risultato prodotto\index{Operazione!moltiplicazione!prodotto}. L'operazione di moltiplicazione  è commutativa\index{Operazione!moltiplicazione!commutativa} quindi cambiando l'ordine degli fattori il risultato non cambia \[2\cdot3=3\cdot2=6\]. L'operazione ha un elemento neutro\index{Operazione!moltiplicazione!elemento neutro} uno. La moltiplicazione dell'elemento neutro e di un fattore ha per prodotto il fattore  \[4\cdot1=1\cdot4=4\]. La moltiplicazione è associativa\index{Operazione!moltiplicazione!associativa}. Nella moltiplicazione di tre numeri o più numeri il risultato finale non cambia se vengono sostituiti due fattori con il loro prodotto\nobs\vref{fig:ProprietaMoltiplicazione} \[2\cdot3\cdot4=(2\cdot3)\cdot4=2\cdot(3\cdot4)\]. La moltiplicazione è dissociativa\index{Operazione!moltiplicazione!dissociativa}. Nella moltiplicazione  il risultato finale non cambia se viene sostituito un fattore con altri fattori il cui prodotto è uguale al fattore sostituito  \[6\cdot5=2\cdot3\cdot5\]. L'elemento assorbente\index{Operazione!moltiplicazione!elemento assorbente} è lo zero. La moltiplicazione di un numero qualunque per zero ha come prodotto zero\nobs\vref{fig:ProprietaMoltiplicazione}
+\subsection{Divisione}
+\label{sec:Numerinatdiv}
+\begin{figure} %
+	\centering
+\includestandalone[width=\textwidth]{primo/mappe/mappe_concettuali_5}
+	\caption{I nomi della divisione}
+	\label{fig:ProprietaDivisione}
+	\end{figure}
+La divisione\index{Operazione!divisione} è una operazione binaria \nobs\vref{fig:Nat_operazione_Divisione} non sempre interna in $\N$. I termini in ingresso si dicono dividendo\index{Operazione!divisione!dividendo} e divisore\index{Operazione!divisione!divisore}, il risultato quoziente\index{Operazione!divisione!quoziente}. Se il dividendo non è  multiplo  del divisore l'operazione è esterna. La divisione non è commutativa \[3\div2\neq2\div3\] e neppure associativa \[(4\div3)\div2\neq4\div(3\div2)\]. L'operazione gode della proprietà invariantiva\index{Operazione!divisione!invariantiva}, per cui moltiplicando  o dividendo la stessa quantità diverso da zero, al dividendo e al divisore il quoziente non cambia\nobs\vref{fig:ProprietaDivisione}. Casi particolari sono \[1\div0\] \[0\div a\] Nel primo caso la divisione è impossibile. Nel secondo è indeterminata.
+\begin{figure} %
+	\centering
+\includestandalone[width=.5\textwidth]{primo/numeri_naturali/Operazione_Divisione2_}
+	\caption{Proprietà Divisione}
+		\label{fig:ProprietaDivisione2}
+	\end{figure}
+\subsection{Potenza}
+\label{sec:NumerinatPot}
+\begin{figure} %
+	\centering
+\includestandalone[width=\textwidth]{primo/mappe/mappe_concettuali_6}
+	\caption{Proprietà Potenza}
+	\label{fig:ProprietaPotenza}\end{figure}
+La potenza\index{Operazione!potenza} è una operazione binaria\nobs\vref{fig:Nat_operazione_Potenza}  interna in $\N$. I termini in ingresso si dicono base\index{Operazione!potenza!base} ed esponente\index{Operazione!potenza!esponente} il risultato potenza. L'indice della potenza indica quante volte la base deve essere moltiplicata per se stessa. Quindi\[a^1=a\; a^2=a\cdot a\; a^3=a\cdot a\cdot a\; \text{eccetera} \] 
+
+La potenza ha vari proprietà. Rispetto al prodotto e la divisione. non ha nessuna proprietà rispetto la somma e la sottrazione. Questo dipende dal fatto che la potenza si basa sulla moltiplicazione. 
+Per la moltiplicazione\index{Operazione!potenza!moltiplicazione} vale che il prodotto di potenze con base uguale, è una potenza che ha per base la stessa base e per esponente la somma degli esponenti.\[ 2^3\cdot 2^4=2^7 \] Il prodotto di potenze di basi diverse ma esponente uguale è una potenza che ha per base il prodotto delle basi e per esponente lo stesso esponente.\[2^3\cdot 4^3=8^3\] 
+
+Per la divisione\index{Operazione!potenza!divisione} vale che la divisione di potenze con base uguale, è una potenza che ha per base la stessa base e per esponente la differenza degli esponenti.\[ 2^5\div 2^3=2^2 \]Questa proprietà non è sempre definita. La proprietà è valida se il grado del dividendo è maggiore del grado del divisore e la divisione è definita.  La divisione di potenze di basi diverse ma esponente uguale è una potenza che ha per base il quoziente delle basi e per esponente lo stesso esponente. Anche in questo caso la divisione deve essere definita.\[4^3\cdot 2^3=2^3\] 
+\subsection{Distributiva}
+\label{sec:distibutivaInN}
+La proprietà distributiva\index{Operazione!addizione!distributiva}\index{Operazione!moltiplicazione!distributiva} non è un'operazione ma è una proprietà delle operazioni di addizione e moltiplicazione. Questa proprietà lega le due operazioni nel senso che è possibile cambiare l'ordine di esecuzione fra la somma e il prodotto e il risultato non cambia. \[ 5\cdot(2+3)=5\cdot 2+ 5\cdot 3=25\]
+\subsection{Espressioni}
+\label{sec:EspressioniNumeri Naturali}
+Un'espressione è la combinazione di una o più operazioni fra loro anche diverse. Per convenzione si dice che le operazioni vengono eseguite nell'ordine in cui si trovano leggendo l'espressione da sinistra. La precedenza spetta alle potenze poi alle moltiplicazioni divisioni infine alle somme differenze. A parità di precedenza viene eseguita l'operazione che s trova più a sinistra. L'ordine di esecuzione può essere  cambiato inserendo fra parentesi l'operazione da eseguire prima. Vi sono tre tipi di parentesi quindi tre livelli di priorità.
+\section{Numeri primi e composti}
+\label{sec:Numeriprimiecomposti}
+Per la moltiplicazione i numeri naturali (escluso lo zero) sono divisibili in due gruppi: in numeri primi\index{Numero!primo} e in numeri composti\index{Numero!composto} o multipli. Un numero è composto se è il prodotto di due o più numeri diversi da uno e da lui stesso. Un numero è primo se non è composto. 
+
+Anche con la divisione possiamo classificare in due gruppi: i numeri primi e i numeri divisibili. Un numero è divisibile per un altro numero diverso da uno se il resto della divisione è zero. Un numero non divisibile è primo. La figura\nobs\vref{fig:ProprietaClassificazioneNumNat} riassume quanto detto.
+
+Esistono varie regole che permettono di semplificare la ricerca del numero divisore. La tabella\nobs\vref{tab:criteriDivisitilità} le riassume.
+\begin{figure} %
+	\centering
+\includestandalone[width=.9\textwidth]{primo/mappe/mappe_concettuali_7}
+	\caption{Classificazione}
+	\label{fig:ProprietaClassificazioneNumNat}
+\end{figure}
+%	\begin{esempio}
+%Dato che $18:2=9$ con resto zero avremo:
+%\begin{enumerate}
+%	\item 18 è multiplo di 2 secondo 9
+%	\item 18 è divisibile per 2
+%\end{enumerate}
+%	\end{esempio}
+\subsection{Scomposizione in fattori primi}
+Iniziamo a introdurre un oggetto che utilizzeremo in seguito. Un albero binario\index{Albero Binario} è formato da un nodo detto radice da cui si staccano due nodi detti figli. Un nodo senza figli è detto foglia.  
+\begin{figure} %
+	\centering
+\includestandalone[width=.5\textwidth]{primo/numeri_naturali/AlberoBinario0}
+	\caption{Albero Binario}
+	\label{fig:AlberoBinarioDef}
+\end{figure}
+
+Per scomposizione in fattori primi  di un numero si intende riscrivere quel numero come prodotto di numeri primi (fattori). Procediamo come nella figura\nobs\vref{fig:AlberoBinario6}. 
+\begin{description}
+\item[A] Iniziamo con \num{210};
+\item[B] \num{210} si può scrivere come il prodotto di due numeri \num{21} e \num{10};
+\item[C] \num{21} si può scrivere come il prodotto di due numeri \num{7} e \num{3} che essendo primi cerchio;
+\item[D] \num{10} si può scrivere come il prodotto di due numeri \num{2} e \num{5} che essendo primi cerchio;
+\end{description}
+Posso dire che \[210=2\cdot 3\cdot 5 \cdot 7 \cdot5 \]Ho ottenuto la scomposizione cercata.
+
+Per la scomposizione di $180$, procediamo come prima e otteniamo lo schema\nobs\vref{fig:AlberoBinario2}. Quindi la scomposizione cercata è:
+\[180=2\cdot 2\cdot 2\cdot 3\cdot 3\cdot 5=2^2\cdot 3^2\cdot 5 \]    
+
+La scomposizione di un numero in fattori è unica. Non vi possono essere due scomposizioni in fattori diverse per lo stesso numero. L'esempio\nobs\vref{fig:AlberoBinario3} mostra che anche procedendo in maniera diversa, la scomposizione finale è la stessa.
+\begin{table}
+\centering
+\begin{tabular}{ccp{0.5\textwidth}}
+\toprule  N&  &\multicolumn{1}{c}{Regola}   \\ 
+\midrule 2 & Se & l'ultima cifra è pari, cioè è  \numlist{0;2;4;6;8} \\ 
+3 & Se & la somma delle cifre è divisibile per tre.Esempio \num{375} $3+7+5=15\div3=5$ infatti $375\div 3=125$ \\ 
+ 4 & Se & le ultime due cifre sono divisibili per quattro o sono due zeri $\mathbf{00}$. Esempio $4\mathbf{60}$ $60\div 4=15$ $469\div 4=115$ \\
+ 5 & Se & l'ultima cifra è divisibile per cinque \\  
+ 6 & Se & è divisibile contemporaneamente per tre e per due  \\  
+ 8 & Se & ultime tre cifre sono divisibili per 8 o sono tre zeri $\mathbf{000}$. Esempio $9\mathbf{872}$ le ultime tre cifre sono divisibili per otto $872\div 8= 109$ $9872\div 8=1234$ \\  
+ 9 & Se & la somma delle cifre è divisibile per 9. Esempio $405$ $4+0+5=9$ $405\div9=45$  \\
+ 10 & Se & l'ultima sua cifra è zero \\
+ 11 & Se& la differenza della somma delle cifre di posto pari e le cifre di posto dispari è zero o si divide per undici. Esempio $25652$ $(5+5)-(2+6+2)=0$ $25652\div 11=2332$. Esempio \num{4145889} $(4+4+8+9)-(1+5+8=11)$ $4145889\div 11=376899$  \\    
+ 12 & Se & è divisibile contemporaneamente per tre e per quattro  \\  
+ 25 & Se & il numero  formato dalle ultime due cifre è divisibile per venticinque\\
+\bottomrule
+\end{tabular}
+\caption{Criteri di divisibilità}
+\label{tab:criteriDivisitilità}
+\end{table} 
+\begin{figure}
+		\centering
+\includestandalone[width=.3\linewidth]{primo/numeri_naturali/AlberoBinario1}
+	\caption[]{Scomposizione di\num{120}}
+	\label{fig:AlberoBinario1}
+\end{figure}
+\begin{figure} 
+	\centering
+\includestandalone[width=.3\linewidth]{primo/numeri_naturali/AlberoBinario2}
+	\caption[]{Scomposizione di \num{180}}
+	\label{fig:AlberoBinario2}
+\end{figure}
+\begin{figure} 
+\centering
+\includestandalone[width=.6\linewidth]{primo/numeri_naturali/AlberoBinario3}
+	\caption[]{Scomposizioni di \num{1350}}
+	\label{fig:AlberoBinario3}
+\end{figure}%
+\begin{figure} 
+\centering
+\includestandalone[width=.6\linewidth]{primo/numeri_naturali/AlberoBinario6}
+	\caption[]{Scomposizioni di \num{210}}
+	\label{fig:AlberoBinario6}
+\end{figure}%
+Un altro metodo per scomporre un numero in fattori  è quello di dividere ripetutamente  il numero da scomporre per dei primi, terminando quando il quoziente ottenuto è uno.
+\begin{esempio}
+Supponiamo di voler scomporre il \num{120}. Procedo come segue
+	\[
+	\begin{array}{c}
+	\primedecomp{120}\\
+	120 =2^3\cdot 3\cdot 5
+	\end{array}
+	\]
+	\end{esempio}
+\section{Massimo Comun Divisore}
+\label{sec:macdNaturali}
+Dati due o più numeri, il $\mcd$ è il numero\index{mcd} più grande in comune che li divide tutti. Vi sono casi, in cui il $\mcd$ vale uno, perché uno è l'unico numero che li divide. In questo caso si dice che i due numeri sono primi fra di loro\index{Numeri!primi fra loro}.
+ 	\begin{figure}
+	\centering
+\includestandalone[width=.5\linewidth]{primo/numeri_naturali/Diagramma1}
+	\caption{Massimo Comun Divisore}
+	\label{fig:numnatmcd}
+\end{figure}
+ Per calcolare $\mcd(120,180,1350)$ utilizziamo lo schema\nobs\vref{fig:numnatmcd}. Abbiamo già scomposto questi tre numeri e  	
+ allineo le scomposizioni.
+   \[
+   \begin{array}{rcllll}
+   840&= & 2^3 & 3& 5 & 7\\
+   180&= & 2^2 & 3& 5 \\
+   1350&= & 2 & 3^3& 5^2
+   \end{array}
+   \]
+   I fattori comuni sono \numlist{2;3;5} e presi gli esponenti minori ottengo che
+     \[\mcd(840;180;1350)=2\cdot 3\cdot 5=30 \]
+    \begin{figure}
+    	\centering
+    \includestandalone[width=.4\linewidth]{primo/numeri_naturali/Diagramma2}
+    	\caption{Algoritmo di Euclide}
+    	\label{fig:algoritmoEuclide}
+    \end{figure}
+   
+   Un modo veloce per calcolare il $\mcd$ è l'algoritmo di Euclide\index{mcd!Euclide}. Il diagramma\nobs\vref{fig:algoritmoEuclide} mostra la versione con divisione. 
+   
+   Supponiamo di voler calcolare il $\mcd$ di $a=\num{27}$ e di $b=\num{15}$. Seguiamo lo schema, dividiamo $a$ con $b$ otteniamo un quoziente di 1 e un resto di $12$. Il resto non è $0$ per cui $a=\num{15}$ e di $b=\num{12}$ e ripetiamo. Dividiamo $a$ con $b$ otteniamo un quoziente di 1 e un resto di $3$. Il resto non è $0$ per cui $a=\num{15}$ e di $b=\num{3}$ e ripetiamo.  Dividiamo $a$ con $b$ otteniamo un quoziente di $5$ e un resto di $0$. Il resto è $0$ per cui $\mcd=\num{3}$. La tabella seguente mostra i passaggi necessari.
+ \[
+\begin{array}{cccc}
+$a$&$b$&$a/b$&$r$\\
+	27&15&1&12\\
+    15&12&1&3\\
+    12&3&4&0
+    \end{array} 
+    \]
+    \begin{esempio}
+    Supponiamo di voler calcolare il $\mcd$ fra \numlist{40;12}. Organizzo i calcoli come nella tabella seguente. Inizio dividendo \num{40} per \num{12}. Ottengo come quoziente  \num{3} e per resto  \num{4}. La seconda riga ha per $a$ il precedente valore di $b$ e per $b$ il valore di $r$. Divido  \num{12} per \num{4}. Ottengo come quoziente  \num{3} e per resto  \num{0}. Essendo il resto uguale a zero, $\mcd(40;12)=4$.
+       \[
+      \begin{array}{cccc}
+      $a$&$b$&$a/b$&$r$\\
+      		40&12&3&4\\
+      	   	12&4&3&0
+          \end{array} 
+          \]
+    \end{esempio}
+   \begin{esempio}
+    Calcoliamo il $\mcd$ fra \num{85} e \num{26}. Dopo qualche passaggio otteniamo che il resto è zero quando $b=1$, quindi $\mcd(\num{85};\num{26})=1$. I numeri sono primi fra di loro\index{Numeri!primi fra loro}. 
+   	   \[
+   	   \begin{array}{cccc}
+   	   $a$&$b$&$a/b$&$r$\\
+   	   	85&26&3&7\\
+   	   	26&7&3&5\\
+   	   	7&5&1&2\\
+   	   	5&2&2&1\\
+   	   	2&1&2&0
+   	    \end{array} 
+   	     \]
+   \end{esempio}
+\begin{esempio}
+Calcoliamo il $\mcd$ fra \numlist{128;75}. Imposto la tabella
+  \[
+   \begin{array}{cccc}
+   	   $a$&$b$&$a/b$&$r$\\
+   	   	128 & 75 & 1 & 53\\
+   	   	75 & 53 & 1 & 22\\
+   	   	53 & 22 & 2 & 9\\
+   	   	22 & 9 &2 & 4\\
+   	   	9 & 4 & 2 & 1\\
+   	   	4 & 1 & 4& 0
+   	    \end{array} 
+   	     \]
+   	    Dato che per resto zero il valore di $b$ è uno i due numeri sono primi fra loro. 
+   	    
+   	    Calcoliamo lo stesso $\mcd$ con il metodo delle scomposizioni. 
+   	    Dalla tabella\nobs\vref{fig:scomposizione12875} abbiamo le seguenti scomposizioni allineate:
+   	      \[
+   	       \begin{array}{rclll}
+   	       128& = & 2^7&   &    \\
+   	       75 & = &    & 3 & 5^2 
+   	       \end{array}
+   	       \]
+   	  Dato che non vi sono fattori in comune, il $\mcd$ è uno.
+\end{esempio}
+  \begin{figure}
+   	        	\centering
+   	    \includestandalone[width=.4\linewidth]{primo/numeri_naturali/AlberoBinario7}
+   	        	\caption[]{Scomposizione di \numlist{128;75}}
+   	        	\label{fig:scomposizione12875}
+   	        \end{figure}
+\begin{esempio}
+Utilizziamo il metodo di Euclide\index{mcd!Euclide} per calcolare il $\mcd$ tra \numlist{60;32;50}. Il procedimento è il seguente prima trovo il $\mcd$ tra \numlist{60;32} e poi cerco il $\mcd$ fra il $\mcd$ trovato e \num{50}.
+Imposto la tabella
+  \[
+   \begin{array}{cccc}
+   	   $a$&$b$&$a/b$&$r$\\
+   	   	60 & 32 & 1 & 28\\
+   	   	32 & 28 & 1 & 4\\
+   	   	28 & 4 & 7 & 0
+   	   \end{array} 
+   	     \]
+   Il $\mcd(60;32)=4$
+ Trovo il $\mcd(50;4)$
+ Imposto la tabella
+   \[
+     \begin{array}{cccc}
+     	   $a$&$b$&$a/b$&$r$\\
+     	   	50 & 4 & 21 & 2\\
+     	   	4 & 2 & 2 & 0
+     	   \end{array} 
+     	     \]
+     Il $\mcd$ tra \numlist{60;32;50} è due.
+\end{esempio}
+    \section{Minimo comune multiplo}
+        	\label{sec:mcmnumerinaturali}
+     Il minimo comune multiplo fra due più o numeri è il più piccolo multiplo  in comune fra i numeri dati. 
+    
+    Per calcolare il minimo comune multiplo fra \numlist{120;80;45}  scompongo in fattori  primi i tre numeri come nello schema\vref{fig:AlberoBinario5}   e seguo la procedura\nobs\vref{fig:numnatmcm}     	
+    	
+   Allineo le scomposizioni
+    \[
+       \begin{array}{rclll}
+       120&= & 2^3 & 3& 5 \\
+       80&= & 2^4 & & 5 \\
+       45&= &  & 3^2& 5
+       \end{array}
+       \]
+    quindi \[ \mcm(120;80;45)=2^4\cdot 3^2\cdot 5\]
+    	    \begin{figure}
+    	    	\centering
+    	    \includestandalone[width=.4\linewidth]{primo/numeri_naturali/Diagramma3}
+    	    	\caption{Calcolo del $\mcm$}
+    	    \label{fig:numnatmcm}
+    	    \end{figure}
+    \begin{figure}
+    	\centering
+    \includestandalone[width=.6\linewidth]{primo/numeri_naturali/AlberoBinario5}
+    	\caption[]{Scomposizione di \numlist{120;80;45}}  
+    	\label{fig:AlberoBinario5}
+    \end{figure}
+  \begin{esempio}
+   Calcoliamo il stesso $\mcm$ con il metodo delle scomposizioni. 
+     	    Dalla tabella\nobs\vref{fig:scomposizione12875} abbiamo le seguenti scomposizioni allineate:
+     	     \[
+     	       \begin{array}{rclll}
+     	       128& = & 2^7&   &    \\
+     	       75 & = &    & 3 & 5^2 
+     	       \end{array}
+     	       \]
+     	            	       non avendo fattori in comune avremo
+     	        \[\mcm{128;75}=2^7\cdot 3\cdot 5^2=9600\] 
+  \end{esempio}
+  Un altro modo per trovare il $\mcm$ di due numeri è utilizzare la seguente formula\[ \mcm(a,b )=\dfrac{a\cdot b}{\mcd(a,b)}\]
+  \begin{esempio}
+  Calcoliamo il $\mcm$ fra \numlist{128;76}. Iniziamo a calcolare il $\mcd$ con il metodo di Euclide\index{mcd!Euclide}.
+   \[
+     	   \begin{array}{cccc}
+     	   $a$&$b$&$a/b$&$r$\\
+     	   	128 & 76 & 1 & 52\\
+     	   	76 & 52 & 1 & 24\\
+     	   	52 & 24 & 2 & 4\\
+     	   	24 & 4 & 6 & 0
+     	    \end{array} 
+     	     \]
+     	quindi \[\mcd(128;76)=4\]
+     	ottengo
+     	\[ \mcm(128,76 )=\dfrac{128\cdot 76}{4}=2432\]
+  \end{esempio}
+  Il $\mcm$ è una operazione per cui vale la proprietà associativa quindi\[\mcm(a,b,c)=\mcm(\mcm(a,b),c) \] quindi posso sostituire a due temini il loro minimo comune multiplo.
+  \begin{esempio}
+  Calcoliamo il minimo comune multiplo fra \numlist{45;78;48}. Iniziamo a calcolare il massimo comun divisore fra \numlist{45;78} con il metodo di Euclide\index{mcd!Euclide}.
+     \[
+       	   \begin{array}{cccc}
+       	   $a$&$b$&$a/b$&$r$\\
+       	   	78 & 45 & 1 & 33\\
+       	   	45 & 33 & 1 & 12\\
+       	   	33 & 12 & 2 & 9\\
+			12 & 9 & 1 & 3\\
+			9 & 3 & 3 & 0
+       	    \end{array} 
+       	     \]
+       	quindi \[\mcd(78;45)=3\]
+       		ottengo
+       	  \[ \mcm(78,45)=\dfrac{78\cdot 45}{3}=1170\]
+     Calcoliamo il massimo comun divisore fra \numlist{1170;48} con il metodo di Euclide\index{mcd!Euclide}.   	  
+      \[
+            	   \begin{array}{cccc}
+            	   $a$&$b$&$a/b$&$r$\\
+            	   	1170 & 48 & 24 & 18\\
+            	   	48 & 18 & 2 & 12\\
+            	   	18 & 12 & 1 & 6\\
+     				12 & 6 & 2 & 0
+            	    \end{array} 
+            	     \]
+            	quindi \[\mcd(1170;48)=6\]
+            		ottengo
+            	  \[ \mcm(1170,48)=\dfrac{1170\cdot 48}{6}=9360\]
+      Ricapitolando il mimino comune multiplo fra \numlist{45;78;48} è \num{9360}
+  \end{esempio}

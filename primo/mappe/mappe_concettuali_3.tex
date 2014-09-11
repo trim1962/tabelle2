@@ -1,0 +1,30 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{impostazioni/impostazioniTikz}
+\begin{document}
+  \begin{tikzpicture}
+    \node[main node2] (1) {Sottazione};
+    \node[main verb] (2) [right =of 1]  {\'{e}};
+    \node[main node2] (3) [right =of 2] {Operazione};
+\node[main verb] (4) [above right= .3cm and 1cm  of 3]  {\'{e}};
+\node[main verb] (5) [below right= .1cm and 1cm of 3]  {ha};
+\node[main verb] (6) [above left  =of 3]  {non è\'{e}};
+\node[main verb] (7) [below left =of 3]  {ha};
+\node[main node2] (8) [above right = .01cm and 1cm of 6]  {Commutativa};
+\node[main node2] (9) [above left = .01cm and 1cm of 6]  {Associativa};
+\node[main node2] (10) [above right= .01cm and 1cm of 4]  {Invariantiva};
+\node[main node2] (11) [above right = .0cm and 1cm of 5]  {Primo termine};
+\node[main node2] (12) [below right = .0cm and 1cm of 5]  {Secondo termine};
+\node[main node2] (13) [below left = of 7]  {Un risultato};
+\node[main verb] (14) [right = of 11]  {\'{e}};
+\node[main verb] (15) [right = of 12]  {\'{e}};
+\node[main verb] (16) [right = of 13]  {\'{e}};
+\node[main node2] (17) [right =of 14] {Il minuendo};
+\node[main node2] (18) [right =of 15] {Il sottraendo};
+\node[main node2] (19) [right =of 16] {La differenza};
+\foreach \x /\y in{1/2,2/3,3/6,3/4,3/5,3/7,6/8,6/9,4/10,5/12,5/12,7/13,11/14,12/15,13/16,14/17,15/18,16/19,5/11}
+  \path[linea] (\x) edge node {} (\y);
+  
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,340 @@
+\chapter{Funzioni ed equazioni  esponenziali}
+\label{cha:FunzioniEquazioniEsponenziali}
+\section{Proprietà delle potenze}
+\label{sec:ProprietaDellePotenze}
+Iniziamo con ripassare le proprietà delle potenze. La tabella\nobs\vref{tab:potenzeriepilogo} elenca le principali proprietà. Per le potenze a esponente reale la base deve un numero reale positivo. Se questo non viene rispettato, possiamo avere delle situazioni paradossali come la seguente:
+\[-2=\sqrt[3]{-8}=(-8)^{\frac{1}{3}}=(-8)^{\frac{2}{6}}=\sqrt[6]{(-8)^{2}}=\sqrt[6]{64}=2\] 
+\begin{table}
+	\centering
+	\begin{tabular}{RCLL}
+		\toprule
+		a^n&=&\overbrace{a\times a\times\cdots\times a}^{n{}\mbox{volte}}&\forall a\in\R\qquad n\in\N\qquad n>1 \\[.6cm]
+		a^0&=&1&\forall a\in\R\qquad a\neq 0\\[.6cm]
+		0^0&=&?\\[.6cm]
+		a^1&=&a&\forall a\in\R\\[.6cm]
+		
+		a^n\cdot a^m&=&a^{n+m}&\forall a\in\R\qquad n,m\in\N\\[.6cm]
+		a^m\div a^n&=&a^{m-n}&\forall a\in\R\qquad a\neq 0\qquad n,m\in\N\\[.6cm]
+		\left(a^n\right)^m&=&a^{n\cdot m}&\forall a\in\R\\[.6cm]
+		a^{n}b^{n}&=&{\left(ab\right)}^n& a,b\in\R\qquad n\in\N\\[.6cm]
+		a^{n}\div b^{n}&=&{\left(a\div  b\right)}^n& a,b\in\R\qquad b\neq 0\qquad n\in\N\\[.6cm]
+		\left(\dfrac{a}{b}\right)^n&=&\dfrac{a^n}{b^n}& a,b\in\R\qquad b\neq 0\qquad n\in\N\\[.6cm]
+		a^{-n}&=&\left(\dfrac{1}{a}\right)^n&\forall a\in\R\qquad a\neq 0\qquad n\in\N \\[.6cm]
+			a^{\frac{m}{n}}&=&\sqrt[n]{a^{m}}&\forall a\in\R\qquad a\geq 0\qquad n,m\in\N \\[.6cm]
+		\bottomrule
+	\end{tabular}
+	\caption{Proprietà delle potenze}
+	\label{tab:potenzeriepilogo}
+\end{table}
+\section{Funzioni di variabili reali}
+\label{sec:FunzioniVariabileReale}
+Una prima definizione di funzione è la seguente:
+\begin{definizione}
+Una funzione è una relazione che associa ad un elemento di un insieme (Dominio\index{Funzione!Dominio}) un elemento di un altro insieme. (Codominio\index{Funzione!Codominio}). 
+\end{definizione}
+Se $f$ è la funzione\index{Funzione} avremo \[\function{f}{D}{C}{x}{f(x)}\]
+dove $f(x)$ è l'immagine\index{Funzione!Immagine} tramite $f$ di $x$.
+\begin{esempio}
+ Il biglietto del cinema è una funzione fra l'insieme degli spettatori (Dominio) e l'insieme delle poltrone di un cinema (Codominio). La figura\nobs\vref{fig:funzioniEsempio1} mostra questo. 
+ \end{esempio}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio1}
+		\caption{Biglietto del cinema}
+		\label{fig:funzioniEsempio1}
+	\end{subfigure}\qquad
+	\centering
+		\begin{subfigure}[b]{.4\linewidth}
+			\centering
+			\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio2}
+			\caption{Essere padre di}
+			\label{fig:funzioniEsempio2}
+		\end{subfigure}%
+%	\caption{$\Delta>0$}
+%	\label{fig:DeltaMagZeroEsempio1}
+\end{figure}
+\begin{esempio}
+La relazione <<essere padre di>> definita fra l'inseme dei dei padri e l'insieme dei figli, non è una funzione un padre infatti può avere più di un figlio come mostrato nella  figura\nobs\vref{fig:funzioniEsempio1}.
+\end{esempio}
+\begin{esempio}
+La relazione <<essere figlio di>> fra l'insieme dei figli e l'insieme e quello delle madri è una funzione. Un figlio ha una sola madre. come nella figura\nobs\vref{fig:funzioniEsempio3}. Due figli possono avere la stessa madre ma un figlio ha sempre una sola madre.
+\end{esempio}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio3}
+		\caption{Essere figlio di}
+		\label{fig:funzioniEsempio3}
+	\end{subfigure}\qquad
+	%	\centering
+	%	\begin{subfigure}[b]{.4\linewidth}
+	%		\centering
+	%		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio4}
+	%		\caption{Essere padre di}
+	%		\label{fig:funzioniEsempio4}
+	%	\end{subfigure}%
+	%	%	\caption{$\Delta>0$}
+	%	%	\label{fig:DeltaMagZeroEsempio1}
+\end{figure}
+\begin{esempio}
+La relazione che associa ad un numero il suo quadrato è una funzione. Formalmente abbiamo \[\function{f}{\R}{\R^{+}_{0}}{x}{x^2} \] oppure possiamo scrivere $y=x^2$. In questo caso abbiamo due incognite, la $x$ viene chiamata variabile indipendente, la $y$ è detta variabile dipendente. In questo caso il dominio della funzione è $\R$ e il codominio $\R^{+}_{0}$ cioè l'insieme dei numeri reali positivo incluso lo zero. La figura\nobs\vref{fig:funzioniEsempio4} mostra alcuni valori utilizzati per l'esempio. Alla funzione è possibile associare un grafico cioè l'insieme delle coppie $x,x^2$. Il grafico\nobs\vref{fig:funzioniEsempio9} è una parabola. 
+\end{esempio}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio4}
+		\caption{Quadrato}
+		\label{fig:funzioniEsempio4}
+	\end{subfigure}\qquad
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio5}
+		\caption{Radice quadrata}
+		\label{fig:funzioniEsempio5}
+	\end{subfigure}%
+	%	\caption{$\Delta>0$}
+	%	\label{fig:DeltaMagZeroEsempio1}
+\end{figure}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio9}
+		\caption{Radice quadrata}
+		\label{fig:funzioniEsempio9}
+	\end{subfigure}\qquad
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio8}
+		\caption{Grafico quadrato}
+		\label{fig:funzioniEsempio8}
+	\end{subfigure}%
+	%	\caption{$\Delta>0$}
+	%	\label{fig:DeltaMagZeroEsempio1}
+\end{figure}
+\begin{esempio}
+	La relazione che associa ad un numero la sua radice non è una funzione. Formalmente abbiamo \[\function{f}{\R}{\R}{x}{\sqrt{x}} \] La figura\nobs\vref{fig:funzioniEsempio5} mostra alcuni valori utilizzati per l'esempio. Dalla figura è chiaro che in questo caso non è una funzione. La relazione diventa una funzione se modifichiamo per esempio il codominio da $\R$ a $\R^{+}$. In questo caso ad un valore in ingresso corrisponde un solo valore in uscita. Il grafico\nobs\vref{fig:funzioniEsempio9} mostra il grafico della radice. 
+\end{esempio}
+\section{Classificazione delle funzioni}
+Una prima rozza classificazione delle funzioni matematiche le divide in due gruppi: intere o fratte.  
+\section{La funzione esponenziale}
+\label{sec:LaFunzioneEsponenziale}
+\begin{definizione}
+	Chiamo funzione esponenziale\index{Funzione!Esponenziale} una funzione del tipo \[y=a^x\quad
+	\text{per $a>0$.} \]
+\end{definizione}
+Il comportamento della funzione esponenziale varia al variare della base. La figura\nobs\vref{fig:funzioniEsempio6} mostra il comportamento per $a>1$.
+\begin{enumerate}
+\item Il grafico della funzione esponenziale occupa il semipiano positivo delle y.
+\item Tutti i grafici passano per il punto $(0,1)$.
+\item La funzione è crescente\index{Funzione!Crescente} all'aumentare dell'incognita. $x_1<x_2\quad f(x_1)<f(x_2)$ 
+\item L'asse delle $x$ è un asintoto orizzontale\index{Asintoto!orizzontale}.
+\end{enumerate}
+ La figura\nobs\vref{fig:funzioniEsempio7} mostra il comportamento della funzione esponenziale per $0<a<1$. 
+ \begin{enumerate}
+ \item Il grafico della funzione esponenziale occupa il semipiano positivo delle y.
+ \item Tutti i grafici passano per il punto $(0,1)$.
+ \item La funzione è  decrescente\index{Funzione!Decrescente} all'aumentare dell'incognita. $x_1<x_2\quad f(x_1)>f(x_2)$ 
+ \item L'asse delle $x$ è un asintoto orizzontale.
+ \end{enumerate}
+\begin{figure}
+\centering
+%\begin{center}
+\begin{tikzpicture}[>=triangle 90]
+\begin{axis}
+[xmin=-6,xmax=6,ymin=-1,ymax=6, %grid,
+axis x line=middle,xtick={-6,-5,...,6},ytick={-6,-5,...,6},
+axis y line=middle,xlabel=$x$,ylabel=$y$]
+\addplot[samples=300] {(0.5^(x))};
+\addplot [samples=300] {(2^(x))};
+
+\end{axis}
+\node (a1) at (1,1.5) {$a>1$};
+\node (a2) at (6,1.5) {$0<a<1$};
+\end{tikzpicture}
+\caption{Funzione esponenziale riepilogo}
+\label{fig:FunzioneExp}
+%\end{center}
+\end{figure}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio6}
+		\caption{$a>1$}
+		\label{fig:funzioniEsempio6}
+	\end{subfigure}\qquad
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio7}
+		\caption{$0<a<1$}
+		\label{fig:funzioniEsempio7}
+	\end{subfigure}%
+		\caption{Funzione esponenziale}
+		\label{fig:funzExp2}
+\end{figure}
+\section{Le equazioni esponenziali}
+\label{sec:LeEquazioniEsponenziali}
+\begin{definizione}\label{def:EquazioneEsponenziale}
+Chiamo equazione esponenziale\index{Equazione!Esponenziale} un'equazione del tipo \[a^{f(x)}=a^{g(x)}\quad a>0\quad  a\neq1 \]
+\end{definizione}
+L'equazione esponenziale ha una sola soluzione. 
+Dall'equazione esponenziale\nobs\vref{def:EquazioneEsponenziale} è possibile passare all'equazione \[f(x)=g(x) \]Non tutte le equazioni esponenziali sono riconducibili alla forma canonica.
+\begin{esempio}
+	Risolvere l'equazione $2^{3x+1}=2^{5x+2} $
+\begin{NodesList}[margin=4cm]
+\begin{align*}
+2^{3x+1}=2^{5x+2}\AddNode\\
+3x+1=5x+2\AddNode\\
+3x-5x=2-1\AddNode\\
+x=-\dfrac{1}{2}\AddNode
+\end{align*}
+\LinkNodes{Uguaglio gli esponenti}%
+\LinkNodes{Semplifico}%
+\LinkNodes{Risolvo}%
+\end{NodesList}
+\[x=-\dfrac{1}{2}\]
+\'{e} la soluzione.
+\end{esempio}
+Un altro tipo di equazione esponenziale si ha quando una base è una potenza dell'altra. In questo caso bisogna prima trasformare una base nell'altra utilizzando le proprietà delle potenze.
+\begin{esempio}
+	Risolvere l'equazione $9^{x+1}=3^{3x+4}$
+	In questo caso le basi sembrano diverse $9\neq 3$ ma $9$ \'{e} una potenza del $3$ si procede come segue:
+	\begin{NodesList}[margin=4cm]
+		\begin{align*}
+			9^{x+1}=3^{3x+4}\AddNode\\
+			(3^2)^{x+1}=3^{3x+4}\AddNode\\
+			\intertext{\hfil Potenza di potenze}
+			3^{2x+2}=3^{3x+4}\AddNode\\
+			2x+2=3x+4\AddNode\\
+			2x-3x=-2+4\AddNode\\
+			x=-4\AddNode
+		\end{align*}
+		\LinkNodes{Trasformo le basi}%
+		\LinkNodes{}%
+		\LinkNodes{Uguaglio gli esponenenti}%
+		\LinkNodes{Semplifico}%
+		\LinkNodes{Risolvo}%
+	\end{NodesList}
+	\[x=-4\]
+	\'{e} la soluzione.
+\end{esempio}
+Un altro caso è il caso in cui le basi non sono uguali. In questo caso dobbiamo avere esponenti uguali. In questo caso, con procedimenti algebrici, si tende a trasformare l'equazione semplificando l'espressione. 
+\begin{esempio}
+	Risolvere l'equazione $7^{x+1}+2\cdot7^{x}=4\cdot3^{x+2}+13\cdot 3^x$
+	\begin{NodesList} [margin=4cm]
+		\begin{align*}
+			7^{x+1}+2\cdot7^{x}=4\cdot3^{x+2}+13\cdot 3^x\AddNode\\
+			\intertext{\hfil indici uguali}
+			7\cdot7^x+2\cdot7^x=4\cdot9\cdot3^x+13\cdot3^x\AddNode\\
+			(7+2)7^x=36\cdot3^x+13\cdot3^x\AddNode\\
+			9\cdot7^x=49\cdot3^x\AddNode\\
+			\dfrac{7^x}{3^x}=\dfrac{49}{9}\AddNode\\
+			x=2\AddNode
+		\end{align*}
+		\LinkNodes{Semplifico l'espressione}%
+		\LinkNodes{Trasformo}%
+		\LinkNodes{Ottengo}%
+		\LinkNodes{Risolvo}%
+		\LinkNodes{Ottengo la soluzione}%
+	\end{NodesList}
+	\[x=2\]
+	\'{e} la soluzione accettabile.
+\end{esempio}
+Un altro tipo di equazione che è riconducibile alle precedenti si ha quando una base si ripete. Il procedimento è semplice, con un raccoglimento totale raccolgo l'elemento in comune. 
+\begin{esempio}
+	Risolvere l'equazione $3^{2x+1}+3^{2x}-3^{2x+2}=-45$
+	In questo caso si ripete sempre la potenza $3^{2x}$  si procede come segue:
+	\begin{NodesList}[margin=4cm]
+		\begin{align*}
+			3^{2x+1}+3^{2x}-3^{2x+2}=-45\AddNode\\
+			3^{2x}3+3^{2x}-3^{2x}3^2=-45\AddNode\\
+			\intertext{\hfil Raccolgo $3^{2x}$}
+			3^{2x}(3+1-9)=-45\AddNode\\
+			-5\cdot 3^{2x}=-45\AddNode\\
+			\intertext{\hfil Divido per $-5$}
+			3^{2x}=9\AddNode\\
+			2x=2\AddNode\\
+			x=1\AddNode
+		\end{align*}
+		\LinkNodes{Separo $3^{2x}$}%
+		\LinkNodes{Raccolgo}%
+		\LinkNodes{Sommo}%
+		\LinkNodes{Semplifico}%
+		\LinkNodes{Uguaglio gli esponenti}%
+		\LinkNodes{Risolvo}%
+	\end{NodesList}
+	\[x=1\]
+	\'{e} la soluzione.
+\end{esempio}
+Equazioni esponenziali risolvibili tramite sostituzioni. In questo caso si trasforma l'equazione esponenziale in un altra non esponenziale. Si risolve la nuova equazione le cui soluzioni permettono di risolvere l'equazione esponenziale di partenza.
+\begin{esempio}
+	Risolvere l'equazione $3^{2x}-8\cdot 3^x-9=0$
+	 è un'equazione del tipo $a^{2x}+a^{x}+c=0$ si risolve con la sostituzione $a^{x}=t$ Ovviamente $t>0$ 
+	\begin{NodesList} [margin=4cm]
+		\begin{align*}
+			3^{2x}-8\cdot 3^x-9=0\AddNode\\
+			%\intertext{\hfil $2^x=t$}
+			t^2-8t-9=0\AddNode\\
+			t_{1,2}=\dfrac{8\pm\sqrt{64+36}}{2}\AddNode\\
+			\intertext{\hfil Inverto la trasformazione}
+			t_{1}=9\AddNode\\
+			3^{x}=9\AddNode\\
+			x=2\AddNode\\
+			\intertext{\hfil Uso la seconda soluzione}
+			t_{2}=-1\AddNode\\
+			3^x=-1\AddNode
+		\end{align*}
+		\LinkNodes{Trasformo l'equazione}%
+		\LinkNodes{Risolvo}%
+		\LinkNodes{Ottengo due soluzioni}%
+		\LinkNodes{Risolvo l'equazione esponenziale}%
+		\LinkNodes{Uguaglio gli esponenti e risolvo}%
+		\LinkNodes{}%
+		\LinkNodes{Equazione impossibile}%
+	\end{NodesList}
+	\[x=2\]
+	\'{e} la soluzione.
+\end{esempio}
+Un altro esempio è il seguente
+\begin{esempio}
+	Risolvere l'equazione $ 2^{x+1}-2^{2-x}=7$ 
+	è un'equazione del tipo $a^{x}+a^{-x}+c=0$ si risolve con la sostituzione $a^{x}=t$
+	Ovviamente $t>0$ 
+	\begin{NodesList} [margin=4cm]
+		\begin{align*}
+			 2\cdot 2^{x}-4\cdot 2^{-x}-7=0\AddNode\\
+			 \intertext{\hfil $2^x=t$}
+			2t-4t^{-1}-7=0\AddNode\\
+			2t-4\dfrac{1}{t}-7=0\AddNode\\
+			2t^2-7x-4=0\AddNode\\
+			t_{1,2}=\dfrac{7\pm\sqrt{49+32}}{4}\AddNode\\
+			\intertext{\hfil Inverto la trasformazione}
+			t_{1}=4\AddNode\\
+			2^{x}=4\AddNode\\
+			x=2\AddNode\\
+			\intertext{\hfil Uso la seconda soluzione}
+			t_{2}=-\dfrac{1}{4} \AddNode\\
+			3^x=-\dfrac{1}{4}\AddNode
+		\end{align*}
+		\LinkNodes{Trasformo l'equazione}%
+		\LinkNodes{Trasformo}%
+		\LinkNodes{Ottengo}%
+		\LinkNodes{Risolvo}%
+		\LinkNodes{Ottengo due soluzioni}%
+		\LinkNodes{Risolvo l'equazione esponenziale}%
+		\LinkNodes{Uguaglio gli esponenti e risolvo}%
+		\LinkNodes{}%
+		\LinkNodes{Equazione impossibile}%
+	\end{NodesList}
+	\[x=2\]
+	\'{e} la soluzione accettabile.
+\end{esempio}
+\altapriorita{risistemare il tutto non  funziona qualcosa in tikz}

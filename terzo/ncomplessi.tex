@@ -1,0 +1,223 @@
+\chapter{I numeri complessi}
+\label{cha:INumeriComplessi}
+\section{Piano complesso}
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[>=triangle 45]
+	\draw[->,color=black] (-1,0) -- (7,0);
+	%\foreach \x in {,1,2,3,4,5,6,7}
+	%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+	\draw[color=black] (6.8,-0.6) node [anchor=south] {$R$};
+	\draw[color=black] (3.06,2.5) node [anchor=west] {$I$};
+	\draw[->,color=black] (3,-3) -- (3,3);
+	\fill [color=black] (3,1) circle (1.5pt);
+	\fill [color=black] (3,-1) circle (1.5pt);
+	\fill [color=black] (2,0) circle (1.5pt);
+	\fill [color=black] (4,0) circle (1.5pt);
+	\draw[color=black] (4,-0.6) node [anchor=south] {$+1$ };
+	\draw[color=black] (2,-0.6) node [anchor=south] {$-1$ };
+	\draw[color=black] (3,-1) node [anchor= west] {$-j$ };
+	\draw[color=black] (3,1.0) node [anchor= west] {$+j$ };
+	\end{tikzpicture}
+	
+	\caption{Piano complesso}
+	\label{fig:nuncomplPianoComplesso}
+\end{figure}
+\begin{figure}
+	\centering
+	\begin{tikzpicture}[>=triangle 45]
+	\draw[->,color=black] (-1,0) -- (7,0);
+	%\foreach \x in {,1,2,3,4,5,6,7}
+	%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+	\draw[color=black] (6.8,-0.6) node [anchor=south] {$R$};
+	\draw[color=black] (3.06,2.5) node [anchor=west] {$I$};
+	\draw[->,color=black] (3,-3) -- (3,3);
+	\fill [color=black] (3,1) circle (1.5pt);
+	\fill [color=black] (3,-1) circle (1.5pt);
+	\fill [color=black] (2,0) circle (1.5pt);
+	\fill [color=black] (4,0) circle (1.5pt);
+	\draw[color=black] (4,-0.6) node [anchor=south] {$+1$ };
+	\draw[color=black] (2,-0.6) node [anchor=south] {$-1$ };
+	\draw[color=black] (3,-1) node [anchor= west] {$-j$ };
+	\draw[color=black] (3,1.0) node [anchor= west] {$+j$ };
+	\fill [color=black] (5,0) circle (1.5pt);
+	\fill [color=black] (6,0) circle (1.5pt);
+	\fill [color=black] (3,2) circle (1.5pt);
+	\fill [color=black] (6,2) circle (1.5pt);
+	\draw[color=black] (6,-0.6) node [anchor=south] {$+3$ };
+	\draw[color=black] (3,2.0) node [anchor= west] {$+2$ };
+	\draw[->,color=black] (3,0) -- (6,2);
+	\end{tikzpicture}
+	\caption[]{Esempio di numero complesso}
+	\label{fig:esempioNumCompPiano}
+\end{figure}
+\section{Definizioni e vocabolario}
+\label{sec:NumCompDefinizioniVocabolario}
+\begin{definizione}
+	Chiamo unità immaginaria\index{Unità!Immaginaria} $\uimm$ il simbolo definito da \[\uimm^2=-1\]  
+\end{definizione}
+L'unità immaginaria permette di dare un senso alle radici di numeri negativi. Per esempio \[\sqrt{-2}=\sqrt{-1}\sqrt{2}=\sqrt{\uimm^2}\sqrt{2}=\pm\uimm\sqrt{2}\]
+\begin{esempio}
+Attenzione all'uso dell'unità immaginaria
+\[-1=\uimm\cdot\uimm=\sqrt{-1}\cdot\sqrt{-1}=\sqrt{(-1)\cdot(-1)}=\sqrt{1}=1 \]L'errore nasce dall'aver accettato come valida $\sqrt{a}\cdot\sqrt{b}=\sqrt{ab}$ che è definita solo per $a\geq 0$ e $b\geq 0$
+\end{esempio}
+\begin{definizione}
+	Chiamo numero complesso\index{Numero!Complesso} \[z=a+\uimm b\] $a$ viene chiamata parte reale \[\Re\left(z\right)=a\]
+	$b$ viene chiamata parte immaginaria\[\Im\left(z\right)=b \] 
+\end{definizione}
+\begin{esempio}
+Il numero \[z=-2+3\uimm \] è un numero complesso che ha per parte reale \[\Re(z)=-2\]  e per parte immaginaria \[\Im(z)=3\]
+\end{esempio}
+\begin{definizione}
+	Dato un numero complesso $z=a+b\uimm$,  chiamo complesso\index{Numero!Complesso!Coniugato} coniugato il numero $z\cdot\overline{z}=(a+b\uimm)(a-b\uimm)=$
+\end{definizione}
+\section{Operazioni}
+\label{sec:NumCompOperazioni}
+\subsection{Potenze dell'unità immaginaria}
+Per la potenza immaginaria\index{Unità!Immaginaria!Potenza} valgono le seguenti relazioni
+\begin{align*}
+	&\uimm^0=1\\
+	&\uimm^1=\uimm\\
+	&\uimm^2=-1\\
+	&\uimm^3=-\uimm\\
+	&\uimm^4=1\\
+	&\uimm^5=\uimm\\
+	&\uimm^6=-1
+\end{align*}
+L'esempio precedente ha un'interpretazione geometrica, sono rotazioni con con centro nell'origine come appare evidente dalla figura~\vref{fig:nuncomplPianoComplesso}.
+\subsection{Somma di numeri complessi}
+\begin{definizione}
+Dati due numeri complessi\index{Numero!Complesso!Somma}  $z=a+\uimm b$ e  $z_1=a_1+\uimm b_1$ chiamo somma il numero \[z+z_1=a+a_1+(b+b_1)\uimm\]
+\end{definizione}
+\begin{esempio}
+Sommiamo $z=3-2\uimm$ e $z_1=4+5\uimm$
+	\[z+z_1=3-2\uimm +4+5\uimm=3+4+(-2+5)\uimm=7+3\uimm\]
+\end{esempio}
+Lo zero\index{Numero!Complesso!Zero} per numeri complessi ha la seguente forma
+\[0=0+0\uimm\]
+\subsection{Prodotto di numeri complessi}
+\begin{definizione}
+	Dati due numeri complessi\index{Numero!Complesso!Prodotto}  $z=a+b\uimm $ e  $z_1=a_1+b\uimm _1$ chiamo prodotto il numero \[z\cdot z_1=(a+b\uimm)(a_1+b_1\uimm)=a\cdot a_1-b\cdot b_1+(a\cdot b_1+a_1\cdot b)\uimm\]
+\end{definizione}
+\begin{esempio}
+	Per moltiplicare $z=3+5\uimm $ e  $z_1=2+3\uimm1$  \[z\cdot z_1=(3+5\uimm)(2+3\uimm)= 6+9\uimm +10\uimm +15\uimm^2=6+9\uimm +10\uimm -15 =-9+19\uimm \]
+	nel calcolo bisogna ricordarsi che $\uimm^2=-1$
+\end{esempio}
+\begin{esempio}
+	Per moltiplicare $z=4-2\uimm $ e  $z_1=1+3\uimm1$  \[z\cdot z_1=(4-2\uimm)(1+3\uimm)= 4+12\uimm -2\uimm -6\uimm^2= 4+12\uimm -2\uimm +6=10+10\uimm \]
+	nel calcolo bisogna ricordarsi che $\uimm^2=-1$
+\end{esempio}
+
+L'unità o l'elemento neutro\index{Numero!Complesso!Elemento neutro} del prodotto ha la forma\[z=1+0\uimm\] 
+Il prodotto fra due numeri coniugati\index{Numero!Complesso!Coniugato}  è un numero reale puro
+\[z\cdot z_1=(a+b\uimm)(a-b\uimm)=a\cdot a+b\cdot b+(a\cdot b-a\cdot b)\uimm=a^2+b^2\]
+Quindi per ottenere la moltiplicazione di due numeri complessi coniugati basta sommare il quadrato della parte reale con il quadrato della parte immaginaria.
+\begin{esempio}
+	Per moltiplicare $z=4-2\uimm $ e\  $\overline{z}=4+2\uimm1$  \[z\cdot \overline{z}=(4-2\uimm)(4+2\uimm)= 16+4=20\]
+\end{esempio}
+\subsection{Divisione fra numeri complessi}
+La divisione fra due numeri si può scrivere come il prodotto fra il primo e il reciproco del secondo, cioè \[z\div z_1=z\cdot\dfrac{1}{z_1}\] Resta da dare un significato a $\frac{1}{z_1}$
+\begin{definizione}
+	Dato un numero complesso\index{Numero!Complesso!Reciproco} $z=a+b\uimm $ chiamo reciproco di $z$ il numero \[\dfrac{1}{z}=\dfrac{a-b\uimm}{a^2+b^2}=\dfrac{a}{a^2+b^2}-\dfrac{b}{a^2+b^2}\uimm\]
+\end{definizione}
+\begin{esempio}
+Calcolare il reciproco di $z=2+3\uimm$
+\[\dfrac{1}{z}=\dfrac{1}{2+3\uimm}\cdot\dfrac{2-3\uimm}{2-3\uimm}=\dfrac{2-3\uimm}{4+9}=\dfrac{2}{13}-\dfrac{3}{13}\uimm\]
+\end{esempio}
+\begin{esempio}
+	Calcolare il reciproco di $z=-6\uimm$
+	\[\dfrac{1}{z}=\dfrac{1}{-6\uimm}\cdot\dfrac{6\uimm}{6\uimm}=\dfrac{6\uimm}{36}=\dfrac{1}{6}\uimm\]
+\end{esempio}
+A questo punto la divisione fra due numeri complessi non è difficile.
+\begin{esempio}
+	Per dividere $z=2+3\uimm$ per $z_1=1-2\uimm$ 
+	\[ z:z_1=(2+3\uimm):(1-2\uimm)=(2+3\uimm)\cdot\dfrac{1}{1-2\uimm} =(2+3\uimm)\cdot\dfrac{1}{1-2\uimm}\cdot\dfrac{1+2\uimm}{1+2\uimm}=(2+3\uimm)\cdot\dfrac{1+2\uimm}{1+4}=\dfrac{2+4\uimm+3\uimm-6}{5}=\dfrac{-4+7\uimm}{5}=-\dfrac{4}{5}+\dfrac{7}{5}\uimm\]
+\end{esempio}
+\begin{table}
+\centering
+\setlength{\extrarowheight}{8pt} 
+\begin{tabular}{lC}
+\toprule
+Unità immaginaria &\uimm^2=-1\\
+Numero complesso&z=a+\uimm b\\
+Parte reale di z&\Re\left(z\right)=a\\
+Parte immaginaria di z&\Im\left(z\right)=b\\
+Coniugato di un numero $z$&\overline{z}=a-\uimm b\\
+Uguaglianza fra numeri complessi&a+\uimm b=a_1+\uimm b_1\Leftrightarrow \begin{cases}a=a_1\\ b=b_1\end{cases}\\
+Somma&z+z'=a+\uimm b+a'\uimm b'=(a+a')+\left(b+b'\right)\uimm\\
+Elemento neutro somma&r=0+i0\\
+Prodotto&z\cdot z'=\left(a+\uimm b\right)\cdot\left(a'+\uimm b'\right)=(aa'-bb)'+\left(ab'+ba'\right)\uimm\\
+Elemento neutro prodotto&z=1+\uimm 0\\
+Somma fra due numeri coniugati&(a+\uimm b)+(a-\uimm b)=2a\\
+Prodotto fra due numeri coniugati&(a+\uimm b)\cdot(a-\uimm b)=a^2+b^2\\
+Divisione fra numeri complessi&(a+\uimm b):(c+\uimm d)=\frac{a+\uimm b}{c+\uimm d}=\frac{(a+\uimm b)\cdot(c-\uimm d)}{c^2+d^2}\\
+\bottomrule
+\end{tabular}
+\caption{Numeri complessi}
+\label{tab:numericomplessi}
+\end{table}
+
+Un numero complesso è composto da una coppia di numeri \[z=a+\uimm b\] quindi al numero $z$ possiamo far corrispondere la coppia $(a;b)$. La figura\nobs\vref{fig:nuncomplPianoComplesso} rappresenta il piano complesso\index{Piano!complesso}. L'asse delle x corrisponde alla parte reale, l'asse delle y la parte immaginaria.
+
+Quindi, al numero complesso  \[z=3+\uimm 2\] corrisponde la coppia $(3;2)$ come nella figura\nobs\vref{fig:esempioNumCompPiano}. 
+%\mediapriorita{Fare degli esempi per i calcoli con i numeri complessi}
+\section{Algebra dei numeri complessi}
+\label{sec:AlgebraNumeriComplessi}
+Il seguente esempio lega la somma e le potenze di numeri complessi. In pratica basta considerare un numero complesso come un binomio. Questo è chiaro nell'esempio che segue.
+\begin{esempio}
+	Supponiamo di voler semplificare $(2+5\uimm)^2+(1+j)(1-j)+\uimm^2 $ Possiamo procedere come segue.
+	\begin{NodesList} [margin=4cm]
+		\begin{align*}
+			(2+5\uimm)^2+(1+j)(1-j)+\uimm^2 \AddNode\\
+			4+25\uimm^2+20\uimm+1+1+\uimm^3\AddNode\\
+			\intertext{\hfil $\uimm^2=-1$}
+			\intertext{\hfil $\uimm^3=-\uimm$}
+			4-25+20\uimm+2-\uimm\AddNode\\
+			-19-19\uimm\AddNode
+		\end{align*}
+		\LinkNodes{Eseguo i prodotti}%
+		\LinkNodes{Semplifico}%
+		\LinkNodes{Ottengo}%
+	\end{NodesList}
+\end{esempio}
+Possiamo avere somme prodotti potenze insieme. Gli esercizi vanno eseguiti seguendo la priorità delle operazioni. In quello che segue  prima si esegue la divisione, poi la potenza ed infine il prodotto e per terminare la somma. 
+\begin{esempio}
+Supponiamo di voler semplificare $(2+3\uimm)\left(\dfrac{1-3\uimm}{2+4\uimm}\right)^2 $ Possiamo procedere come segue. In pratica
+	\begin{NodesList} [margin=4cm]
+		\begin{align*}
+			(2+3\uimm)\left(\dfrac{1-3\uimm}{2+4\uimm}\right)^2 \AddNode\\
+			(2+3\uimm)\left(\dfrac{1-3\uimm}{2+4\uimm}\cdot\dfrac{2-4\uimm}{2-4\uimm}\right)^2\AddNode\\
+			(2+3\uimm)\left(\dfrac{2-4\uimm-6\uimm-12}{4+16}\right)^2\AddNode\\
+			(2+3\uimm)\left(\dfrac{-10-10\uimm}{20}\right)^2\AddNode\\
+			(2+3\uimm)\left(\dfrac{(-1-1\uimm)}{2}\right)^2\AddNode\\
+			(2+3\uimm)\dfrac{(-1-1\uimm)(-1-1\uimm)}{4}\AddNode\\
+			(2+3\uimm)\dfrac{(1+\uimm+\uimm-1)}{4}\AddNode\\
+			%x=2\AddNode\\
+			(2+3\uimm)\dfrac{\uimm}{2}\AddNode\\
+			\dfrac{2\uimm+3\uimm^2}{2}\AddNode\\
+			\dfrac{2\uimm-3}{2}\AddNode
+		\end{align*}
+		\LinkNodes{Prima eseguo la divisione}%
+		\LinkNodes{Moltiplico}%
+		\LinkNodes{Sommo}%
+		\LinkNodes{Semplifico}%
+		\LinkNodes{Quadrato}%
+		\LinkNodes{Semplifico}%
+		\LinkNodes{Semplifico}%
+		\LinkNodes{semplifico}%
+		\LinkNodes{Ottengo}%
+	\end{NodesList}
+\end{esempio}
+
+\bassapriorita{Forma goniometrica dei numeri complessi}
+
+
+
+
+
+
+
+
+
+
+

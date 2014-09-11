@@ -1,0 +1,14 @@
+\documentclass[preview=true,tikz,border=10pt]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{impostazioni/impostazioniTikz}
+\begin{document}
+ \begin{tikzpicture} %[>=triangle  45]
+ %\input{impostazioniTikz2}
+%\tikzset{linea2/.style={-triangle 90,draw}}
+ 	\draw [linea2](0,0)--(14,0);
+ 	\foreach \x in {0,1,...,13}
+ 	\draw (\x,.1) -- (\x,-.1) node[below,inner sep=1pt] {\tiny \x};
+ 	%\node (a) at (\x,0.6) {$\x$};
+ 	\end{tikzpicture}
+\end{document}

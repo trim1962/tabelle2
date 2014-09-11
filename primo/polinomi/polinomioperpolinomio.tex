@@ -1,0 +1,33 @@
+% Tikz File 'mytikz.tex'
+\documentclass{standalone}
+%\input{../../Mod_base/grafica}
+\input{../Mod_base/grafica}
+
+%\usetikzlibrary{...}
+\begin{document}
+		\begin{tikzpicture}
+	\node (a) {$(A$};
+	\node (p1)[right of=a, node distance=15]{$+$};
+	\node (b)[right of=p1, node distance=15]{$B)$};
+	\node (c)[right of=b, node distance=15]{$(C$};
+	\node (p2)[right of=c, node distance=15]{$+$};
+	\node (d)[right of=p2, , node distance=15]{$D)$};
+	\node (U)[right of=d, node distance=15]{$=$};
+	\node (ac)[right of=U, , node distance=15]{$AC$};
+	\node (p2)[right of=ac, node distance=15]{$+$};
+	\node (ad)[right of=p2, , node distance=15]{$AD$};
+	\node (p3)[right of=ad, node distance=15]{$+$};
+	\node (bc)[right of=p3, , node distance=15]{$BC$};
+	\node (p4)[right of=bc, node distance=15]{$+$};
+	\node (bd)[right of=p4, , node distance=15]{$BD$};
+	%\draw[->](a.north)to [bend left=45](c.north);
+	\path (a.north) edge [bend left=45,-triangle 90](ac.north);
+	\path(a.north)edge [bend left=45,-triangle 90](ad.north);
+	\path (b.north) edge [bend left=45,-triangle 90](bc.north);
+	\path(b.north)edge [bend left=45,-triangle 90](bd.north);
+	\path(c.south)edge [bend right=45,-triangle 90](ac.south);
+	\path(c.south)edge [bend right=45,-triangle 90](bc.south);
+	\path(d.south)edge [bend right=45,-triangle 90](ad.south);
+\path(d.south)edge [bend right=45,-triangle 90](bd.south);
+\end{tikzpicture}
+\end{document}

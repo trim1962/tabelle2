@@ -1,0 +1,22 @@
+% Tikz File 'mytikz.tex'
+\documentclass{standalone}
+%\input{../../Mod_base/grafica}
+\input{../Mod_base/grafica}
+
+%\usetikzlibrary{...}
+\begin{document}
+\begin{tikzpicture} [baseline]
+	\node (a) {$A$};
+	\node  (b)[right of=a, node distance=15]{$(B$};
+	\node (p2)[right of=b, node distance=15]{$+$};
+	\node (c)[right of=p2, node distance=15]{$C)$};
+	\node (U)[right of=c, node distance=15]{$=$};
+	\node (ab)[right of=U, node distance=15]{$AB$};
+	\node (p3)[right of=ab, node distance=15]{$+$};
+	\node (ac)[right of=p3, node distance=15]{$AC$};
+	\path (a.north) edge [bend left=45,-triangle 90](ab.north);
+	\path (a.north) edge [bend left=45,-triangle 90](ac.north);
+	\path(b.south)edge [bend right=45,-triangle 90](ab.south);
+\path(c.south)edge [bend right=45,-triangle 90](ac.south);
+\end{tikzpicture}
+\end{document}

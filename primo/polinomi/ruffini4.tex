@@ -1,0 +1,77 @@
+\documentclass{standalone}
+
+\input{../Mod_base/grafica}
+
+%\usetikzlibrary{...}
+\begin{document}
+\begin{tikzpicture}
+\tikzset{tondo/.style={draw,circle,minimum width=2.5em}};
+\tikzset{notondo/.style={circle,minimum width=2.5em}};
+\tikzset{freccia/.style={-triangle 90,very thick}};
+\tikzstyle{etichetta}=[midway,fill=black!20]
+\tikzstyle{noetichetta}=[]
+
+
+\pgfmathsetmacro{\np}{2};
+
+%A
+\pgfmathsetmacro{\xa}{0};
+\pgfmathsetmacro{\ya}{0};
+%B
+\pgfmathsetmacro{\xb}{\np*2};
+\pgfmathsetmacro{\yb}{\ya};
+%C
+\pgfmathsetmacro{\xc}{\xb};
+\pgfmathsetmacro{\yc}{3};
+%D
+\pgfmathsetmacro{\xd}{\xa};
+\pgfmathsetmacro{\yd}{\yc};
+%disegno righe castello
+\pgfmathsetmacro{\extrac}{1.5};
+\pgfmathsetmacro{\extrar}{1};
+\draw(\xa-\extrar,\ya)--(\xb+\extrar,\yb);
+\draw(\xb,\yb-\extrac)--(\xc,\yc+\extrac);
+\draw(\xc+\extrar,\yc)--(\xd-\extrar,\yd);
+\draw(\xd,\yd+\extrac)--(\xa,\ya-\extrac);
+%aggiustamento punti prima riga 
+\pgfmathsetmacro{\deltaa}{3.5};
+%posizionamento coefficienti in alto
+\foreach \n/\x/\st/\co in{
+a1/1/notondo/1,
+a2/3/tondo/2,
+a3/4.5/notondo/1}
+%\draw(\x,\deltaa) node[tondo] {\co};
+\node[\st] (\n) at (\x,\deltaa){$\co$};
+
+\pgfmathsetmacro{\deltam}{0.5};
+%%posizionamento coefficienti in mezzo
+\foreach \n/\x/\st/\co in{
+m1/-0.5/notondo/-1 ,
+m2/3/tondo/-1 %,
+%m3/4.5/tondo/-1%
+}
+\node[\st] (\n) at (\x,\deltam){$\co$};
+
+\pgfmathsetmacro{\deltab}{-1.2};
+%posizionamento coefficienti in mezzo
+\foreach \n/\x/\st/\co in{
+b1/1/notondo/1 ,
+b2/3/tondo/1 %,
+%b3/4.5/tondo/1%
+}
+\node[\st] (\n) at (\x,\deltab){\co};
+
+\foreach \a/\b/\st/\op in{
+%a1/b1/noetichetta/ %,
+%m1/b1/etichetta/* ,
+%b1/m2/etichetta/=%
+a2/m2/etichetta/+,
+m2/b2/etichetta/=
+%m1/b2/etichetta/*,
+%b2/m3/etichetta/=
+%a3/m3/etichetta/+,
+%m3/b3/etichetta/=
+}
+\draw[freccia](\a)--(\b)node[\st]{$\op$};
+\end{tikzpicture}
+\end{document}

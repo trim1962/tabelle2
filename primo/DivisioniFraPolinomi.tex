@@ -1,0 +1,245 @@
+\chapter{Divisioni fra polinomi}
+\label{cha:Divisionipolinomi}
+\section{Divisioni fra monomi}
+Un monomio è divisibile per un altro monomio se il grado del dividendo per ciascuna lettera è minore o uguale al grado della stessa lettera del divisore.
+\begin{esempio}
+Le seguenti divisioni sono possibili
+\begin{align*}
+3x^3y^2:x^y=&3x^0y^1=3y\\
+4x^5a^2b:2x^2a=&2x^3ab
+\end{align*}
+La seguente divisione è impossibile
+\begin{align*}
+x^4y^3:y^5=&x^4y^{-2}
+\end{align*}
+\end{esempio}
+\section{Divisioni fra Polinomi e monomi}
+La divisione di un polinomio\index{Polinomi!divisione} per un monomio è possibile se è possibile la divisione fra ogni termine del polinomio con il monomio.
+\section{Divisione fra polinomi}
+\begin{esempio}
+Supponiamo di voler fare la seguente divisione $(x^3-x^4+1):(x^2+1)$
+\begin{NodesList}
+\begin{align*}
+(x^3-x^4+1):(x^2+1)&\AddNode\\
+&\\
+(-x^4+x^3+1):(x^2+1)&\AddNode\\
+&\\
+\begin{minipage}[t]{0.5\textwidth}
+\begin{tabular}{lllll|l}
+$-x^4$& $+x^3$ & \phantom{$-x^2$} &\phantom{$-x$}  &$+1$&$ x^2+1$\\ 
+\cline{6-6}&&&&&
+%  \vrule height 2.5ex width 0pt $-x^4$& &$-x^2$  &  &&$-x^2+x+1$\\ 
+%\cline{1-5}
+%  \vrule height 2.5ex width 0pt &$+x^3$ & $+x^2$ &  &$+1$&  \\ 
+% &$+x^3$& &$+x$&&  \\ 
+%\cline{2-5}
+%   \vrule height 2.5ex width 0pt&  &$+x^2$&$-x$&$+1$&  \\ 
+%   \vrule height 2.5ex width 0pt&  &$+x^2$&&$+1$&  \\ 
+%\cline{3-5}
+% &  &  &$-x$&&  \\ 
+\\
+\end{tabular}
+\end{minipage}&\AddNode\\
+\begin{minipage}[t]{0.5\textwidth}
+\begin{tabular}{lllll|l}
+$-x^4$& $+x^3$ &\phantom{$-x^2$}  &\phantom{$-x$}  &$+1$&$ x^2+1$\\ 
+\cline{6-6}&&&&&$-x^2$
+%  \vrule height 2.5ex width 0pt $-x^4$& &$-x^2$  &  &&$-x^2+x+1$\\ 
+%\cline{1-5}
+%  \vrule height 2.5ex width 0pt &$+x^3$ & $+x^2$ &  &$+1$&  \\ 
+% &$+x^3$& &$+x$&&  \\ 
+%\cline{2-5}
+%   \vrule height 2.5ex width 0pt&  &$+x^2$&$-x$&$+1$&  \\ 
+%   \vrule height 2.5ex width 0pt&  &$+x^2$&&$+1$&  \\ 
+%\cline{3-5}
+% &  &  &$-x$&&  \\ 
+\\
+\end{tabular}
+\end{minipage}&\AddNode\\
+\begin{minipage}[t]{0.5\textwidth}
+\begin{tabular}{lllll|l}
+$-x^4$& $+x^3$ & \phantom{$-x^2$} & \phantom{$-x$} &$+1$&$ x^2+1$\\ 
+\cline{6-6}
+  \vrule height 2.5ex width 0pt $-x^4$& &$-x^2$  &  &&$-x^2$\\ 
+\cline{1-5}
+  \vrule height 2.5ex width 0pt &$+x^3$ & $+x^2$ &  &$+1$&  \\ 
+% &$+x^3$& &$+x$&&  \\ 
+%\cline{2-5}
+%   \vrule height 2.5ex width 0pt&  &$+x^2$&$-x$&$+1$&  \\ 
+%   \vrule height 2.5ex width 0pt&  &$+x^2$&&$+1$&  \\ 
+%\cline{3-5}
+% &  &  &$-x$&&  \\ 
+\\
+\end{tabular}
+\end{minipage}&\AddNode\\
+\begin{minipage}[t]{0.5\textwidth}
+\begin{tabular}{lllll|l}
+$-x^4$& $+x^3$ & \phantom{$-x^2$} & \phantom{$-x$} &$+1$&$ x^2+1$\\ 
+\cline{6-6}
+  \vrule height 2.5ex width 0pt $-x^4$& &$-x^2$  &  &&$-x^2+x$\\ 
+\cline{1-5}
+  \vrule height 2.5ex width 0pt &$+x^3$ & $+x^2$ &  &$+1$&  \\ 
+% &$+x^3$& &$+x$&&  \\ 
+%\cline{2-5}
+%   \vrule height 2.5ex width 0pt&  &$+x^2$&$-x$&$+1$&  \\ 
+%   \vrule height 2.5ex width 0pt&  &$+x^2$&&$+1$&  \\ 
+%\cline{3-5}
+% &  &  &$-x$&&  \\ 
+\\
+\end{tabular}
+\end{minipage}&\AddNode\\
+\begin{minipage}[t]{0.5\textwidth}
+\begin{tabular}{lllll|l}
+$-x^4$& $+x^3$ & \phantom{$-x^2$} & \phantom{$-x$} &$+1$&$ x^2+1$\\ 
+\cline{6-6}
+  \vrule height 2.5ex width 0pt $-x^4$& &$-x^2$  &  &&$-x^2+x$\\ 
+\cline{1-5}
+  \vrule height 2.5ex width 0pt &$+x^3$ & $+x^2$ &  &$+1$&  \\ 
+ &$+x^3$& &$+x$&&  \\ 
+\cline{2-5}
+   \vrule height 2.5ex width 0pt&  &$+x^2$&$-x$&$+1$&  \\ 
+%   \vrule height 2.5ex width 0pt&  &$+x^2$&&$+1$&  \\ 
+%\cline{3-5}
+% &  &  &$-x$&&  \\ 
+\\
+\end{tabular}
+\end{minipage}&\AddNode\\
+\begin{minipage}[t]{0.5\textwidth}
+\begin{tabular}{lllll|l}
+$-x^4$& $+x^3$ & \phantom{$-x^2$} & \phantom{$-x$} &$+1$&$ x^2+1$\\ 
+\cline{6-6}
+  \vrule height 2.5ex width 0pt $-x^4$& &$-x^2$  &  &&$-x^2+x+1$\\ 
+\cline{1-5}
+  \vrule height 2.5ex width 0pt &$+x^3$ & $+x^2$ &  &$+1$&  \\ 
+ &$+x^3$& &$+x$&&  \\ 
+\cline{2-5}
+   \vrule height 2.5ex width 0pt&  &$+x^2$&$-x$&$+1$&  \\ 
+%   \vrule height 2.5ex width 0pt&  &$+x^2$&&$+1$&  \\ 
+%\cline{3-5}
+% &  &  &$-x$&&  \\ 
+\\
+\end{tabular}
+\end{minipage}&\AddNode\\
+\begin{minipage}[t]{0.5\textwidth}
+\begin{tabular}{lllll|l}
+$-x^4$& $+x^3$ & \phantom{$-x^2$} & \phantom{$-x$} &$+1$&$ x^2+1$\\ 
+\cline{6-6}
+  \vrule height 2.5ex width 0pt $-x^4$& &$-x^2$  &  &&$-x^2+x+1$\\ 
+\cline{1-5}
+  \vrule height 2.5ex width 0pt &$+x^3$ & $+x^2$ &  &$+1$&  \\ 
+ &$+x^3$& &$+x$&&  \\ 
+\cline{2-5}
+   \vrule height 2.5ex width 0pt&  &$+x^2$&$-x$&$+1$&  \\ 
+   \vrule height 2.5ex width 0pt&  &$+x^2$&&$+1$&  \\ 
+\cline{3-5}
+ &  &  &$-x$&&  \\ 
+\\
+\end{tabular}
+\end{minipage}&\AddNode\\
+\end{align*}
+\LinkNodes{Ordino i polinomi\\ }
+\LinkNodes{\begin{minipage}{3.5cm}
+
+Scrivo la divisione lasciando spazi vuoti dove necessario\\
+\end{minipage}}%
+  \LinkNodes{\begin{minipage}{3.5cm}
+  
+ \[\dfrac{-x^4}{x^2}=-x^2\]
+  \end{minipage}
+}%
+ \LinkNodes{Calcolo il primo resto}%
+  \LinkNodes{$\dfrac{x^3}{x^2}=x$}%
+\LinkNodes{\begin{minipage}{3.5cm}
+Calcolo il secondo resto
+\end{minipage}}%
+   \LinkNodes{$\dfrac{x^2}{x^2}=1$}%
+    \LinkNodes{Calcolo l'ultimo resto}%
+   \end{NodesList}
+\end{esempio}
+\begin{esempio}
+Supponiamo di voler dividere \[(x^4+2x+1):(x^2+1)\]
+\begin{figure}
+\rotatebox{90}{
+\begin{minipage}[b]{.35\linewidth}
+\centering\includestandalone[width=5.5cm]{primo/polinomi/divpolinomi7}
+\subcaption{Sette}\label{fig:divpol2g}
+\end{minipage}%
+}
+\rotatebox{90}{
+\begin{minipage}[b]{.35\linewidth}
+\centering\includestandalone[width=5.5cm]{primo/polinomi/divpolinomi6}
+\subcaption{Sei}\label{fig:divpol2f}
+\end{minipage}%
+}
+\rotatebox{90}{
+\begin{minipage}[b]{.35\linewidth}
+\centering\includestandalone[width=5.5cm]{primo/polinomi/divpolinomi5}
+\subcaption{Cinque}\label{fig:divpol2e}
+\end{minipage}%
+}
+\rotatebox{90}{
+\begin{minipage}[b]{.35\linewidth}
+\centering\includestandalone[width=5.5cm]{primo/polinomi/divpolinomi4}
+\subcaption{Quattro}\label{fig:divpol2d}
+\end{minipage}%
+}
+\rotatebox{90}{
+\begin{minipage}[b]{.35\linewidth}
+\centering\includestandalone[width=5.5cm]{primo/polinomi/divpolinomi3}
+\subcaption{Tre}\label{fig:divpol2c}
+\end{minipage}
+}
+\rotatebox{90}{
+\begin{minipage}[b]{.35\linewidth}
+\centering\includestandalone[width=5.5cm]{primo/polinomi/divpolinomi2}
+\subcaption{Due}\label{fig:divpol2b}
+\end{minipage}
+}
+\rotatebox{90}{
+\begin{minipage}[b]{.35\linewidth}
+\centering\includestandalone[width=5.5cm]{primo/polinomi/divpolinomi1}
+\subcaption{Uno}\label{fig:divpol2a}
+\end{minipage}%
+}
+\caption{Divisione fra polinomi}\label{fig:divpolinomi2}
+\end{figure}
+\end{esempio}
+\section{Metodo di Ruffini}
+\begin{esempio}
+Supponiamo di voler dividere
+\[(x^2+2x+1):(x+1)\]
+\begin{figure}
+	\begin{subfigure}[b]{0.55\linewidth}
+		\centering\includestandalone[width=0.6\textwidth]{primo/polinomi/ruffini1}
+		\caption{Imposto il castello}\label{fig:Ruffiniesempio1a}
+	\end{subfigure}%
+	\captionsetup{skip=0pt}
+	\begin{subfigure}[b]{0.55\linewidth}
+		\centering\centering\includestandalone[width=0.6\textwidth]{primo/polinomi/ruffini2}
+		\caption{Sposto il coefficiente sotto la riga}\label{fig:Ruffiniesempio1b}
+	\end{subfigure}
+	\begin{subfigure}[b]{.55\linewidth}
+		\centering\centering\includestandalone[width=0.6\linewidth]{primo/polinomi/ruffini3}
+		\caption{moltiplico e sposto}\label{fig:Ruffiniesempio1c}
+	\end{subfigure}%
+		\captionsetup{skip=0pt}
+	\begin{subfigure}[b]{.55\linewidth}
+		\centering\centering\includestandalone[width=0.6\textwidth]{primo/polinomi/ruffini4}
+		\caption{Sommo sulla colonna}\label{fig:Ruffiniesempio1d}
+	\end{subfigure}
+	\begin{subfigure}[b]{.55\linewidth}
+			\centering\centering\includestandalone[width=0.6\textwidth]{primo/polinomi/ruffini5}
+			\caption{Moltiplico e sposto la risposta}\label{fig:Ruffiniesempio1e}
+		\end{subfigure}%
+		\captionsetup{skip=0pt}
+		\begin{subfigure}[b]{.55\linewidth}
+			\centering\centering\includestandalone[width=0.6\textwidth]{primo/polinomi/ruffini6}
+			\caption{Sommo sulla colonna fine}\label{fig:Ruffiniesempio1f}
+		\end{subfigure}
+	\captionof{figure}{Metodo di Ruffini}
+\label{fig:Ruffiniesempio1}
+\end{figure}
+
+
+la risposta è \[x+1\] con resto zero.
+\end{esempio}

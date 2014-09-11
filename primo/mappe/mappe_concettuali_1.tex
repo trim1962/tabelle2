@@ -1,0 +1,21 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{impostazioni/impostazioniTikz}
+\begin{document}
+  \begin{tikzpicture}
+    \node[main node2] (1) {Numeri Naturale}; 
+    \node[main verb] (2) [right =of 1]  {ha};
+    \node[main node2] (3) [below right =  of 2] {Precedente};
+    \node[main node2] (4) [above right = of 2] {Successivo};
+    \path let \p1=(3), \p2=(4) in node[main verb] (5) at (\x1+60,\y2/2+\y1/2){ha};
+    \node[main node2] (6) [right = 1cm and 1cm of 5] {Ordine};
+%    \node[main verb] (7) [below  = 2cm of 1] {sono};
+    \node[main node2] (8) [below  = 2cm of 6] {Infiniti};
+    \path let \p1=(6), \p2=(8) in node[main verb] (9) at (\x1+60,\y2/2+\y1/2){corrisponde};
+    \node[main node2] (10) [right  =of 9] {Retta orientata};
+   \path let \p1=(1), \p2=(8) in node[main verb] (7) at (\x1,\y2){sono};
+    \foreach \x /\y in{1/2,2/3,2/4,1/7,7/8,3/5,4/5,5/6,6/9,8/9,9/10}
+      \path[linea] (\x) edge node {} (\y);
+\end{tikzpicture}
+\end{document}

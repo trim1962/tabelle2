@@ -1,0 +1,12 @@
+\documentclass[preview=true,border=10pt]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{impostazioni/impostazioniTikz}
+\begin{document}
+ \begin{tikzpicture} %[>=triangle  45]
+ 	\draw [linea2](-7,0)--(7,0);
+ 	\foreach \x in {-6,-5,...,6}
+ 	\draw (\x,.1) -- (\x,-.1) node[below,inner sep=1pt] {\tiny \x};
+ 	%\node (a) at (\x,0.6) {$\x$};
+ 	\end{tikzpicture}
+\end{document}

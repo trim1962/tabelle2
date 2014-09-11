@@ -1,0 +1,14 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{impostazioni/impostazioniTikz}
+\begin{document}
+ \begin{tikzpicture}[very thick,node distance=5cm,text centered,minimum size=3cm,->=latex]
+ \node [circle, draw,thich] (a) {Frazione};
+ \node [circle, draw] (b) [above right=of a] {Numero decimale};
+ \node [circle, draw] (c) [above left=of a]{Percentuale};
+ \draw [<->,,thick,] (a) to (b);
+ \draw [<->,,thick,] (b) to (c);
+ \draw [<->,,thick,] (c) to (a);
+ \end{tikzpicture}
+\end{document}

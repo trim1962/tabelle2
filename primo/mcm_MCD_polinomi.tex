@@ -1,0 +1,400 @@
+\chapter{MCD e mcm}
+\label{cha:mcmmcdpolinomi}
+\section{MCD}\index{Polinomi!MCD}
+\label{secMCDpolinomi}
+Il $\mcd$ fra più polinomi si ottiene moltiplicando i fattori comuni presi una sola volta, con il minore esponente.
+\begin{esempio}
+Supponiamo di voler trovare il $\mcd$ fra $a^3-2a^2b$ e $a^2-4b^2$ i due polinomi sono somme di addendi quindi 
+\begin{center}
+\begin{tikzpicture}
+\tikzset{notondo/.style={ellipse}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[tondo,node distance = 2
+cm];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+\node [notondo] (p1)  {$a^3$};
+\node [notondo,right of=p1] (p2)  {$-$};
+\node [notondo,right of=p2] (p3)  {$2a^2b$};
+\node [notondo,right of=p3] (p4)  {};
+\node [notondo,right of=p4] (p5)  {$a^2$};
+\node [notondo,right of=p5 ] (p6)  {$-$};
+\node [notondo,right of=p6] (p7)  {$4b^2$};
+\node [etichetta,below of=p6] (p9)  {Addendi};
+\node [etichetta,below of=p2] (p8)  {Addendi};
+\draw[freccia] (p8)--(p1);
+\draw[freccia] (p8)--(p3);
+\draw[freccia] (p9)--(p5);
+\draw[freccia] (p9)--(p7);
+\end{tikzpicture}
+\end{center}
+raccogliendo a fattore comune nel primo e osservando che nel secondo abbiamo una differenza di quadrati otteniamo 
+\begin{center}
+\begin{tikzpicture}
+\tikzset{notondo/.style={ellipse}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[tondo,node distance = 2cm,align=center];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+\node [notondo,node distance=0.5cm] (p1)  {$a^2$};
+\node [notondo,right of=p1] (p2)  {};
+\node [notondo,right of=p2,,node distance=0.1cm] (p3)  {$(a-2b)$};
+\node [notondo,right of=p3,node distance=2cm ] (p4)  {};
+\node [notondo,right of=p4,] (p5)  {$(a-2b)$};
+\node [notondo,right of=p5,,node distance=0.5cm ] (p6)  {};
+\node [notondo,right of=p6] (p7)  {$(a+2b)$};
+\node [etichetta,below of=p4] (p9)  {Fattori\\ comuni};
+\node [etichetta,above of=p4] (p8)  {Fattori\\ non comuni};
+\draw[freccia] (p8)--(p1);
+\draw[freccia] (p8)--(p7);
+\draw[freccia] (p9)--(p3);
+\draw[freccia] (p9)--(p5);
+\end{tikzpicture}
+\end{center}
+Abbiamo trasformato le due somme in prodotti di fattori tramite un raccoglimento totale. Vi è un solo fattore comune, il $\mcd$ fra i due polinomi sarà\[(a-2b)\]
+\end{esempio}
+\begin{esempio}
+Supponiamo di voler trovare il $\mcd$ fra $x^2+9-6x$ e $x^2-2x-3$ i due polinomi sono somme di addendi quindi:
+\begin{center}
+\begin{tikzpicture}
+\tikzset{notondo/.style={ellipse}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[tondo,node distance = 2cm,align=center];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+\node [notondo] (p1)  {$x^2$};
+\node [notondo,right of=p1] (p2)  {$+$};
+\node [notondo,right of=p2] (p3)  {$9$};
+\node [notondo,right of=p3] (p3a)  {$-$};
+\node [notondo,right of=p3a] (p3b)  {$6x$};
+\node [notondo,right of=p3b] (p4)  {};
+\node [notondo,right of=p4] (p5)  {$x^2$};
+\node [notondo,right of=p5 ] (p6)  {$-$};
+\node [notondo,right of=p6] (p7)  {$2x$};
+\node [notondo,right of=p7] (p7a)  {$-$};
+\node [notondo,right of=p7a] (p7b)  {$3$};
+\node [etichetta,below of=p7] (p9)  {Addendi};
+\node [etichetta,below of=p3] (p8)  {Addendi};
+\draw[freccia] (p8)--(p1);
+\draw[freccia] (p8)--(p3);
+\draw[freccia] (p8)--(p3b);
+\draw[freccia] (p9)--(p5);
+\draw[freccia] (p9)--(p7);
+\draw[freccia] (p9)--(p7b);
+\end{tikzpicture}
+\end{center}
+Il primo è il quadrato di un binomio, l'altro trinomio è un trinomio particolare o somma prodotto. Otteniamo: 
+\begin{center}
+\begin{tikzpicture}
+\tikzset{notondo/.style={ellipse}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[tondo,node distance = 2cm,align=center];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+%\node [notondo,node distance=0.5cm] (p1)  {$(x-3)^2$};
+%\node [notondo,right of=p1] (p2)  {$$};
+\node [notondo] (p3)  {$(x-3)^2$};
+\node [notondo,right of=p3,node distance=2cm ] (p4)  {};
+\node [tondo,right of=p4,] (p5)  {$(x-3)$};
+\node [notondo,right of=p5,,node distance=0.5cm ] (p6)  {$ $};
+\node [notondo,right of=p6] (p7)  {$(x+1)$};
+\node [etichetta,below of=p4] (p9)  {Fattori\\ comuni};
+\node [etichetta,above of=p7] (p8)  {Fattore \\non comune};
+\node [etichetta,above of=p3,] (p10)  {Minore \\ esponente};
+%\draw[freccia] (p8)--(p1);
+\draw[freccia] (p8)--(p7);
+\draw[freccia] (p9)--(p3);
+\draw[freccia] (p9)--(p5);
+\draw[freccia] (p10)--(p4);
+\end{tikzpicture}
+\end{center}
+Abbiamo trasformato le due somme in  prodotti di fattori. I fattori in questo caso sono due. Viene preso il fattore comune con il minore esponente. Il $\mcd$ fra i due polinomi sarà\[x-3 \]
+\end{esempio}
+\begin{esempio}
+Supponiamo di voler trovare il $\mcm$ fra $x^3-2x^2$, $x^2-4x+4$ e $ x^3-4x$ i tre polinomi sono somme di addendi quindi 
+\begin{center}
+\begin{tikzpicture}
+\tikzset{notondo/.style={ellipse}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[tondo,node distance = 2cm,align=center];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+\node [notondo] (p1)  {$x^2$};
+\node [notondo,right of=p1] (p2)  {$-$};
+\node [notondo,right of=p2] (p3)  {$2x$};
+\node [notondo,right of=p3] (p4)  {};
+\node [notondo,right of=p4] (p5)  {$x^2$};
+\node [notondo,right of=p5 ] (p6)  {$-$};
+\node [notondo,right of=p6] (p7)  {$4x$};
+\node [notondo,right of=p7] (p7a)  {$+$};
+\node [notondo,right of=p7a] (p7b)  {$4$};
+\node [notondo,right of=p7b] (a1)  {};
+\node [notondo,right of=a1] (a2)  {$x^3$};
+\node [notondo,right of=a2] (a3)  {$-$};
+\node [notondo,right of=a3] (a4)  {$4x$};
+
+\node [etichetta,below of=p2] (p8)  {Addendi};
+\node [etichetta,below of=p7] (p9)  {Addendi};
+\node [etichetta,below of=a3] (p10)  {Addendi};
+\draw[freccia] (p8)--(p1);
+\draw[freccia] (p8)--(p3);
+\draw[freccia] (p9)--(p5);
+\draw[freccia] (p9)--(p7);
+\draw[freccia] (p9)--(p7b);
+\draw[freccia] (p10)--(a2);
+\draw[freccia] (p10)--(a4);
+\end{tikzpicture}
+\end{center}
+Il primo lo fattorizzo con un raccoglimento totale, ho poi un quadrato, l'altro binomio un altro raccoglimento totale e una differenza di quadrati. Otteniamo: 
+\begin{center}
+\begin{tikzpicture}
+\tikzset{notondo/.style={ellipse}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[tondo,node distance = 2cm,align=center];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+\node [notondo] (p1)  {$x^2$};
+\node [notondo,right of=p1] (p2)  {};
+\node [tondo,right of=p2,node distance=0.5cm] (p3)  {$(x-2)$};
+\node [notondo,right of=p3,node distance=2cm ] (p4)  {};
+\node [notondo,right of=p4,] (p5)  {$(x-2)^2$};
+\node [notondo,right of=p5,node distance=2cm ] (p6)  {};
+\node [notondo,right of=p6] (p7)  {$x$};
+\node [notondo,right of=p7] (a1)  {};
+\node [notondo,right of=a1,node distance=0.cm] (a2)  {$(x-2)$};
+\node [notondo,right of=a2] (a3)  {};
+\node [notondo,right of=a3,node distance=0.4cm] (a4)  {$(x+2)$};
+\node [etichetta,below of=p5] (p9)  {Fattori\\ comuni};
+\node [etichetta,above of=p4] (p8)  {Fattori \\non comuni};
+\node [etichetta,below of=p3,] (p10)  {Minore \\ esponente};
+\draw[freccia] (p8)--(p7);
+\draw[freccia] (p8)--(a4);
+\draw[freccia] (p8)--(p1);
+\draw[freccia] (p9)--(p3);
+\draw[freccia] (p9)--(p5);
+\draw[freccia] (p9)--(a2);
+\draw[freccia] (p10)--(p3);
+%\draw[freccia] (p10)--(p5);
+\end{tikzpicture}
+\end{center}
+Abbiamo trasformato le tre somme in  prodotti di fattori. Vi è un solo fattore comune ed è preso quello con il minore esponente. Il $\mcd$ fra i tre polinomi sarà\[x-2 \]
+\end{esempio}
+
+\section{mcm}\index{Polinomi!mcm}
+\label{sec:mcmpolinomi}
+Il $\mcm$ fra più polinomi si ottiene moltiplicando i fattori comuni  e non comuni, presi una sola volta, con il maggiore esponente.
+
+In genere, i polinomi sono una somma di più termini (addendi) quindi non è possibile,in genere, calcolare subito il $\mcm$.  
+\begin{esempio}
+Supponiamo di voler trovare il $\mcm$ fra $a^3-2a^2b$ e $a^2-4b^2$ i due polinomi sono somme di addendi quindi 
+\begin{center}
+\begin{tikzpicture}
+\tikzset{notondo/.style={ellipse}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[tondo,node distance = 2
+cm];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+\node [notondo] (p1)  {$a^3$};
+\node [notondo,right of=p1] (p2)  {$-$};
+\node [notondo,right of=p2] (p3)  {$2a^2b$};
+\node [notondo,right of=p3] (p4)  {};
+\node [notondo,right of=p4] (p5)  {$a^2$};
+\node [notondo,right of=p5 ] (p6)  {$-$};
+\node [notondo,right of=p6] (p7)  {$4b^2$};
+\node [etichetta,below of=p6] (p9)  {Addendi};
+\node [etichetta,below of=p2] (p8)  {Addendi};
+\draw[freccia] (p8)--(p1);
+\draw[freccia] (p8)--(p3);
+\draw[freccia] (p9)--(p5);
+\draw[freccia] (p9)--(p7);
+\end{tikzpicture}
+\end{center}
+raccogliendo a fattore comune nel primo e osservando che nel secondo abbiamo una differenza di quadrati otteniamo 
+\begin{center}
+\begin{tikzpicture}
+\tikzset{notondo/.style={ellipse}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[tondo,node distance = 2cm,align=center];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+\node [notondo,node distance=0.5cm] (p1)  {$a^2$};
+\node [notondo,right of=p1] (p2)  {};
+\node [notondo,right of=p2,,node distance=0.1cm] (p3)  {$(a-2b)$};
+\node [notondo,right of=p3,node distance=2cm ] (p4)  {};
+\node [notondo,right of=p4,] (p5)  {$(a-2b)$};
+\node [notondo,right of=p5,,node distance=0.5cm ] (p6)  {};
+\node [notondo,right of=p6] (p7)  {$(a+2b)$};
+\node [etichetta,below of=p4] (p9)  {Fattori\\ comuni};
+\node [etichetta,above of=p4] (p8)  {Fattori\\ non comuni};
+\draw[freccia] (p8)--(p1);
+\draw[freccia] (p8)--(p7);
+\draw[freccia] (p9)--(p3);
+\draw[freccia] (p9)--(p5);
+\end{tikzpicture}
+\end{center}
+Abbiamo trasformato le due somme in un prodotti di fattori. Possiamo dividere i fattori  in fattori comuni e in fattori non comuni. Il $\mcm$ fra i due polinomi sarà\[a^2(a-2b)(a+2b) \]
+\end{esempio}
+\begin{esempio}
+Supponiamo di voler trovare il $\mcm$ fra $x^2+9-6x$ e $x^2-2x-3$ i due polinomi sono somme di addendi quindi 
+\begin{center}
+\begin{tikzpicture}
+\tikzset{notondo/.style={ellipse}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[tondo,node distance = 2cm,align=center];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+\node [notondo] (p1)  {$x^2$};
+\node [notondo,right of=p1] (p2)  {$+$};
+\node [notondo,right of=p2] (p3)  {$9$};
+\node [notondo,right of=p3] (p3a)  {$-$};
+\node [notondo,right of=p3a] (p3b)  {$6x$};
+\node [notondo,right of=p3b] (p4)  {};
+\node [notondo,right of=p4] (p5)  {$x^2$};
+\node [notondo,right of=p5 ] (p6)  {$-$};
+\node [notondo,right of=p6] (p7)  {$2x$};
+\node [notondo,right of=p7] (p7a)  {$-$};
+\node [notondo,right of=p7a] (p7b)  {$3$};
+\node [etichetta,below of=p7] (p9)  {Addendi};
+\node [etichetta,below of=p3] (p8)  {Addendi};
+\draw[freccia] (p8)--(p1);
+\draw[freccia] (p8)--(p3);
+\draw[freccia] (p8)--(p3b);
+\draw[freccia] (p9)--(p5);
+\draw[freccia] (p9)--(p7);
+\draw[freccia] (p9)--(p7b);
+\end{tikzpicture}
+\end{center}
+Il primo è il quadrato di un binomio, l'altro trinomio è un trinomio particolare o somma prodotto. Otteniamo: 
+\begin{center}
+\begin{tikzpicture}
+\tikzset{notondo/.style={ellipse}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[tondo,node distance = 2cm,align=center];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+%\node [notondo,node distance=0.5cm] (p1)  {$(x-3)^2$};
+%\node [notondo,right of=p1] (p2)  {};
+\node [tondo] (p3)  {$(x-3)^2$};
+\node [notondo,right of=p3,node distance=2cm ] (p4)  {};
+\node [notondo,right of=p4,] (p5)  {$(x-3)$};
+\node [notondo,right of=p5,,node distance=0.5cm ] (p6)  {};
+\node [notondo,right of=p6] (p7)  {$(x+1)$};
+\node [etichetta,below of=p4] (p9)  {Fattori\\ comuni};
+\node [etichetta,above of=p7] (p8)  {Fattore \\non comune};
+\node [etichetta,above of=p3,] (p10)  {Maggiore \\ esponente};
+%\draw[freccia] (p8)--(p1);
+\draw[freccia] (p8)--(p7);
+\draw[freccia] (p9)--(p3);
+\draw[freccia] (p9)--(p5);
+\draw[freccia] (p10)--(p3);
+\end{tikzpicture}
+\end{center}
+Abbiamo trasformato le due somme in prodotti di fattori. I fattori in questo caso sono due. Per i fattori comuni viene preso quello con il maggiore esponente. Il $\mcm$ fra i due polinomi sarà\[(x-3)^2(x+1) \]
+\end{esempio}
+\begin{esempio}
+Supponiamo di voler trovare il $\mcm$ fra $x^3-2x^2$, $x^2-4x+4$ e $ x^3-4x$ i tre polinomi sono somme di addendi quindi 
+\begin{center}
+\begin{tikzpicture}
+\tikzset{notondo/.style={ellipse}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[tondo,node distance = 2cm,align=center];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+\node [notondo] (p1)  {$x^2$};
+\node [notondo,right of=p1] (p2)  {$-$};
+\node [notondo,right of=p2] (p3)  {$2x$};
+\node [notondo,right of=p3] (p4)  {};
+\node [notondo,right of=p4] (p5)  {$x^2$};
+\node [notondo,right of=p5 ] (p6)  {$-$};
+\node [notondo,right of=p6] (p7)  {$4x$};
+\node [notondo,right of=p7] (p7a)  {$+$};
+\node [notondo,right of=p7a] (p7b)  {$4$};
+\node [notondo,right of=p7b] (a1)  {};
+\node [notondo,right of=a1] (a2)  {$x^3$};
+\node [notondo,right of=a2] (a3)  {$-$};
+\node [notondo,right of=a3] (a4)  {$4x$};
+
+\node [etichetta,below of=p2] (p8)  {Addendi};
+\node [etichetta,below of=p7] (p9)  {Addendi};
+\node [etichetta,below of=a3] (p10)  {Addendi};
+\draw[freccia] (p8)--(p1);
+\draw[freccia] (p8)--(p3);
+\draw[freccia] (p9)--(p5);
+\draw[freccia] (p9)--(p7);
+\draw[freccia] (p9)--(p7b);
+\draw[freccia] (p10)--(a2);
+\draw[freccia] (p10)--(a4);
+\end{tikzpicture}
+\end{center}
+Il primo lo fattorizzo con un raccoglimento totale, ho poi un quadrato, l'altro binomio un altro raccoglimento totale e una differenza di quadrati. Otteniamo: 
+\begin{center}
+\begin{tikzpicture}
+\tikzset{notondo/.style={ellipse}};
+\tikzset{tondo/.style={draw,notondo}};
+\tikzset{linea/.style={very thick}};
+\tikzset{freccia/.style={-triangle 90,linea}};
+\tikzstyle{etichetta}=[tondo,node distance = 2cm,align=center];
+\tikzstyle{noetichetta}=[];
+\tikzset{freccialta/.style={freccia,bend left=45}};
+\tikzset{frecciabassa/.style={freccia,bend right=45}};
+\node [tondo] (p1)  {$x^2$};
+\node [notondo,right of=p1] (p2)  {};
+\node [notondo,right of=p2,node distance=0.5cm] (p3)  {$(x-2)$};
+\node [notondo,right of=p3,node distance=2cm ] (p4)  {};
+\node [tondo,right of=p4,] (p5)  {$(x-2)^2$};
+\node [notondo,right of=p5,node distance=2cm ] (p6)  {};
+\node [notondo,right of=p6] (p7)  {$x$};
+\node [notondo,right of=p7] (a1)  {};
+\node [notondo,right of=a1,node distance=0.cm] (a2)  {$(x-2)$};
+\node [notondo,right of=a2] (a3)  {};
+\node [notondo,right of=a3,node distance=0.4cm] (a4)  {$(x+2)$};
+\node [etichetta,below of=p5] (p9)  {Fattori\\ comuni};
+\node [etichetta,above of=p4] (p8)  {Fattori \\non comuni};
+\node [etichetta,below of=p3,] (p10)  {Maggiore \\ esponente};
+
+\draw[freccia] (p8)--(p7);
+\draw[freccia] (p8)--(a4);
+\draw[freccia] (p8)--(p1);
+\draw[freccia] (p9)--(p3);
+\draw[freccia] (p9)--(p5);
+\draw[freccia] (p9)--(a2);
+\draw[freccia] (p10)--(p1);
+\draw[freccia] (p10)--(p5);
+\end{tikzpicture}
+\end{center}
+Abbiamo trasformato le tre somme in un prodotto di fattori. I fattori in questo caso sono tre. Per i fattori comuni viene preso quello con il maggiore esponente. Il $\mcm$ fra i tre polinomi sarà\[x^2(x-2)^2(x+2) \]
+\end{esempio}

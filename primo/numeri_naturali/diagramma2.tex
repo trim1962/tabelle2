@@ -1,0 +1,29 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{impostazioni/impostazioniTikz}
+\begin{document}
+\begin{tikzpicture}
+    	% Definizione dei nodi e delle loro scatole
+    
+    	\node[start-end] (0) {Inizio};
+    	\node[input,below= 0.8cm of 0]  (1) {a,b};
+    	\node[decision,below=0.8cm of 1]  (2) {b=0};
+    	\node[input,right=0.8cm of 2]  (3) {mcd=a};
+    	\node[operation,below=0.8cm of 2]  (4) {a/b};
+    	\node[decision,below=0.8cm of  4]  (5) {resto=0};
+    	\node[input,right=0.8cm of 5]  (6) {mcd=b};
+    	\node[operation,below=0.8cm of 5]  (7) {a=b b=r};
+    	\node[start-end,below=0.8cm of 3]  (8) {stop};
+    	\node[start-end,below=0.8cm of 6]  (9) {stop};
+    	% collegamento dei nodi
+    	
+    	\foreach \x /\y in{0/1,1/2,4/5,3/8,6/9}
+    	      \path[linea] (\x) edge node {} (\y);
+    	\path[linea] (2) edge node [above] {SI} (3);
+    	\path[linea] (5) edge node [above] {SI} (6);
+    	\path[linea] (5) edge node [left] {NO} (7);
+    	\path[linea] (2) edge node [left] {NO} (4);
+    	\path [linea] (7.west)  -|  node [above left]  {NO}+(-0.8cm,0)  |-  (4);
+    	\end{tikzpicture}
+\end{document}

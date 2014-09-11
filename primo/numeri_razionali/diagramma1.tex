@@ -1,0 +1,18 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{impostazioni/impostazioniTikz}
+\begin{document}
+\begin{tikzpicture}
+		\node[start-end] (1) {Inizio};
+		\node[operation,,text width=3cm,below=1cm of 1]  (2) {Calcola mcm fra i denominatori};
+		\node[operation,text width=3cm,below=1cm of 2]  (3) {Dividi il mcm per denominatore e moltiplico il risultato per il numeratore};
+		\node[decision,below=1cm of  3]  (4){Le frazioni sono finite?};
+		\node[operation,,text width=3cm,below=1cm of 4] (5) {Somma i valori trovati};  		
+	    \node[start-end,below=1cm of 5]  (6) {Fine};
+	    \foreach \x /\y in{1/2,2/3,3/4,5/6}
+	          \path[linea] (\x) edge node {} (\y);
+	    \path[linea] (4) edge node [left] {SI} (5);
+	    \path [linea] (4.west)  -|  node [above left]  {NO}+(-0.8cm,0)  |-  (3);
+\end{tikzpicture}
+\end{document}

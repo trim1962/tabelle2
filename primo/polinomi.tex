@@ -1,0 +1,434 @@
+\chapter{Polinomi}
+\label{cha:polinomi}
+\section{Somme}
+\label{sec:somme}
+La somma fra polinomi\index{Polinomi!somma} si ottiene sommando, se vi sono, i monomi simili che li compongono. La somma cambia solo la parte numerica di un monomio mai la sua parte letterale. 
+\begin{esempio}
+Supponiamo di voler sommare\[ 3a+2b^2+4a-6b^2+2b\] procediamo come segue:
+	 \begin{NodesList} %[margin=-3cm]
+	 	\begin{align*}
+	 		3a+2b^2+4a-6b^2+2b&                           \AddNode\\
+	 		(3+4)a+(2-6)b^2+2b&          \AddNode\\                                       		
+	 		7a-4b^2+2b&   \AddNode\\
+	 		\AddNode
+	 	\end{align*}
+	 	\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+	 	\LinkNodes{individuo i simili}%
+	 	%\LinkNodes{sommo i monomi simili}%
+	 	\LinkNodes{$3+4$ e $2-6$}%
+	  \end{NodesList}
+\end{esempio}
+\section{Prodotti}
+Il prodotto fra due polinomi\index{Polinomi!prodotto} si ottiene moltiplicando tutti i termini di un polinomio per tutti i monomi dell'altro. 
+\subsection{Monomio per un polinomio}
+Il caso più semplice è il prodotto di un monomio per un binomio. Il monomio fuori della parentesi moltiplica il binomio all'interno.
+\begin{center}
+\includestandalone{primo/polinomi/monomioperpolinomio}
+\end{center}
+\begin{esempio}
+Supponiamo di avere \[3(2a-5b)-7a(2a+3b)+5(a^2+3b)\]
+In questo esempio abbiamo tre moltiplicazioni di un monomio per un binomio. A destra si vedono i risultati parziali  che poi sommati, danno il risultato finale.
+\begin{NodesList}
+	\begin{align*}
+		\overbrace{3(2a-5b)}^{1}-\overbrace{7a(2a+3b)}^{2}+\overbrace{5(a^2+3b)}^{3}&\AddNode[1]\AddNode[2]\\
+		6a+&\AddNode[1]&\tag{1}\\ 
+		-15b&\AddNode[2]&\\
+		6a-15b-7a(2a+3b)+5(a^2+3b)&\AddNode[3]\AddNode[4]\\
+		-14a^2&\AddNode[3]&\tag{2}\\    
+		-21ab&\AddNode[4]&\\
+		6a-15b-14a-21ab+5(a^2+3b)&\nonumber\AddNode[5]\AddNode[6]\\
+		+5a^2&\AddNode[5]&\tag{3}\\
+		+15b&\AddNode[6]&\\
+		6a-15b-14a^2-21ab+5a^2+15b&\nonumber\AddNode[7]&\\   
+		6a-9a^2-21ab&\nonumber\AddNode[7] 
+	\end{align*}
+	\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{$3\cdot 2a$}%    
+	\LinkNodes[margin=2cm]{$3\cdot(-5b)$}%
+	\LinkNodes[margin=2cm]{$-7a\cdot(2a)$}%
+	\LinkNodes[margin=2cm]{$-7a\cdot(3b)$}%
+	\LinkNodes[margin=2cm]{$5\cdot(a^2)$}%
+	\LinkNodes[margin=2cm]{$5\cdot(3b)$}%  
+	\LinkNodes[margin=2cm]{otteniamo}% 
+	\LinkNodes[margin=2cm]{sommando}% 
+\end{NodesList}
+\end{esempio}
+\newpage
+\begin{esempio}
+Supponiamo di avere \[2a(3a-6)-(6a^2-2b)-3a(a-2b)\]
+Anche in questo esempio abbiamo tre moltiplicazioni di un monomio per un binomio. Nel secondo prodotto si nota il segno meno fuori della parentesi tonda che in pratica cambierà il segno dei termini all'interno della parentesi. A destra abbiamo  i risultati parziali delle tre moltiplicazioni.
+% % % % % % % %
+\begin{NodesList}
+	\begin{align*}
+\overbrace{2a(3a-6)}^{1}-\overbrace{(6a^2-2b)}^{2}-\overbrace{3a(a-2b)}^{3}&\AddNode[1]\AddNode[2]\\ %
+		6a^2+&\AddNode[1]&\tag{1}\\%
+		-12a&\AddNode[2]&\\ %
+		6a^2-12a-(6a^2-2b)-3a(a-2b)&\AddNode[3]\AddNode[4]\\
+		-6a^2&\AddNode[3]&\tag{2}\\    
+		+2b&\AddNode[4]&\\
+		6a^2-12a-6a^2+2b-3a(a-2b)&\AddNode[5]\AddNode[6]\\
+		-6a&\AddNode[5]&\tag{3}\\
+		+6ab&\AddNode[6]&\\
+		6a^2-12a-6a^2+2b-6a+6ab&\AddNode[7]\\   
+		-18a+2b+6ab&\AddNode[7]   
+	\end{align*}
+	\tikzset{LabelStyle/.style ={left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{$2a\cdot 3a$}%1    
+	\LinkNodes[margin=2cm]{$3\cdot(-5b)$}%2
+	\LinkNodes[margin=2cm]{$-1\cdot(6a^2)$}%3
+	\LinkNodes[margin=2cm]{$-1\cdot(-2b)$}%4
+	\LinkNodes[margin=2cm]{$-3a\cdot(a)$}%5
+	\LinkNodes[margin=2cm]{$-3a\cdot(-2b)$}%6  
+	\LinkNodes[margin=2cm]{otteniamo}% 7
+	\LinkNodes[margin=2cm]{sommando}% 8
+\end{NodesList}
+\end{esempio}
+\subsection{Polinomio per polinomio}
+In questo caso il polinomio nella prima parentesi moltiplica il polinomio della seconda parentesi. In pratica ogni monomio contenuto nella prima parentesi moltiplica tutti i monomi della seconda.
+\begin{center}
+\includestandalone{primo/polinomi/polinomioperpolinomio}
+\end{center}
+\begin{esempio}
+Supponiamo di avere \[(xy-2)[(xy-2)xy+4+2xy]-(xy-2)(x^2y^2+2xy+4)\]
+In questo esempio abbiamo quattro moltiplicazioni  fra vari polinomi. A complicare le cose vi sono le regole di precedenza. A destra i vari risultati parziali. Si procede seguendo l'ordine indicato sopra l'espressione. 
+	\begin{NodesList}
+		\begin{align*}
+			\overbrace{(xy-2)\overbrace{[\underbrace{(xy-2)xy}_{1}+4+2xy]}^{2}}^{3}-\overbrace{(xy-2)(x^2y^2+2xy+4)}^{4} &\AddNode[1]\AddNode[2]\\
+			x^2y^2&\AddNode[1]\\ 
+			-2xy&\AddNode[2] \\
+			\overbrace{(xy-2)\overbrace{[x^2y^2-2xy+4+2xy]}^{2}}^{3}-\overbrace{(xy-2)(x^2y^2+2xy+4)}^{4} &\AddNode[3]\\
+			\overbrace{(xy-2)[x^2y^2+4]}^{3}-\overbrace{(xy-2)(x^2y^2+2xy+4)}^{4} &\AddNode[3]\\
+			\overbrace{(xy-2)[x^2y^2+4]}^{3}-\overbrace{(xy-2)(x^2y^2+2xy+4)}^{4} &\AddNode[4]\AddNode[5]\AddNode[6]\AddNode[7]\\
+			x^3y^3&\AddNode[4]\\    
+			4xy&\AddNode[5]\\
+			-2x^2y^2&\AddNode[6]\\
+			-8&\AddNode[7]\\
+			x^3y^3+4xy-2x^2y^2-8-\overbrace{(xy-2)(x^2y^2+2xy+4)}^{4} &\AddNode[8]\AddNode[9]\AddNode[10]\AddNode[11]\AddNode[12]\AddNode[13]\\
+			-x^3y^3&\AddNode[8]\\
+			-2x^2y^2&\AddNode[9]\\
+			-4xy&\AddNode[10]\\   
+			2x^2y^2&\AddNode[11] \\ 
+			4xy&\AddNode[12]\\     
+			8&\AddNode[13]\\   
+			x^3y^3+4xy-2x^2y^2-8-x^3y^3-2x^2y^2-4xy+2x^2y^2+4xy+8 &\AddNode[14]\\
+			4xy-2x^2y^2 &\AddNode[14]
+		\end{align*}
+		\tikzset{LabelStyle/.style = {left=0.2cm,pos=.5,text=red,fill=white}}
+		\LinkNodes[margin=0cm]{$xy\cdot xy$}%         
+		\LinkNodes[margin=0cm]{$-2\cdot xy$}%
+		\LinkNodes[margin=0cm]{Sommando}%
+		\LinkNodes[margin=0cm]{$xy\cdot(x^2y^2)$}%
+		\LinkNodes[margin=0cm]{$4\cdot xy$}%
+		\LinkNodes[margin=0cm]{$-2\cdot x^2y^2$}%
+		\LinkNodes[margin=0cm]{$-2\cdot +4$}%
+		\LinkNodes[margin=0cm]{$(-1)\cdot xy\cdot x^2y^2$}%
+		\LinkNodes[margin=0cm]{$(-1)\cdot xy\cdot 2xy$}%
+		\LinkNodes[margin=0cm]{$(-1)\cdot xy\cdot 4$}%
+		\LinkNodes[margin=0cm]{$(-1)\cdot (-2)\cdot x^2y^2$}%
+		\LinkNodes[margin=0cm]{$(-1)\cdot (-2)\cdot 2xy$}%
+		\LinkNodes[margin=0cm]{$(-1)\cdot (-2)\cdot 4$}%
+		\LinkNodes[margin=0cm]{Sommando}%
+	\end{NodesList}
+\end{esempio}
+\begin{esempio}
+% % % % % %
+Supponiamo di avere \[(3a-2b)(2a-b)+(2a^2-2)(2-a)\]
+ In questo esempio abbiamo due moltiplicazioni di un binomio per un binomio. A destra i passaggi parziali. Infine sommiamo  gli elementi simili e otteniamo la soluzione.
+ \begin{NodesList} % % % % % % % % % % % % % % % %
+ 	\begin{align*}
+ 		\overbrace{(3a-2b)(2a-b)}^{1}+\overbrace{(2a^2-2)(2-a)}^{2}&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\\ %
+ 		6a^2&\AddNode[1]&\tag{1}\\ % 
+ 		-3ab&\AddNode[2]&\\ %
+ 		-4ab&\AddNode[3]&\\  %  
+ 		+2b^2&\AddNode[4]&\\ %
+ 		6a^2-7ab+2b^2+(2a^2-2)(2-a)&\AddNode[5]\AddNode[6]\AddNode[7]\AddNode[8]\\ %
+ 		4a^2&\AddNode[5]&\tag{2}\\ %
+ 		-2a^3&\AddNode[6]&\\ %
+ 		-4 &\AddNode[7]&\\   %
+ 		2a&\AddNode[8]&\\   %
+ 		6a^2-7ab+2b^2+4a^2-2a^3-4+2a&\AddNode[9]\\ %
+ 		10a^2+2b^2-7ab-2a^3-4+2a&\AddNode[9] %
+ 	\end{align*}
+ 	\tikzset{LabelStyle/.style ={left=.5cm,pos=.5,text=red,fill=white}}
+ 	%\tikzset{LabelStyle/.style = {left=0.2cm,pos=.5,text=red,fill=white}} %
+ 	\LinkNodes[margin=2cm]{$3a\cdot 2a$}%1    
+ 	\LinkNodes[margin=2cm]{$3a\cdot(-b)$}%2
+ 	\LinkNodes[margin=2cm]{$-2b\cdot(2a)$}%3
+ 	\LinkNodes[margin=2cm]{$-2b\cdot(-b)$}%4
+ 	\LinkNodes[margin=2cm]{$2a^2\cdot(2)$}%5
+ 	\LinkNodes[margin=2cm]{$2a^2\cdot(-a)$}%6  
+ 	\LinkNodes[margin=2cm]{$-2\cdot 2$}% 7
+ 	\LinkNodes[margin=2cm]{$-2\cdot -a$}% 8
+ 	\LinkNodes[margin=2cm]{Sommando}%9
+ 	\LinkNodes[margin=2cm]{Sommando}%9
+ \end{NodesList}
+\end{esempio}
+\subsection{Quadrato del binomio}
+Il quadrato di un binomio\index{Quadrato!binomio} è il  prodotto di un binomio per se stesso. Si calcola utilizzando la regola\[(A+B)^2=A^2+B^2+2AB\] che va letta: << Il quadrato di in binomio è uguale al quadrato del primo termine più il quadrato del secondo termine più il doppio del prodotto del primo termine per il secondo>>. 
+\begin{center}
+\includestandalone{primo/polinomi/quadratobinomio}
+\end{center}
+\begin{esempio}
+Supponiamo di voler calcolare il quadrato del binomio \[\left(a+2b\right)^2 \]
+procediamo come segue:
+%\begin{figure}
+\begin{NodesList}
+	\begin{align*}
+		\left(a+2b\right)^2&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\\
+		+a^2&\AddNode[1]&\\ 
+		+4b^2&\AddNode[2]&\\
+		+4ab&\AddNode[3]\\
+		\left(a+2b\right)^2=a^2+4b^2+4ab&\AddNode[4]
+	\end{align*}
+	\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{$a\cdot a$}%    
+	\LinkNodes[margin=2cm]{$2b\cdot 2b$}%
+	\LinkNodes[margin=2cm]{$2\cdot a \cdot 2b$}%
+	\LinkNodes[margin=2cm]{ottengo}% 
+\end{NodesList}
+\end{esempio}
+\begin{esempio}
+Supponiamo di voler calcolare il quadrato di \[ \left(2x-3y\right)^2\]
+procediamo come segue:
+%\begin{figure}
+\begin{NodesList}
+	\begin{align*}
+		\left(2x-3y\right)^2&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\\
+		+4x^2&\AddNode[1]&\\ 
+		+9y^2&\AddNode[2]&\\
+		-12xy&\AddNode[3]\\
+		\left(2x-3y\right)^2=4x^2+9y^2-12xy&\AddNode[4]
+	\end{align*}
+	\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{$2x\cdot 2x$}%    
+	\LinkNodes[margin=2cm]{$(-3y)\cdot (-3y)$}%
+	\LinkNodes[margin=2cm]{$2\cdot (2x) \cdot(-3y)$}%
+	\LinkNodes[margin=2cm]{ottengo}% 
+\end{NodesList}
+\end{esempio}
+\begin{esempio}
+Supponiamo di voler calcolare il quadrato di \[\left(2-z\right)^2\]
+%\begin{figure}
+\begin{NodesList}
+	\begin{align*}
+		\left(2-z\right)^2&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\\
+		+4&\AddNode[1]&\\ 
+		+z^2&\AddNode[2]&\\
+		-4z&\AddNode[3]\\
+		\left(2-z\right)^2=4+z^2-4z&\AddNode[4]
+	\end{align*}
+	\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{$2\cdot 2$}%    
+	\LinkNodes[margin=2cm]{$(-z)\cdot (-z)$}%
+	\LinkNodes[margin=2cm]{$2\cdot (2) \cdot(-z)$}%
+	\LinkNodes[margin=2cm]{ottengo}% 
+\end{NodesList}
+\end{esempio}
+\begin{esempio}
+Supponiamo di voler calcolare il quadrato di \[\left(1-\dfrac{1}{2}z\right)^2\]
+%\begin{figure}
+\begin{NodesList}
+	\begin{align*}
+		\left(1-\dfrac{1}{2}z\right)^2&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\\
+		+1&\AddNode[1]&\\ 
+		+\dfrac{1}{4}z^2&\AddNode[2]&\\[0.8cm]
+		-z&\AddNode[3]\\
+		\left(1-\dfrac{1}{2}z\right)^2=1+\dfrac{1}{4}z^2-z&\AddNode[4]
+	\end{align*}
+	\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{$1\cdot 1$}%    
+	\LinkNodes[margin=2cm]{$(-\dfrac{1}{2}z)\cdot (-\dfrac{1}{2}z)$}%
+	\LinkNodes[margin=2cm]{$2\cdot (1) \cdot(-\dfrac{1}{2}z)$}%
+	\LinkNodes[margin=2cm]{ottengo}% 
+\end{NodesList}
+\end{esempio}
+\subsection{Differenza di quadrati}
+In questo caso il prodotto\index{Differenza!quadrati} è fra due binomi in cui un termine mantiene il suo segno mentre l'altro lo cambia. Si calcola utilizzando la regola \[(A+B)(A-B)=A^2-B^2 \] che va letta: << Al prodotto fra la somma di due termini con la loro differenza è uguale al quadrato del primo termine meno il quadrato del secondo>>.
+\begin{center}
+\includestandalone{primo/polinomi/differenzadquadrati}
+\end{center}
+\begin{esempio}
+Supponiamo di voler calcolare \[(2x-3y)(2x+3y)\]
+procediamo come segue
+\begin{NodesList}
+	\begin{align*}
+		(2x-3y)(2x+3y)&\AddNode[1]\AddNode[2]\AddNode[3]\\
+		+4x^2&\AddNode[1]&\\ 
+		-9y^2&\AddNode[2]&\\
+		%-12xy&\AddNode[3]\\
+		(2x-3y)(2x+3y)=4x^2-9y^2&\AddNode[3]
+	\end{align*}
+	\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{$2x\cdot 2x$}%    
+	\LinkNodes[margin=2cm]{$(-)(-3y)\cdot (-3y)$}%
+	%\LinkNodes[margin=2cm]{$2\cdot (2x) \cdot(-3y)$}%
+	\LinkNodes[margin=2cm]{ottengo}% 
+\end{NodesList}
+\end{esempio}
+\begin{esempio}
+Supponiamo di vole calcolare \[(-4a-b)(-4a+b)\]
+L'esempio non sembra una differenza di quadrati ma anche qui abbiamo un termine che mantiene il segno ed un termine che lo cambia, procediamo come segue
+\begin{NodesList}
+	\begin{align*}
+		(-4a-b)(-4a+b)&\AddNode[1]\AddNode[2]\AddNode[3]\\
+		+16a^2&\AddNode[1]&\\ 
+		-b^2&\AddNode[2]&\\
+		%-12xy&\AddNode[3]\\
+		(-4a-b)(-4a+b)=16a^2-b^2&\AddNode[3]
+	\end{align*}
+	\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{$-4x\cdot(-4x)$}%    
+	\LinkNodes[margin=2cm]{$(-)(-b)\cdot (-b)$}%
+	%\LinkNodes[margin=2cm]{$2\cdot (2x) \cdot(-3y)$}%
+	\LinkNodes[margin=2cm]{ottengo}% 
+\end{NodesList}
+\end{esempio}
+\begin{esempio}
+Supponiamo di vole calcolare \[(a+b+c)(a+b+c)\]
+L'esempio non sembra una differenza di quadrati ma anche qui abbiamo un termine che mantiene il segno ed un termine che lo cambia solo che qui non è un monomio ma un binomio, procediamo come segue:
+\begin{NodesList}
+	\begin{align*}
+		(a+b+c)(a-b-c)&\AddNode[1]\AddNode[2]\AddNode[3]\\
+		[a+(b+c)][a-(b+c)]&\AddNode[1]&\\ 
+		a^2-(b+c)^2&\AddNode[2]&\\
+		%-12xy&\AddNode[3]\\
+		(a+b+c)(a-b-c)=a^2-b^2-c^2-2bc&\AddNode[3]
+	\end{align*}
+	\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{raggruppo}%    
+	\LinkNodes[margin=2cm]{applico differenza di quadrati}%
+	%\LinkNodes[margin=2cm]{$2\cdot (2x) \cdot(-3y)$}%
+	\LinkNodes[margin=2cm]{ottengo}% 
+\end{NodesList}
+\end{esempio}
+\subsection{Cubo del Binomio}
+Un altro prodotto notevole è il cubo del binomio\index{Cubo!binomio}. Si calcola utilizzando la regola\[(A+B)^3=A^3+B^3+3A^2B+3AB^2\] che va letta: << Il cubo di un binomio è uguale al cubo del primo termine più il cubo del secondo termine più il triplo del prodotto del quadrato primo termine per il secondo  più il triplo del prodotto del primo per il quadrato del secondo>>. 
+\begin{center}
+\includestandalone{primo/polinomi/cubobinomio}
+\end{center}
+\begin{esempio}
+Supponiamo di vole calcolare \[(a-3b)^3\]
+procediamo come segue:
+\begin{NodesList}
+	\begin{align*}
+		(a-3b)^3&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\AddNode[5]\\
+		a^3&\AddNode[1]&\\ 
+		-27b^3&\AddNode[2]&\\
+		-9a^2b&\AddNode[3]\\
+		+27ab^2&\AddNode[4]\\
+		(a-3b)^2=a^3-27b^3-9a^2b+27ab^2&\AddNode[5]
+	\end{align*}
+	\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{$a\cdot a\cdot a $}%    
+	\LinkNodes[margin=2cm]{$(-3b)\cdot (-3b)\cdot (-3b)$}%
+	\LinkNodes[margin=2cm]{$3\cdot (a)\cdot (a) \cdot(-3b)$}%
+	\LinkNodes[margin=2cm]{$3\cdot (a) \cdot(-3b)\cdot(-3b)$}%
+	\LinkNodes[margin=2cm]{ottengo}% 
+\end{NodesList}
+\end{esempio}
+\subsection{Quadrato del trinomio}
+Il quadrato del trinomio si calcola utilizzando la regola\[(A+B+c)=A^2+B^2+C^2+2AB+2AC+2BC\] che va letta: << Il quadrato di un trinomio è uguale al quadrato del primo termine più il quadrato del secondo termine più il quadrato del terzo termine, più la somma del doppio del prodotto del primo per il secondo, più la somma del doppio del prodotto del primo per il terzo, più la somma del doppio del prodotto del secondo per il terzo>>. 
+\begin{center}
+\includestandalone{primo/polinomi/quadratotrinomio}
+\end{center}
+\begin{esempio}
+Supponiamo di vole calcolare \[(a+2b-3c)^2\]
+procediamo come segue:
+\begin{NodesList}
+	\begin{align*}
+(a+2b-3c)^2&\AddNode[1]\AddNode[2]\AddNode[3]\AddNode[4]\AddNode[5]\AddNode[6]\AddNode[7]\\
+		a^2&\AddNode[1]&\\ 
+		+4b^2&\AddNode[2]&\\
+		+9c^2&\AddNode[3]\\
+		+4ab&\AddNode[4]\\
+		-6ac&\AddNode[5]\\
+		-12bc&\AddNode[6]\\
+		(a+2b-3c)^2=a^2+4b^2+9c^2+4ab-6ac-12bc&\AddNode[7]
+	\end{align*}
+	\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+	\LinkNodes[margin=2cm]{$a\cdot a $}%    
+	\LinkNodes[margin=2cm]{$(2b)\cdot (2b)$}%
+	\LinkNodes[margin=2cm]{$(-3c)\cdot (-3c)$}%
+	\LinkNodes[margin=2cm]{$2\cdot (a)\cdot (2b)$}%
+	\LinkNodes[margin=2cm]{$2\cdot (a) \cdot(-3c)$}%
+	\LinkNodes[margin=2cm]{$2\cdot (2b) \cdot(-3c)$}%
+	\LinkNodes[margin=2cm]{ottengo}% 
+\end{NodesList}
+\end{esempio}
+\begin{esempio}
+La tabella\vref{tab:prodottinotevoli2} da qualche esempio di prodotto notevole.
+\begin{table} %[H]
+%\renewcommand\arraystretch{2}
+\centering
+\[
+\begin{aligned}
+(a+b)\cdot(c+d) = 
+&\begin{tabular}{C|C|C}
+\bm{a}&+ac&+ad\\
+\hline
+\bm{b}&+bc&+bd\\
+\hline
+&\bm{c}&\bm{d}\\
+\end{tabular}
+=ac+ad+dc+bd \\[.6cm]  %\hline
+(a+b)\cdot(a-b)=
+&\begin{tabular}{C|C|C}
+\bm{a}&+a^2&-ab\\
+\hline
+\bm{b}&+ab&-b^2\\
+\hline
+&\bm{a}&\bm{-b}\\
+\end{tabular}
+=a^2+ab-ab-b^2=a^2-b^2 \\[.6cm] %\hline
+(a+b)^2=(a+b)\cdot(a+b)=
+&\begin{tabular}{C|C|C}
+\bm{a}&a^2&+ab\\
+\hline
+\bm{b}&+ab&b^2\\
+\hline
+&\bm{a}&\bm{b}\\
+\end{tabular}
+=a^2+b^2+ab+ab=a^2+2ab+b^2 \\[.6cm] 
+(a-b)^2=(a-b)\cdot(a-b)=
+&\begin{tabular}{C|C|C}
+%
+\bm{a}&a^2&-ab\\
+\hline
+\bm{-b}&-ab&b^2\\
+\hline
+&\bm{a}&\bm{-b}\\
+%
+\end{tabular}
+=a^2+b^2-ab-ab=a^2-2ab+b^2\\[.6cm] 
+(a-b)^2=(a-b)\cdot(a-b)=
+&\begin{tabular}{C|C|C|C}
+%
+\bm{a}&+ac&+cd&+ae\\
+\hline
+\bm{b}&+bc&+db&+be\\
+\hline
+&\bm{c}&\bm{d}&\bm{e}\\
+%
+\end{tabular}
+=ac+cd+ae+bc+bd+be
+\end{aligned}
+\]
+\caption{prodotti}
+\label{tab:prodottinotevoli2}
+\end{table}
+%\renewcommand\arraystretch{1}
+\end{esempio}
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\toprule$A(B+C)$  & \raisebox{-0.4\height}{ \includestandalone{primo/polinomi/monomioperpolinomio}} \tabularnewline
+\midrule $(A+B)(C+D)$&  \raisebox{-0.4\height}{\includestandalone{primo/polinomi/polinomioperpolinomio}}\tabularnewline
+\midrule $(A+B)^2$& \raisebox{-0.4\height}{\includestandalone{primo/polinomi/quadratobinomio}}\tabularnewline
+\midrule $(A-B)(A+B)$& \raisebox{-0.4\height}{\includestandalone{primo/polinomi/differenzadquadrati}}\tabularnewline
+\midrule $(A+B)^3$& \raisebox{-0.4\height}{\includestandalone{primo/polinomi/cubobinomio}}\tabularnewline
+\midrule $(A+B+C)^2$& \raisebox{-0.4\height}{\includestandalone{primo/polinomi/quadratotrinomio}}\tabularnewline
+\bottomrule
+\end{tabular} 
+\caption{Prodotti}
+\label{tab:prodottipolinomi}
+\end{table}

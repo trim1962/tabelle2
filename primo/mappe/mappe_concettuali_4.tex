@@ -1,0 +1,31 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{impostazioni/impostazioniTikz}
+\begin{document}
+  \begin{tikzpicture}
+    \node[main node2] (1) {Moltiplicazione};
+    \node[main verb] (2) [right =of 1]  {\'{e}};
+    \node[main node2] (3) [right =of 2] {Operazione};
+%\node[main verb] (4) [above right=  of 3]  {ha};
+\node[main verb] (5) [right= of 3]  {\'{e}};
+\node[main verb] (6) [above   = of 3]  {\'{e} formata};
+\node[main verb] (7) [below   = of 3]  {ha};
+\node[main node2] (10) [above right=  of 5]  {Distributiva};
+\node[main node2] (11) [below right= of 5]  {Associativa invariantiva};
+\node[main node2] (12) [right=   of 5]  {Commutativa};
+\node[main node2] (9)  [below =   of 7]   {Un risultato};
+\node[main node2] (8) [above  = of 6]  {Da fattori};
+\node[main node2] (13) [below left=   of 7]  {Un elemento assorbente};
+\node[main node2] (14) [below right= of 7]  {Un elemento neutro};
+\node[main verb] (15) [below =of 9]  {\'{e}};
+\node[main verb] (16) [below =of 13] {\'{e}};
+\node[main verb] (17) [below =of 14] {\'{e}};
+\node[main node2] (18) [below =of 15] {Il prodotto};
+\node[main node2] (19) [below =of 16] {Lo zero};
+\node[main node2] (20) [below =of 17] {Uno};
+\foreach \x /\y in{1/2,2/3,3/6,3/5,3/7,6/8,7/9,5/10,5/11,5/12,7/13,7/14,15/18,16/19,17/20,13/16,14/17,9/15}
+  \path[linea] (\x) edge node {} (\y);
+%  
+\end{tikzpicture}
+\end{document}

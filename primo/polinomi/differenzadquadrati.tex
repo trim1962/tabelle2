@@ -1,0 +1,22 @@
+% Tikz File 'mytikz.tex'
+\documentclass{standalone}
+\input{../Mod_base/grafica}
+
+\begin{document}
+\begin{tikzpicture}
+\node (ap) {$(A$};	
+\node (P)[right of=ap, node distance=15]{$+$};
+\node (bp)[right of=P, node distance=15]{$B)$};
+\node (am)[right of=bp, node distance=15]{$(A$};
+\node (M)[right of=am, node distance=15]{$-$};
+\node (bm)[right of=M, node distance=15] {$B)$};
+\node (S)[right of=bm, node distance=15] {$=$};
+\node (aq)[right of=S, node distance=15] {$A^2$};
+\node (M2)[right of=aq, node distance=15] {$-$};
+\node (bq)[right of=M2, node distance=15] {$B^2$};
+\path (ap.north) edge [bend left=45,-triangle 90](aq.north);
+\path (bp.north) edge [bend left=45,-triangle 90](bq.north);
+\path(am.south)edge [bend right=45,-triangle 90](aq.south);
+\path(bm.south)edge [bend right=45,-triangle 90](bq.south);
+\end{tikzpicture}
+\end{document}

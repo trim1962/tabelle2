@@ -1,0 +1,29 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{impostazioni/impostazioniTikz}
+\begin{document}
+  \begin{tikzpicture}
+    \node[main node2] (1) {Addizione};
+    \node[main verb] (2) [right =of 1]  {\'{e}};
+    \node[main node2] (3) [right =of 2] {Operazione};
+    \node[main verb] (4) [above  = of 3] {\'{e}};
+	%\node[main verb] (5) [right =of 3] {ha};
+	\node[main verb] (6) [below  =  of 3] {ha};
+	\node[main node2] (7) [above right = of 4]  {Formata di addendi};
+%	\node[main node2] (8) [above right = .5cm and 1cm of 5] {delle propriet\'{a}};
+	\node[main node2] (9) [right =  of 6] {Elemento neutro};
+    \node[main node2] (10)[left  = of 6]  {Un risultato};
+    %\node[main verb] (11) [above =of 2] {};
+    \node[main verb] (12) [right =of 9]  {\'{e}};
+    \node[main verb] (13) [left =of 10] {\'{e}};
+   	\node[main node2] (14) [above  =  of 4] {Associativa};
+   	\node[main node2] (15) [above  left = of 4] {Commutativa};
+    \node[main node2] (16) [below =of 12] {Lo zero};
+    \node[main node2] (17) [below =of 13] {La somma};
+    \node[main node2] (18) [right  =  of 4] {Interna};
+    \foreach \x /\y in{1/2,2/3,3/4,3/6,4/7,6/9,6/10,9/12,10/13,4/15,12/16,13/17,4/14,4/18}
+      \path[linea] (\x) edge node {} (\y);
+ 
+\end{tikzpicture}
+\end{document}

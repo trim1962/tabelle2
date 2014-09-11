@@ -1,0 +1,49 @@
+\documentclass[preview=true]{standalone}
+\input{../Mod_base/grafica}
+\input{../Mod_base/base}
+\input{impostazioni/impostazioniTikz}
+\begin{document}
+\begin{forest}
+ [210
+ ]
+ \node at (current bounding box.south)
+ [below=1ex,primo]
+ {A};
+\end{forest}
+\begin{forest}
+  [210
+  [21]
+  [10]
+  ]
+   \node at (current bounding box.south)
+   [below=1ex,primo]
+   {B};
+\end{forest}
+\begin{forest}
+  [210
+  [21
+  	[7,primo]
+  	[3,primo]
+  	]
+  [10]
+  ]
+   \node at (current bounding box.south)
+     [below=1ex,primo]
+     {C};
+\end{forest}
+\begin{forest}
+  [210
+  [21
+  	[7,primo]
+  	[3,primo]
+  	]
+  [10
+  [5,primo]
+  [2,primo]
+  ]
+  ]
+   \node at (current bounding box.south)
+     [below=1ex,primo]
+     {D};
+\end{forest}
+\end{document}
