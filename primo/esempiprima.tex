@@ -1,0 +1,114 @@
+\chapter{Esempi}
+\section{Frazioni numeriche}
+\label{sec:Frazioninumeriche}
+\begin{table}[H]
+	\caption{Trovare la somma di due frazioni con denominatore diverso}
+	\label{tab:Trovaresommaduefrazionidenominatorediverso1}
+\begin{enumerate}
+	\item Prerequisiti 
+\begin{itemize}
+	\item frazioni
+	\item mcm
+	 \item precedenza operazioni
+ \item somma fra frazioni
+\end{itemize}
+  \item Scopo: Determinare la somma fra due frazioni irriducibili
+  \item Testo: Dato $\dfrac{7}{3}+\dfrac{5}{4}$  determinarne la somma.
+  \item Svolgimento: 
+  \begin{enumerate}
+  \item calcolo il $mcm$ fra $3$ e $4$ $mcm(3,4)=12$
+	\item applico la formula per la somma di due frazioni con denominatore diverso\nobs\vref{tab:prodottifrazioni} \[\dfrac{(12\div 3)\cdot 7+(12\div 4)\cdot 5}{12}\]
+	\item Per la regola delle precedenze\nobs\vref{Tab:precedenze} devo fare prima la divisone $12\div 3$ e poi la divisione $12\div 4$
+	\item la somma diviene \[\dfrac{4\cdot 7+3\cdot 5}{12}\]
+	\item Per la regola delle precedenze\nobs\vref{Tab:precedenze} prima devo fare la moltiplicazione $4\cdot 7$ e poi la moltiplicazione $3\cdot 5$
+	\item la somma diviene \[\dfrac{28+15}{12}=\dfrac{43}{12}\]
+\end{enumerate}
+  \end{enumerate}
+\end{table}
+%2
+\begin{table}[H]
+	\caption{Trovare la somma di due frazioni con denominatore diverso}
+	\label{tab:Trovaresommaduefrazionidenominatorediverso2}
+\begin{enumerate}
+	\item Prerequisiti 
+\begin{itemize}
+	\item frazioni
+	\item mcm
+	 \item precedenza operazioni
+ \item somma fra frazioni
+\end{itemize}
+  \item Scopo: Determinare la somma fra due frazioni irriducibili
+  \item Testo: Dato $\dfrac{3}{5}+\dfrac{7}{8}$  determinarne la somma.
+  \item Svolgimento: 
+  \begin{enumerate}
+  \item calcolo il $mcm$ fra $5$ e $8$ $mcm(5,8)=40$
+	\item applico la formula per la somma di due frazioni con denominatore diverso\nobs\vref{tab:prodottifrazioni} \[\dfrac{(40\div 5)\cdot \cdots+(\cdots\div 8)\cdot 5}{12}\]
+	\item Per la regola delle precedenze\nobs\vref{Tab:precedenze} devo fare prima la divisone $40\div 5$ e poi la divisione $\cdots\div 8$
+	\item la somma diviene \[\dfrac{8\cdot 3+5\cdot \cdots}{40}\]
+	\item Per la regola delle precedenze\nobs\vref{Tab:precedenze} prima devo fare la moltiplicazione $8\cdot 3$ e poi la moltiplicazione $5\cdot\cdots$
+	\item la somma diviene \[\dfrac{24+\cdots}{40}=\dfrac{59}{40}\]
+ \end{enumerate}
+  \end{enumerate}
+\end{table}
+\section{Polinomi}
+\label{sec:Polinomi}
+\begin{equation}
+\underbrace{\underbrace{[\overbrace{(a-2b)(a-2b+c)}^{\text{1}}+\overbrace{(3a-2b)(a+b)}^{\text{2}}]}_{\text{3}}(a+2b)}_{\text{4}}
+\label{es:esercizio1}
+\end{equation}
+Per risolvere l'esercizio\nobs\vref{es:esercizio1} inizio a controllare la tavola delle precedenze\nobs\vref{tab:precedenzaparentesi}. Vi sono cinque parentesi tonde. All'interno di esse non vi sono operazioni da eseguire passo alla parentesi quadre. 
+Osservo che fra le parentesi quadre vi sono due moltiplicazioni $(1)$ e $(2)$ e una somma $(3)$ mentre fuori vi è la moltiplicazione $(4)$.
+Controllo la tabella delle precedenze per le operazioni\nobs\vref{tab:precedenzaoperazioni} devo fare prima le moltiplicazioni  $(1)$ e $(2)$ poi la somma $(3)$.
+Inizio con $(1)$ 
+\renewcommand\arraystretch{2}
+\[
+\begin{tabular}{C|C|C|C}
+%
+\bm{a}&+a^2&-2ab&+ac\\
+\hline
+\bm{-2b}&-2ab&+4b^2&-2bc\\
+\hline
+&\bm{a}&\bm{-2b}&\bm{c}\\
+%
+\end{tabular}
+=a^2\overline{-2ab}+ac\overline{-2ab}+4b^2-bc=
+\]
+sommo i monomi simili e ottengo la soluzione di $(1)$ 
+\[=a^2-3ab+ac+2b^2-bc\]
+Continuo con $(2)$  
+\[
+\begin{tabular}{C|C|C}
+%
+\bm{3a}&+3a^2&3ab\\
+\hline
+\bm{-2b}&-2ab&-2b^2\\
+\hline
+&\bm{a}&\bm{b}\\
+%
+\end{tabular}
+=
+3a^2+\overline{3ab}-\overline{2ab}-2b^2=
+\]
+sommo i monomi simili e ottengo la soluzione di $(2)$ 
+ \[=3a^2+ab-2b^2\]
+Per cui $(3)$ diviene
+\[ [\underbrace{a^2-3ab+ac+\cancel{2b^2}-bc}_{\text{1}}+\underbrace{3a^2+ab\cancel{-2b^2}}_{\text{2}}]\]
+\[ [\underbrace{4a^2-2ab+ac-bc}_{\text{3}}]\]
+Resta da fare la moltiplicazione $(4)$ 
+\[\underbrace{[4a^2-2ab+ac-bc](a+2b)}_{\text{4}}\]
+\[
+\begin{tabular}{C|C|C|C|C}
+%
+\bm{a}&4a^3&-2a^2b&a^2c&-abc\\
+\hline
+\bm{2b}&8a^2b&-4ab^2&2abc&-2b^2c\\
+\hline
+&\bm{4a^2}&\bm{-2ab}&\bm{ac}&\bm{-bc}\\
+%
+\end{tabular}
+=4a^3-2a^2b+a^2c-abc+8a^2b-4ab^2+2abc-2b^2c=
+\]
+Sommando i monomi simili
+\[=4a^3+a^2c+6a^2b-4ab^2+abc-2b^2c\]
+\renewcommand\arraystretch{1}
+ %FINE PRIMA

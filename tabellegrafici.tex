@@ -1,0 +1,23 @@
+% arara: pdflatex: { draft: true }
+% arara: makeindex
+% arara: makeglossaries
+% arara: pdflatex: { synctex: true }    
+% arara: pdflatex: { synctex: true } 
+
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+% !TEX root = tabelle.grafici.tex
+% !TeX spellcheck = it_IT
+\documentclass[a4paper,oneside]{book}
+%\usepackage{navigator}
+\usepackage{etex}
+\reserveinserts{18}
+\usepackage{morefloats}
+\usepackage[grafici]{optional}
+%,
+%terzo1,
+%terzo,
+%esempi,
+%extra
+
+\input{tabelle}

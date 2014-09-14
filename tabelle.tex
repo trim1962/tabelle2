@@ -1,7 +1,5 @@
 \input{../Mod_base/base}
 \input{../Mod_base/grafica}
-
-
 \input{../Mod_base/stand_class}
 \input{../Mod_base/matematica}
 \input{../Mod_base/tabelle}
@@ -44,7 +42,6 @@
 \loadglsentries[altacronym]{glossario/acronimi1}
 \loadglsentries{glossario/simboli1}
 }
-
 \opt{secondo}{
 %\setglossarystyle{altlist}
 \loadglsentries{glossario/glossari2}
@@ -93,7 +90,6 @@
 % % % % % % % %
 % % % % % % % % % % % % % % % % % % % %TITOLO % % % % % % % % % % % % % % % % % % % % % % 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-
 \makeatletter
 \renewcommand\frontmatter{%
 	\cleardoublepage
@@ -103,8 +99,6 @@
 	\cleardoublepage
 	\@mainmattertrue}
 \makeatother
-
-
 \input{../Mod_base/indice}
 \listfiles
  \begin{document}
@@ -156,16 +150,13 @@
 \todototoc
 \cleardoublepage
 \listoftodos
-
-
 \mainmatter%
-
-\opt{prima}{\input{prima}}
-\opt{secondo}{\input{secondo}}
-\opt{terzo}{\input{terzo}}
-\opt{quarto}{\input{quarto}}
-\opt{extra}{\input{extra}}
-\opt{grafici}{\input{grafici}}
+\opt{prima}{\input{primo/prima}}
+\opt{secondo}{\input{secondo/secondo}}
+\opt{terzo}{\input{terzo/terzo}}
+\opt{quarto}{\input{quarto/quarto}}
+\opt{extra}{\input{extra/extra}}
+\opt{grafici}{\input{grafici/grafici}}
 \input{../Mod_base/MezziUsati}
 \glsaddall
 \printglossaries
