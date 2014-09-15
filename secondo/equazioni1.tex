@@ -52,7 +52,7 @@ Se aggiungiamo o togliamo la stessa quantità\footnote{Quantità definita} al pr
 \end{align*}
 \end{esempio}
 \subsection{Conseguenze primo principio}
-Se un termine passa  dal primo al secondo membro di una equazione o viceversa cambia di segno.
+Se un termine passa  dal primo al secondo membro di una equazione o viceversa cambia di segno\index{Regola!del trasporto}.
 \begin{esempio}
 \begin{NodesList}[dy=5pt,margin=3cm]
  \[ % formula no "inline"
@@ -82,7 +82,7 @@ aggiungo $-5$ ad entrambi i membri
   }
   \end{NodesList}
 \end{esempio}
-Se la stessa quantità è presente nel primo o secondo membro dell'equazione allora può essere eliminata.
+Se la stessa quantità è presente nel primo o secondo membro dell'equazione allora può essere eliminata\index{Regola!cancellazione}.
 \begin{esempio}
 \begin{NodesList}[dy=5pt,margin=3cm]
  \[ % formula no "inline"
@@ -153,12 +153,85 @@ $a,b\in\R$
     x  = -11 \AddNode
   \end{align*}
   \LinkNodes{Moltiplico}
-  \LinkNodes{
-    }
-  \LinkNodes{ Ottengo la soluzione
-    }
+  \LinkNodes{ }
+  \LinkNodes{ Ottengo la soluzione}
+  \end{NodesList}
+  \[x=-11\]
+  è soluzione
+\end{esempio}
+\begin{esempio}
+Risolvere l'equazione \[2(x+\dfrac{4}{3})-\dfrac{5x-3}{2}=2x+3(x+2) \]
+ \begin{NodesList}[margin=3cm]
+  \begin{align*}
+  2\overbrace{(x+\dfrac{4}{3})}-\dfrac{5x-3}{2}=2x+\overbrace{3(x+2)} \AddNode\\
+%  \intertext{\hfil isolati i termini con l'incognita \hfil}
+\overbrace{2(\dfrac{3x+4}{3})}-\dfrac{5x-3}{2}=\overbrace{2x+3x}+6 \AddNode\\
+  \dfrac{6x+8}{3}-\dfrac{5x-3}{2}=5x+6   \AddNode\\
+ \dfrac{12x+16-15+9=30x+31}{6}   \AddNode\\
+ -3x+25=30x+31\AddNode\\
+  \intertext{\hfil isolati i termini con l'incognita \hfil}
+ \overbrace{-3x-30x}=\overbrace{-25+31}\AddNode\\
+ -33x=6\AddNode\\
+ x=-\dfrac{6}{33}\AddNode\\
+ x=-\dfrac{2}{11}\AddNode\\
+  \end{align*}
+  \LinkNodes{Precedenze}
+   \LinkNodes{Moltiplico e sommo}
+  \LinkNodes{mcm}
+  \LinkNodes{Moltiplico per $6$}
+  \LinkNodes{Sommo}
+  \LinkNodes{Separo}
+  \LinkNodes{Divido}
+    \LinkNodes{Semplifico}
   \end{NodesList}
 \end{esempio}
+Nei due esempi precedenti abbiamo due equazioni. Le due equazioni in origine non erano in forma normale\index{Equazione!forma normale}, semplificando e separando le variabili otteniamo un'equazione in forma normale,  che viene risolta dividendo per il termine davanti l'incognita. Dato che abbiamo ottenuto una soluzione l'equazione è determinata\index{Equazione!determinata}.
+\begin{esempio}
+Risolvere l'equazione \[2(3x+2)=3(\dfrac{4}{3}x-1)+2(x+1) \]
+ \begin{NodesList}[margin=3cm]
+  \begin{align*}
+\overbrace{2(3x+2)}=3(\dfrac{4}{3}x-1)+\overbrace{2(x+1)} \AddNode\\
+%  \intertext{\hfil isolati i termini con l'incognita \hfil}
+6x+3=\overbrace{3(\dfrac{4x-3}{3})}+2x+2 \AddNode\\
+ 6x+3=4x-3+2x+2  \AddNode\\
+  \intertext{\hfil isolati i termini con l'incognita \hfil}
+ \overbrace{6x-4x-2x}=\overbrace{-4-3+2}  \AddNode\\
+ 0=-5\AddNode
+  \end{align*}
+  \LinkNodes{Precedenze}
+   \LinkNodes{Moltiplico}
+  \LinkNodes{Separo}
+  \LinkNodes{Sommo}
+  \end{NodesList}
+  a  primo membro abbiamo zero al secondo meno cinque. L'uguaglianza è impossibile l'equazione è impossibile.
+\end{esempio}
+Esempio simile è il seguente
+\begin{esempio}
+Risolviamo l'equazione \[ 6(x-3) = 3(x-1)+5(x+\dfrac{2}{5})-(2x+17)\]
+\begin{NodesList}[margin=3cm]
+  \begin{align*}
+\overbrace{6(x-3)} = \overbrace{3(x-1)}+5(\overbrace{x+\dfrac{2}{5}})\overbrace{-(2x+17)} \AddNode\\
+%  \intertext{\hfil isolati i termini con l'incognita \hfil}
+6x-18 = 3x-3+\overbrace{5(\dfrac{5x+2}{5})}-2x-17\AddNode\\
+6x-18 = 3x-3+5x+2-2x-17  \AddNode\\
+  \intertext{\hfil isolati i termini con l'incognita \hfil}
+ \overbrace{6x-3x-5x+2x}=\overbrace{18-3+2-17}  \AddNode\\
+ 0=0\AddNode
+  \end{align*}
+  \LinkNodes{Precedenze}
+   \LinkNodes{Moltiplico}
+  \LinkNodes{Separo}
+  \LinkNodes{Sommo}
+  \end{NodesList}
+  Il primo membro è uguale al secondo l'uguaglianza è sempre vera. 
+\end{esempio}
+Negli ultimi due esempi il primo membro è sempre uguale a zero. Se il secondo membro è diverso da zero l'equazione è impossibile. Se il secondo membro è uguale a zero l'equazione è indeterminata.
+\begin{figure}
+		\centering
+\includestandalone[width=.3\linewidth]{secondo/diagrammi/AlberoBinario1}
+	\caption[]{Classificazione equazioni}
+	\label{fig:AlberoBinarioeqa1}
+\end{figure}
 %\begin{table}[H]
 %\centering
 %\begin{tabular}{LCR}
