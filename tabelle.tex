@@ -59,6 +59,19 @@
 \loadglsentries[altacronym]{glossario/acronimi1}
 \loadglsentries[acronym]{glossario/simboli1}
 }
+\opt{glossario}{
+\setacronymstyle{long-short}
+%\setglossarystyle{super}
+\loadglsentries[altacronym]{glossario/acronimi1}
+\loadglsentries[acronym]{glossario/simboli1}
+
+\setglossarystyle{altlistgroup}
+\loadglsentries{glossario/glossari1}
+\loadglsentries{glossario/glossari2}
+\loadglsentries{glossario/glossari3}
+\loadglsentries{glossario/glossari4}
+
+}
 %Simboli logici
 \usepackage{gn-logic14}
 \newcommand{\tabincludegraphics}[2][]{%
@@ -126,6 +139,7 @@
 		\opt{quarto}{{\bfseries QUARTO}\\[0.4cm]}
 		\opt{extra}{{\bfseries EXTRA}\\[0.4cm]}
 		\opt{grafici}{{\bfseries GRAFICI}\\[0.4cm]}
+	\opt{glossario}{{\bfseries GLOSSARIO}\\[0.4cm]}
 		\HRule \\[1.5cm]
 		\vfill
 		
@@ -138,6 +152,7 @@
 \setcounter{page}{2}
 \input{../Mod_base/copyright}
 \tableofcontents 
+\opt{prima,secondo,terzo,quarto,extra}{
 \cleardoublepage
 \listoftables
 \addcontentsline{toc}{chapter}{\listtablename}
@@ -150,6 +165,7 @@
 \todototoc
 \cleardoublepage
 \listoftodos
+}
 \mainmatter%
 \opt{prima}{\input{primo/prima}}
 \opt{secondo}{\input{secondo/secondo}}
