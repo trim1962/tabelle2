@@ -1,56 +1,5 @@
 \chapter{I numeri complessi}
 \label{cha:INumeriComplessi}
-\section{Piano complesso}
-\begin{figure}
-	\centering
-	\begin{tikzpicture}[>=triangle 45]
-	\draw[->,color=black] (-1,0) -- (7,0);
-	%\foreach \x in {,1,2,3,4,5,6,7}
-	%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
-	\draw[color=black] (6.8,-0.6) node [anchor=south] {$R$};
-	\draw[color=black] (3.06,2.5) node [anchor=west] {$I$};
-	\draw[->,color=black] (3,-3) -- (3,3);
-	\fill [color=black] (3,1) circle (1.5pt);
-	\fill [color=black] (3,-1) circle (1.5pt);
-	\fill [color=black] (2,0) circle (1.5pt);
-	\fill [color=black] (4,0) circle (1.5pt);
-	\draw[color=black] (4,-0.6) node [anchor=south] {$+1$ };
-	\draw[color=black] (2,-0.6) node [anchor=south] {$-1$ };
-	\draw[color=black] (3,-1) node [anchor= west] {$-j$ };
-	\draw[color=black] (3,1.0) node [anchor= west] {$+j$ };
-	\end{tikzpicture}
-	
-	\caption{Piano complesso}
-	\label{fig:nuncomplPianoComplesso}
-\end{figure}
-\begin{figure}
-	\centering
-	\begin{tikzpicture}[>=triangle 45]
-	\draw[->,color=black] (-1,0) -- (7,0);
-	%\foreach \x in {,1,2,3,4,5,6,7}
-	%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
-	\draw[color=black] (6.8,-0.6) node [anchor=south] {$R$};
-	\draw[color=black] (3.06,2.5) node [anchor=west] {$I$};
-	\draw[->,color=black] (3,-3) -- (3,3);
-	\fill [color=black] (3,1) circle (1.5pt);
-	\fill [color=black] (3,-1) circle (1.5pt);
-	\fill [color=black] (2,0) circle (1.5pt);
-	\fill [color=black] (4,0) circle (1.5pt);
-	\draw[color=black] (4,-0.6) node [anchor=south] {$+1$ };
-	\draw[color=black] (2,-0.6) node [anchor=south] {$-1$ };
-	\draw[color=black] (3,-1) node [anchor= west] {$-j$ };
-	\draw[color=black] (3,1.0) node [anchor= west] {$+j$ };
-	\fill [color=black] (5,0) circle (1.5pt);
-	\fill [color=black] (6,0) circle (1.5pt);
-	\fill [color=black] (3,2) circle (1.5pt);
-	\fill [color=black] (6,2) circle (1.5pt);
-	\draw[color=black] (6,-0.6) node [anchor=south] {$+3$ };
-	\draw[color=black] (3,2.0) node [anchor= west] {$+2$ };
-	\draw[->,color=black] (3,0) -- (6,2);
-	\end{tikzpicture}
-	\caption[]{Esempio di numero complesso}
-	\label{fig:esempioNumCompPiano}
-\end{figure}
 \section{Definizioni e vocabolario}
 \label{sec:NumCompDefinizioniVocabolario}
 \begin{definizione}
@@ -61,25 +10,6 @@ L'unità immaginaria permette di dare un senso alle radici di numeri negativi. P
 Attenzione all'uso dell'unità immaginaria
 \[-1=\uimm\cdot\uimm=\sqrt{-1}\cdot\sqrt{-1}=\sqrt{(-1)\cdot(-1)}=\sqrt{1}=1 \]L'errore nasce dall'aver accettato come valida $\sqrt{a}\cdot\sqrt{b}=\sqrt{ab}$ che è definita solo per $a\geq 0$ e $b\geq 0$
 \end{esempio}
-\begin{definizione}
-	Chiamo numero complesso\index{Numero!Complesso} \[z=a+\uimm b\] $a$ viene chiamata parte reale \[\Re\left(z\right)=a\]
-	$b$ viene chiamata parte immaginaria\[\Im\left(z\right)=b \] 
-\end{definizione}
-\begin{esempio}
-Il numero \[z=-2+3\uimm \] è un numero complesso che ha per parte reale \[\Re(z)=-2\]  e per parte immaginaria \[\Im(z)=3\]
-\end{esempio}
-\begin{definizione}
-	Dato un numero complesso $z=a+b\uimm$,  chiamo complesso\index{Numero!Complesso!Coniugato} coniugato il numero $\conj{z}=a+b\uimm$
-\end{definizione}
-
-\begin{figure} %[htbp]
-	\centering
-\includestandalone[width=.6\textwidth]{terzo/complessi/complessi0}
-	\caption{Angoli concavi e convessi, positivi e negativi}
-	\label{fig:numcomplesso}
-\end{figure}
-\section{Numero complesso, coniugato oppposto}
-\label{sec:NumCompOperazioni}
 \subsection{Potenze dell'unità immaginaria}
 Per la potenza immaginaria\index{Unità!Immaginaria!Potenza} valgono le seguenti relazioni
 \begin{align*}
@@ -91,21 +21,76 @@ Per la potenza immaginaria\index{Unità!Immaginaria!Potenza} valgono le seguenti
 	&\uimm^5=\uimm\\
 	&\uimm^6=-1
 \end{align*}
-L'esempio precedente ha un'interpretazione geometrica, sono rotazioni con con centro nell'origine come appare evidente dalla figura~\vref{fig:nuncomplPianoComplesso}.
+L'esempio precedente ha un'interpretazione geometrica. Le potenze dell'unità sono rotazioni  sono rotazioni con  centro nell'origine come appare evidente dalla figura~\vref{fig:nuncomplPianoComplesso}.
+\begin{definizione}
+	 Un numero complesso\index{Numero!Complesso} è \[z=a+\uimm b\] $a$ è chiamata parte reale \[\Re\left(z\right)=a\]
+	$b$ viene detta  parte immaginaria\[\Im\left(z\right)=b \] 
+\end{definizione}
+\begin{esempio}
+Il numero \[z=-2+3\uimm \] è un numero complesso che ha per parte reale \[\Re(z)=-2\]  e per parte immaginaria \[\Im(z)=3\]
+\end{esempio}
+\begin{definizione}
+	Dato un numero complesso $z=a+b\uimm$, il coniugato\index{Numero!Complesso!Coniugato} è  il numero $\conj{z}=a-b\uimm$
+\end{definizione}
+\begin{esempio}
+Se $z=3+2\uimm$ il coniugato è $\conj{z}=3-2\uimm$ 
+\end{esempio}
+\begin{definizione}
+Dato un numero complesso $z=a+b\uimm$, ò'opposto\index{Numero!Complesso!Oppoto} è il numero $-z=-a-b\uimm$
+\end{definizione}
+\begin{definizione}
+Dato un numero  complesso $z=a+b\uimm$,il modulo\index{Numero!Complesso!Modulo} è il numero $\abs{z}=\sqrt{a^2+b^2}$
+\end{definizione}
+\section{Piano complesso}
+Un numero complesso $z=a+b\uimm$ è una coppia di numeri $(a;b)$. A questa coppia di punti corrisponde un punto del piano chiamato piano di  Argand-Gauss. 
+Nel piano di Argand-Gauss l'asse delle $x$ viene chiamato asse reale $\Re$ mentre l'asse delle $y$ è chiamato asse immaginario $\Im$.
+Al numero complesso corrisponde il vettore applicato all'origine ed estremità in $(a;b)$. Nella figura\nobs\vref{fig:pianonumcomplesso} sono rappresentati tre numeri complessi $z$, $\conj{z}$ e $-z$. Ad ogni vettore è associato un'angolo $\theta$ che forma con l'asse reale chiamato fase. 
+\begin{figure}
+	\centering
+	\includestandalone[width=.5\textwidth]{terzo/complessi/complessi00}
+	\caption{Piano complesso}
+	\label{fig:nuncomplPianoComplesso}
+\end{figure}
+\begin{figure} %[htbp]
+	\centering
+\includestandalone[width=.6\textwidth]{terzo/complessi/complessi0}
+	\caption{Numeri complesso ,coniugato e opposto}
+	\label{fig:pianonumcomplesso}
+\end{figure}
+\section{Operazioni con i numeri complessi}
+\label{sec:NumCompOperazioni}
 \subsection{Somma di numeri complessi}
 \begin{definizione}
-Dati due numeri complessi\index{Numero!Complesso!Somma}  $z=a+\uimm b$ e  $z_1=a_1+\uimm b_1$ chiamo somma il numero \[z+z_1=a+a_1+(b+b_1)\uimm\]
+Dati due numeri complessi\index{Numero!Complesso!Somma}  $z=a+\uimm b$ e  $z_1=a_1+\uimm b_1$ la somma è il numero \[z+z_1=a+a_1+(b+b_1)\uimm\]
 \end{definizione}
+Dal punto di vista grafico la somma di due numeri complessi equivale alla somma grafica di due vettori tramite la regola del parallelogramma che ha per lati i due vettori come mostrato nella figura\nobs\vref{fig:sommaPianoComplesso}.
+
+La differenza tra due numeri complessi è più complessa dal punto di vista grafico. Si procede come nella figura\nobs\vref{fig:DifferenzaPianoComplesso}. \[ z=z_1-z_2=z_1+(-z_2)\]  Quindi dalla differenza si passa alla somma con l'opposto.
+\begin{figure}
+	\centering
+	\includestandalone[width=.6\textwidth]{terzo/complessi/complessi1}
+	\caption{Somma nel piano complesso}
+	\label{fig:sommaPianoComplesso}
+\end{figure}
 \begin{esempio}
 Sommiamo $z=3-2\uimm$ e $z_1=4+5\uimm$
 	\[z+z_1=3-2\uimm +4+5\uimm=3+4+(-2+5)\uimm=7+3\uimm\]
 \end{esempio}
-Lo zero\index{Numero!Complesso!Zero} per numeri complessi ha la seguente forma
+Lo zero\index{Numero!Complesso!Zero} dei numeri complessi ha la seguente forma
 \[0=0+0\uimm\]
+La somma di un numero con il suo coniugato è un numero reale puro. \[z+\conj{z}=a+\uimm b+a-\uimm b=2a \] 
+La differenza di un numero con il suo coniugato è un numero immaginario puro. \[z-\conj{z}=a+\uimm b-a+\uimm b=2\uimm b \] 
+
 \subsection{Prodotto di numeri complessi}
 \begin{definizione}
 	Dati due numeri complessi\index{Numero!Complesso!Prodotto}  $z=a+b\uimm $ e  $z_1=a_1+b\uimm _1$ chiamo prodotto il numero \[z\cdot z_1=(a+b\uimm)(a_1+b_1\uimm)=a\cdot a_1-b\cdot b_1+(a\cdot b_1+a_1\cdot b)\uimm\]
 \end{definizione}
+\begin{figure}
+	\centering
+	\includestandalone[width=.6\textwidth]{terzo/complessi/complessi2}
+	\caption{Differenza nel piano complesso}
+	\label{fig:DifferenzaPianoComplesso}
+\end{figure}
 \begin{esempio}
 	Per moltiplicare $z=3+5\uimm $ e  $z_1=2+3\uimm1$  \[z\cdot z_1=(3+5\uimm)(2+3\uimm)= 6+9\uimm +10\uimm +15\uimm^2=6+9\uimm +10\uimm -15 =-9+19\uimm \]
 	nel calcolo bisogna ricordarsi che $\uimm^2=-1$
@@ -147,9 +132,9 @@ A questo punto la divisione fra due numeri complessi non è difficile.
 \toprule
 Unità immaginaria &\uimm^2=-1\\
 Numero complesso&z=a+\uimm b\\
-Parte reale di z&\Re\left(z\right)=a\\
-Parte immaginaria di z&\Im\left(z\right)=b\\
-Coniugato di un numero $z$&\overline{z}=a-\uimm b\\
+Parte reale di z&\Re(z)=a\\
+Parte immaginaria di z&\Im(z)=b\\
+Coniugato di un numero $z$&\conj{z}=a-\uimm b\\
 Uguaglianza fra numeri complessi&a+\uimm b=a_1+\uimm b_1\Leftrightarrow \begin{cases}a=a_1\\ b=b_1\end{cases}\\
 Somma&z+z'=a+\uimm b+a'\uimm b'=(a+a')+\left(b+b'\right)\uimm\\
 Elemento neutro somma&r=0+i0\\
@@ -163,11 +148,6 @@ Divisione fra numeri complessi&(a+\uimm b):(c+\uimm d)=\frac{a+\uimm b}{c+\uimm 
 \caption{Numeri complessi}
 \label{tab:numericomplessi}
 \end{table}
-
-Un numero complesso è composto da una coppia di numeri \[z=a+\uimm b\] quindi al numero $z$ possiamo far corrispondere la coppia $(a;b)$. La figura\nobs\vref{fig:nuncomplPianoComplesso} rappresenta il piano complesso\index{Piano!complesso}. L'asse delle x corrisponde alla parte reale, l'asse delle y la parte immaginaria.
-
-Quindi, al numero complesso  \[z=3+\uimm 2\] corrisponde la coppia $(3;2)$ come nella figura\nobs\vref{fig:esempioNumCompPiano}. 
-%\mediapriorita{Fare degli esempi per i calcoli con i numeri complessi}
 \section{Algebra dei numeri complessi}
 \label{sec:AlgebraNumeriComplessi}
 Il seguente esempio lega la somma e le potenze di numeri complessi. In pratica basta considerare un numero complesso come un binomio. Questo è chiaro nell'esempio che segue.
@@ -215,14 +195,35 @@ Supponiamo di voler semplificare $(2+3\uimm)\left(\dfrac{1-3\uimm}{2+4\uimm}\rig
 		\LinkNodes{Ottengo}%
 	\end{NodesList}
 \end{esempio}
-
 \bassapriorita{Forma goniometrica dei numeri complessi}
+\section{Coordinate polari}
+\begin{definizione}
+un sistema di coordinate polari individua la posizione di un punto $P$ nel piano, tramite una coppia $(\rho;\theta)$ dove il primo numero è la distanza del punto detto polo e da un angolo.
+\end{definizione}
+\begin{figure} %[htbp]
+	\centering
+\includestandalone[width=.6\textwidth]{terzo/complessi/polar-plot}
+	\caption{Coordinate polari}
+	\label{fig:coordinatepolari}
+\end{figure}
+La figura\nobs\vref{fig:coordinatepolari} mostra un sistema di riferimento polare\index{Coordinate polari}. Punti che sono alla stessa distanza dal centro si trovano sulla medesima circonferenza. 
 
-
-
-
-
-
+Per rappresentare un numero complesso $z=a+\uimm b$ tramite un sistema di coordinate polari bisogna trasformare la coppia $(a;b)$
+nella coppia $(\rho;\theta)$.
+\begin{align*}
+&\rho=\sqrt{a^2+b^2}\\
+&\theta=\begin{cases}
+\arctan{\dfrac{b}{a}}&\text{se $a>0$ e $b\geq 0$ }\\
+&\\
+\arctan{\dfrac{b}{a}}+\pi&\text{se $a>0$ e $b< 0$ }\\
+&\\
+\arctan{\dfrac{b}{a}}-\pi&\text{se $a<0$ e $b< 0$ }\\
+&\\
++\dfrac{\pi}{2}&\text{se $a=0$ e $b> 0$ }\\
+&\\
+-\dfrac{\pi}{2}&\text{se $a=0$ e $b< 0$ }\\
+\end{cases}
+\end{align*} 
 
 
 
