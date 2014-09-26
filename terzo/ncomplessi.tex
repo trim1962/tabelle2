@@ -198,7 +198,7 @@ Supponiamo di voler semplificare $(2+3\uimm)\left(\dfrac{1-3\uimm}{2+4\uimm}\rig
 \bassapriorita{Forma goniometrica dei numeri complessi}
 \section{Coordinate polari}
 \begin{definizione}
-un sistema di coordinate polari individua la posizione di un punto $P$ nel piano, tramite una coppia $(\rho;\theta)$ dove il primo numero è la distanza del punto detto polo e da un angolo.
+un sistema di coordinate polari individua la posizione di un punto $P$ nel piano, tramite una coppia $(\rho;\theta)$ dove il primo numero è la distanza (modulo) dal punto detto polo e da un angolo detto argomento o fase.
 \end{definizione}
 \begin{figure} %[htbp]
 	\centering
@@ -224,8 +224,16 @@ nella coppia $(\rho;\theta)$.
 -\dfrac{\pi}{2}&\text{se $a=0$ e $b< 0$ }\\
 \end{cases}
 \end{align*} 
-
-
-
-
-
+\subsection{Moltiplicazione}
+Il prodotto di due numeri complessi in coordinate polari ha le seguenti proprietà  con $z_1,z_2,w\in \C$ 
+\begin{align*}
+&\abs{w}=\abs{z_1\cdot z_2}=\abs{z_1}\cdot\abs{z_2}\\
+&\arg(z_1\cdot z_2)=\arg{z_1}+\arg{z_2}
+\end{align*} 
+\subsection{Divisione}
+La divisione fra numeri complessi in coordinate polari ha le seguenti proprietà con $z_1,z_2,w\in \C$ 
+\begin{align*}
+&\abs{w}=\dfrac{\abs{z_1}}{\abs{z_2}}\\
+&\arg(w)=\arg (z_1)-\arg (z_2)
+\end{align*}
+\bassapriorita{esempi numerici operazioni numeri complessi in coordinate polari}
