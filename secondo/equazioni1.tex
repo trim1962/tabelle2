@@ -1,28 +1,42 @@
 \chapter{Equazioni}
 \label{sec:equazioni}
 \section{Definizioni}
-Un'equazione\index{Equazione} è l'uguaglianza fra due espressioni. Dato che dipende dai valori che vengono assegnati alle lettere un'equazione è un'uguaglianza condizionata. I valori, che sostituiti alle lettere rendono vere l'uguaglianza,  sono chiamate soluzioni\index{Equazione!soluzione} . 
-\begin{esempio}
+\begin{definizionet}{}{}
+Un'equazione\index{Equazione} è l'uguaglianza fra due espressioni.
+\end{definizionet}
+ Dato che dipende dai valori che vengono assegnati alle lettere un'equazione è un'uguaglianza condizionata.
+\begin{definizionet}{}{}
+  I valori, che sostituiti alle lettere rendono vere l'uguaglianza,  sono chiamate soluzioni\index{Equazione!soluzione}
+\end{definizionet}
+\begin{esempiot}{}{}
+Classificare le seguenti uguaglianze
+\end{esempiot}
 \begin{itemize}
 \item $2+3=3+5$ non è un'equazione. Mancano le lettere.
 \item $2+x=3x+5y$ è un'equazione. 
 \item $z+3x=0$ è un'equazione.
 \end{itemize}
-\end{esempio}
-\begin{esempio}
-Data l'equazione $2x-5=x+2$ $x=7$ è soluzione infatti $2\cdot 7-5=7+2$ $9=9$ l'uguaglianza è verificata. Mentre per $x=3$ $2\cdot 3-5=7+2$ $1\neq5$ quindi non è soluzione.
-\end{esempio}
+\begin{esempiot}{}{}
+Verificare se $x=7$ è soluzione di
+ l'equazione $2x-5=x+2$ 
+\end{esempiot} 
+ $x=7$ è soluzione infatti $2\cdot 7-5=7+2$ $9=9$ l'uguaglianza è verificata. Mentre per $x=3$ $2\cdot 3-5=7+2$ $1\neq5$ quindi non è soluzione.
+
 Le lettere sono chiamate variabili\index{Equazione!variabile} o costanti\index{Equazione!costante}. Una variabile o incognita è una quantità non nota a priori che può assumere qualunque valore. Una costante è una quantità non nota ma fissa. Di solito si usano $x,y,z$ per indicare le incognite $a,b,c,\dots$ per indicare le costanti.  
 
 Un'equazione in cui compare una sola lettera è detta in una incognita, con due diverse in due incognite eccetera. Il segno di uguaglianza divide l'equazione in due parti, la parte a sinistra chiamata primo membro, la parte a destra secondo membro.
 \section{Principi di equivalenza}
+\begin{definizionet}{}{}
 Due o più equazioni sono equivalenti\index{Equazione!equivalente} se hanno le stesse soluzioni.
-\begin{esempio}
-Le equazioni 
+\end{definizionet}
+\begin{esempiot}{}{}
+Verificare se le due equazioni sono equivalenti 
 \begin{align*}
 5x+4&=4x+3\\
 3x+2&=2x+3
 \end{align*}
+\end{esempiot}
+le equazioni 
 hanno la stessa soluzione
 \begin{align*}
 5x+4&=4x+3\\
@@ -33,11 +47,16 @@ hanno la stessa soluzione
 -1&=-1
 \end{align*}
 Quindi le due equazioni sono equivalenti.
-\end{esempio}
+
 \subsection{Primo principio di equivalenza}
 \label{sec:PrimoprincipioEquivalenza}
+\begin{principiot}{}{}
 Se aggiungiamo o togliamo la stessa quantità\footnote{Quantità definita} al primo e al secondo membro di una equazione,  otteniamo un'equazione  equivalente\index{Equazione!equivalente} a quella di partenza.
-\begin{esempio}
+\end{principiot}
+
+\begin{esempiot}{}{}
+Primo principio equivalenza
+\end{esempiot}
 \begin{align*}
 8x+14&=6x+10
 \intertext{aggiungendo $+10$ ad entrambi i membri}
@@ -50,10 +69,11 @@ Se aggiungiamo o togliamo la stessa quantità\footnote{Quantità definita} al pr
 -2&=-2
 \intertext{quindi $-2$ è soluzione per entrambe}
 \end{align*}
-\end{esempio}
 \subsection{Conseguenze primo principio}
 Se un termine passa  dal primo al secondo membro di una equazione o viceversa cambia di segno\index{Regola!del trasporto}.
-\begin{esempio}
+\begin{esempiot}{}{}
+Conseguenze primo principio
+\end{esempiot}
 \begin{NodesList}[dy=5pt,margin=3cm]
  \[ % formula no "inline"
  \begin{aligned}
@@ -81,9 +101,10 @@ aggiungo $-5$ ad entrambi i membri
   \end{minipage}
   }
   \end{NodesList}
-\end{esempio}
 Se la stessa quantità è presente nel primo o secondo membro dell'equazione allora può essere eliminata\index{Regola!cancellazione}.
-\begin{esempio}
+\begin{esempiot}{}{}
+Regola di cancellazione
+\end{esempiot}
 \begin{NodesList}[dy=5pt,margin=3cm]
  \[ % formula no "inline"
  \begin{aligned}
@@ -111,11 +132,15 @@ semplifico
   \end{minipage}
   }
   \end{NodesList}
-\end{esempio}
+
 \subsection{Secondo principio di equivalenza}
 \label{sec:SecondoprincipioEquivalenza}
+\begin{principiot}{}{}
 Se moltiplichiamo o dividiamo per  la stessa quantità diversa da zero il primo e il secondo membro di una equazione,  otteniamo un'equazione  equivalente\index{Equazione!equivalente} a quella di partenza.
-\begin{esempio}
+\end{principiot}
+\begin{esempiot}{}{}
+Secondo principio di equivalenza
+\end{esempiot}
 \begin{align*}
 2x+2&=x+5
 \intertext{moltiplico per  $+5$  entrambi i membri}
@@ -128,22 +153,27 @@ Se moltiplichiamo o dividiamo per  la stessa quantità diversa da zero il primo 
 40&=40
 \intertext{quindi $-2$ è soluzione per entrambe}
 \end{align*}
-\end{esempio}
 \section{Forma normale}
 \label{sec:formanormale}
 Dopo aver trasportato a primo membro tutti i termini di una equazione si ottiene un polinomio ordinato e l'equazione diventa \[P(x)=0\]
 In questo caso l'equazione\index{Equazione!forma normale} si dice in forma normale.
-\begin{esempio}
+\begin{esempiot}{}{}
+Forma normale
+\end{esempiot}
 L'equazione\[3x^2+3=0\] è in forma normale.
 
 L'equazione\[(x-2)(3x+2)+5x=0\] non è in forma normale.
-\end{esempio}
+
 Il grado più grande dell'equazione rispetto all'incognita è detto grado dell'equazione\index{Equazione!grado}.
 \section{Equazioni di primo grado}
 \label{sec:equazionidiprimogrado}
+\begin{definizionet}{}{}
 Una equazione\index{Equazione!di primo grado} di primo grado è un'equazione della forma \[ax=b\]
 $a,b\in\R$
-\begin{esempio}
+\end{definizionet}
+\begin{esempiot}{}{}
+risolvere l'equazione $8x+2(x+11) = 6x+3(x-3) $
+\end{esempiot}
  \begin{NodesList}[margin=3cm]
   \begin{align*}
   8x+2(x+11) = 6x+3(x-3) \AddNode\\
@@ -158,9 +188,9 @@ $a,b\in\R$
   \end{NodesList}
   \[x=-11\]
   è soluzione
-\end{esempio}
-\begin{esempio}
+\begin{esempiot}{}{}
 Risolvere l'equazione \[2(x+\dfrac{4}{3})-\dfrac{5x-3}{2}=2x+3(x+2) \]
+\end{esempiot}
  \begin{NodesList}[margin=3cm]
   \begin{align*}
   2\overbrace{(x+\dfrac{4}{3})}-\dfrac{5x-3}{2}=2x+\overbrace{3(x+2)} \AddNode\\
@@ -184,10 +214,11 @@ Risolvere l'equazione \[2(x+\dfrac{4}{3})-\dfrac{5x-3}{2}=2x+3(x+2) \]
   \LinkNodes{Divido}
     \LinkNodes{Semplifico}
   \end{NodesList}
-\end{esempio}
-Nei due esempi precedenti abbiamo due equazioni. Le due equazioni in origine non erano in forma normale\index{Equazione!forma normale}, semplificando e separando le variabili otteniamo un'equazione in forma normale,  che viene risolta dividendo per il termine davanti l'incognita. Dato che abbiamo ottenuto una soluzione l'equazione è determinata\index{Equazione!determinata}.
-\begin{esempio}
+
+ Le due equazioni precedenti, in origine, non erano in forma normale\index{Equazione!forma normale}, semplificando e separando le variabili otteniamo un'equazione in forma normale,  che viene risolta dividendo per il termine davanti l'incognita. Dato che abbiamo ottenuto una soluzione l'equazione è determinata\index{Equazione!determinata}.
+\begin{esempiot}{}{}
 Risolvere l'equazione \[2(3x+2)=3(\dfrac{4}{3}x-1)+2(x+1) \]
+\end{esempiot}
  \begin{NodesList}[margin=3cm]
   \begin{align*}
 \overbrace{2(3x+2)}=3(\dfrac{4}{3}x-1)+\overbrace{2(x+1)} \AddNode\\
@@ -204,10 +235,11 @@ Risolvere l'equazione \[2(3x+2)=3(\dfrac{4}{3}x-1)+2(x+1) \]
   \LinkNodes{Sommo}
   \end{NodesList}
   a  primo membro abbiamo zero al secondo meno cinque. L'uguaglianza è impossibile l'equazione è impossibile.
-\end{esempio}
+
 Esempio simile è il seguente
-\begin{esempio}
+\begin{esempiot}{}{}
 Risolviamo l'equazione \[ 6(x-3) = 3(x-1)+5(x+\dfrac{2}{5})-(2x+17)\]
+\end{esempiot}
 \begin{NodesList}[margin=3cm]
   \begin{align*}
 \overbrace{6(x-3)} = \overbrace{3(x-1)}+5(\overbrace{x+\dfrac{2}{5}})\overbrace{-(2x+17)} \AddNode\\
@@ -224,7 +256,7 @@ Risolviamo l'equazione \[ 6(x-3) = 3(x-1)+5(x+\dfrac{2}{5})-(2x+17)\]
   \LinkNodes{Sommo}
   \end{NodesList}
   Il primo membro è uguale al secondo l'uguaglianza è sempre vera. 
-\end{esempio}
+
 Negli ultimi due esempi il primo membro è sempre uguale a zero. Se il secondo membro è diverso da zero l'equazione è impossibile. Se il secondo membro è uguale a zero l'equazione è indeterminata.
 \begin{figure}
 		\centering
@@ -232,6 +264,12 @@ Negli ultimi due esempi il primo membro è sempre uguale a zero. Se il secondo m
 	\caption[]{Classificazione equazioni}
 	\label{fig:AlberoBinarioeqa1}
 \end{figure}
+
+
+
+
+
+
 %\begin{table}[H]
 %\centering
 %\begin{tabular}{LCR}

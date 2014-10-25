@@ -6,7 +6,6 @@
 	\caption{Triangolo rettangolo}
 	\label{fig:triangolopitagorico1}
 \end{figure}
-
 \section{I triangoli rettangoli}
 \begin{table}
 \centering
@@ -50,11 +49,13 @@ I lati di un triangolo sono classificati, rispetto ad un angolo, come opposti o 
 	\label{fig:triangolooppostoadiacente}
 \end{figure}
 \subsection{Relazioni fondamentali}
+\begin{teoremat}{}{}
 Consideriamo la figura\nobs\vref{fig:triangolopitagorico1}. Valgono le seguenti relazioni fra i cateti gli angoli e l'ipotenusa
 \begin{align*}
 c&=a\sin\gamma&b&=a\cos\gamma\\
 b&=a\sin\beta&c&=a\cos\beta
 \end{align*}
+\end{teoremat}
 Quindi
 
 Un cateto è uguale  al prodotto dell'ipotenusa per il seno dell'angolo opposto
@@ -78,12 +79,13 @@ Il rapporto fra  cateto e l'ipotenusa è uguale al coseno dell'angolo adiacente.
 
 \noindent Dalle relazioni di partenza si ottiene
 \[\dfrac{b}{sen\beta}=\dfrac{b}{\cos\gamma}=\dfrac{c}{\sin\gamma}=\dfrac{c}{cos\beta}=a \]
-
+\begin{teoremat}{}{}
 Dividendo fra loro le relazioni di partenza otteniamo
 \begin{align*}
 b&=c\tan\beta&c&=b\tan\gamma\\
 b&=c\cot\gamma&c&=b\cot\beta
 \end{align*}
+\end{teoremat}
 \section{Risoluzione triangoli rettangoli}
 La risoluzione di un triangolo consiste nel trovare tutti i suoi elementi conoscendone alcuni. Ricordiamo che in un triangolo rettangolo vale il teorema di Pitagora.\index{Teorema!Pitagora} Quindi, facendo riferimento alla figura\nobs\vref{fig:TeoremaPitagora_1}:
 \begin{align*}
@@ -110,8 +112,9 @@ Risolviamo questo caso, conosciamo, come nella figura\nobs\vref*{fig:risTriangRe
 c&=a\sin\gamma&c&=a\cos\beta\\
 b&=a\cos\gamma&b&=a\cos\beta
 \end{align*}
-\begin{esempio}
+\begin{esempiot}{}{}
 Trovare gli altri elementi di un triangolo sapendo che l'ipotenusa $a=3$ e l'angolo acuto $\gamma=\ang{30}$ 
+\end{esempiot}
 \begin{align*}
 a&=3\\
 \gamma&=\ang{30}\\
@@ -121,7 +124,6 @@ c&=3\sin\ang{30}=3\cdot\dfrac{1}{2}=\dfrac{3}{2}\\
 b&=a\cos\gamma\\
 b&=3\cos\ang{30}=3\cdot\dfrac{\sqrt{3}}{2}=\dfrac{3\sqrt{3}}{2}
 \end{align*}
-\end{esempio}
 \subsection{Angolo acuto e cateto noti}
 Risolviamo questo caso, conosciamo, come nella figura\nobs\vref*{fig:risTriangRett_2}, un cateto $b$ e un angolo acuto, ad esempio $\gamma$.
 \begin{align*}
@@ -129,8 +131,9 @@ Risolviamo questo caso, conosciamo, come nella figura\nobs\vref*{fig:risTriangRe
 c&=b\tan\gamma&c&=a\cot\beta\\
 a&=\dfrac{b}{\sin\beta}&a&=\dfrac{b}{\cos\beta}
 \end{align*}
-\begin{esempio}
+\begin{esempiot}{}{}
 Trovare gli elementi ignoti di un triangolo rettangolo, sapendo che  il cateto $b=5$ e l'angolo $\gamma=\ang{60}$.
+\end{esempiot}
 \begin{align*}
 b&=5\\
 \gamma &=\ang{60}\\
@@ -140,10 +143,10 @@ c&=5\tan\ang{60}=5\cdot\sqrt{5}=5\sqrt{3}\\
 a&=\dfrac{b}{\sin\beta}\\
 a&=\dfrac{5}{\sin\ang{30}}=\dfrac{5}{\dfrac{1}{2}}=10
 \end{align*}
-\end{esempio}
 Una variante di quanto prima è quello che segue. Qui un angolo è noto tramite il valore di una funzione goniometrica.
-\begin{esempio}
+\begin{esempiot}{}{}
 Trovare gli elementi ignoti di un triangolo rettangolo, sapendo che  il cateto $b=4$ e l'angolo $\cos\gamma=\dfrac{4}{5}$.
+\end{esempiot}
 \begin{align*}
 \cos\gamma&=\dfrac{4}{5}\\
 b&=4
@@ -161,7 +164,6 @@ a&=\dfrac{20}{4}=5\\
 c&=a\sin\gamma\\
 c&=5\dfrac{3}{5}=3
 \end{align*}
-\end{esempio}
 \subsection{Ipotenusa e cateto}
 Risolviamo questo caso, conosciamo, come nella figura\nobs\vref*{fig:risTriangRett_3}, un cateto $b$ e l'ipotenusa $a$.
 \begin{align*}
@@ -169,8 +171,9 @@ Risolviamo questo caso, conosciamo, come nella figura\nobs\vref*{fig:risTriangRe
 \gamma&=\ang{90}-\beta&\beta&=\ang{90}-\gamma\\
 c&=a\cos\beta&c&a\sin\gamma
 \end{align*}
-\begin{esempio}
+\begin{esempiot}{}{}
 Trovare gli elementi ignoti di un triangolo rettangolo sapendo che l'ipotenusa $a=2$  il cateto $b=\sqrt{5}$.
+\end{esempiot}
 \begin{align*}
 a&=\num{2}\\
 b&=\sqrt{\num{3}}\\
@@ -180,7 +183,6 @@ b&=\sqrt{\num{3}}\\
 c&=a\cos\beta\\
 c&=2\cos\ang{60}=2\cdot\dfrac{1}{2}=1
 \end{align*} 
-\end{esempio}
 \subsection{Cateti noti}
 Risolviamo questo caso, conosciamo, come nella figura\nobs\vref*{fig:risTriangRett_4}, con i cateti $b$ e $c$ noti.
 \begin{align*}
@@ -188,8 +190,9 @@ Risolviamo questo caso, conosciamo, come nella figura\nobs\vref*{fig:risTriangRe
 \beta&=\ang{90}-\gamma&\gamma&=\ang{90}-\beta\\
 a&=\dfrac{c}{\sin\gamma}&a&=\dfrac{c}{\cos\beta}
 \end{align*}
-\begin{esempio}
+\begin{esempiot}{}{}
 Trovare gli elementi ignoti di un triangolo rettangolo sapendo che  il cateto $b=5$ e il lato $c=12$
+\end{esempiot}
 \begin{align*}
 b&=5\\
 c&=12\\
@@ -199,7 +202,6 @@ c&=12\\
 a&=\dfrac{c}{\sin\gamma}\\
 a&=\dfrac{12}{\sin\ang{67.38}}\approxeq\dfrac{12}{\num{0.92}}\approxeq\num{13.0}
 \end{align*}
-\end{esempio}
 \begin{figure}
 	\begin{subfigure}[b]{.5\linewidth}
 		\centering
