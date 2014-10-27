@@ -29,14 +29,14 @@ Iniziamo con ripassare le proprietà delle potenze. La tabella\nobs\vref{tab:pot
 \section{Funzioni di variabili reali}
 \label{sec:FunzioniVariabileReale}
 Una prima definizione di funzione è la seguente:
-\begin{definizione}
+\begin{definizionet}{Funzione}{}
 Una funzione è una relazione che associa ad un elemento di un insieme (Dominio\index{Funzione!Dominio}) un elemento di un altro insieme. (Codominio\index{Funzione!Codominio}). 
-\end{definizione}
+\end{definizionet}
 Se $f$ è la funzione\index{Funzione} avremo \[\function{f}{D}{C}{x}{f(x)}\]
 dove $f(x)$ è l'immagine\index{Funzione!Immagine} tramite $f$ di $x$.
-\begin{esempio}
+\begin{osservazionet}{}{}
  Il biglietto del cinema è una funzione fra l'insieme degli spettatori (Dominio) e l'insieme delle poltrone di un cinema (Codominio). La figura\nobs\vref{fig:funzioniEsempio1} mostra questo. 
- \end{esempio}
+ \end{osservazionet}
 \begin{figure}
 	\centering
 	\begin{subfigure}[b]{.4\linewidth}
@@ -55,12 +55,12 @@ dove $f(x)$ è l'immagine\index{Funzione!Immagine} tramite $f$ di $x$.
 %	\caption{$\Delta>0$}
 %	\label{fig:DeltaMagZeroEsempio1}
 \end{figure}
-\begin{esempio}
-La relazione <<essere padre di>> definita fra l'inseme dei dei padri e l'insieme dei figli, non è una funzione un padre infatti può avere più di un figlio come mostrato nella  figura\nobs\vref{fig:funzioniEsempio1}.
-\end{esempio}
-\begin{esempio}
-La relazione <<essere figlio di>> fra l'insieme dei figli e l'insieme e quello delle madri è una funzione. Un figlio ha una sola madre. come nella figura\nobs\vref{fig:funzioniEsempio3}. Due figli possono avere la stessa madre ma un figlio ha sempre una sola madre.
-\end{esempio}
+\begin{osservazionet}{}{}
+La relazione <<essere padre di>> definita fra l'inseme dei dei padri e l'insieme dei figli, non è una funzione. Un padre infatti può avere più di un figlio come mostrato nella  figura\nobs\vref{fig:funzioniEsempio1}.
+\end{osservazionet}
+\begin{osservazionet}{}{}
+La relazione <<essere figlio di>> fra l'insieme dei figli e l'insieme e quello delle madri è una funzione. Un figlio ha una sola madre. Come nella figura\nobs\vref{fig:funzioniEsempio3}. Due figli possono avere la stessa madre ma un figlio ha sempre una sola madre.
+\end{osservazionet}
 \begin{figure}
 	\centering
 	\begin{subfigure}[b]{.4\linewidth}
@@ -79,9 +79,9 @@ La relazione <<essere figlio di>> fra l'insieme dei figli e l'insieme e quello d
 	%	%	\caption{$\Delta>0$}
 	%	%	\label{fig:DeltaMagZeroEsempio1}
 \end{figure}
-\begin{esempio}
+\begin{osservazionet}{}{}
 La relazione che associa ad un numero il suo quadrato è una funzione. Formalmente abbiamo \[\function{f}{\R}{\R^{+}_{0}}{x}{x^2} \] oppure possiamo scrivere $y=x^2$. In questo caso abbiamo due incognite, la $x$ viene chiamata variabile indipendente, la $y$ è detta variabile dipendente. In questo caso il dominio della funzione è $\R$ e il codominio $\R^{+}_{0}$ cioè l'insieme dei numeri reali positivo incluso lo zero. La figura\nobs\vref{fig:funzioniEsempio4} mostra alcuni valori utilizzati per l'esempio. Alla funzione è possibile associare un grafico cioè l'insieme delle coppie $x,x^2$. Il grafico\nobs\vref{fig:funzioniEsempio9} è una parabola. 
-\end{esempio}
+\end{osservazionet}
 \begin{figure}
 	\centering
 	\begin{subfigure}[b]{.4\linewidth}
@@ -118,17 +118,17 @@ La relazione che associa ad un numero il suo quadrato è una funzione. Formalmen
 	%	\caption{$\Delta>0$}
 	%	\label{fig:DeltaMagZeroEsempio1}
 \end{figure}
-\begin{esempio}
+\begin{osservazionet}{}{}
 	La relazione che associa ad un numero la sua radice non è una funzione. Formalmente abbiamo \[\function{f}{\R}{\R}{x}{\sqrt{x}} \] La figura\nobs\vref{fig:funzioniEsempio5} mostra alcuni valori utilizzati per l'esempio. Dalla figura è chiaro che in questo caso non è una funzione. La relazione diventa una funzione se modifichiamo per esempio il codominio da $\R$ a $\R^{+}$. In questo caso ad un valore in ingresso corrisponde un solo valore in uscita. Il grafico\nobs\vref{fig:funzioniEsempio9} mostra il grafico della radice. 
-\end{esempio}
+\end{osservazionet}
 \section{Classificazione delle funzioni}
 Una prima rozza classificazione delle funzioni matematiche le divide in due gruppi: intere o fratte.  
 \section{La funzione esponenziale}
 \label{sec:LaFunzioneEsponenziale}
-\begin{definizione}
+\begin{definizionet}{Funzione esponenziale}
 	Chiamo funzione esponenziale\index{Funzione!Esponenziale} una funzione del tipo \[y=a^x\quad
 	\text{per $a>0$.} \]
-\end{definizione}
+\end{definizionet}
 Il comportamento della funzione esponenziale varia al variare della base. La figura\nobs\vref{fig:funzioniEsempio6} mostra il comportamento per $a>1$.
 \begin{enumerate}
 \item Il grafico della funzione esponenziale occupa il semipiano positivo delle y.
@@ -182,13 +182,14 @@ axis y line=middle,xlabel=$x$,ylabel=$y$]
 \end{figure}
 \section{Le equazioni esponenziali}
 \label{sec:LeEquazioniEsponenziali}
-\begin{definizione}\label{def:EquazioneEsponenziale}
+\begin{definizionet}{Equazione esponenziale}{}\label{def:EquazioneEsponenziale}
 Chiamo equazione esponenziale\index{Equazione!Esponenziale} un'equazione del tipo \[a^{f(x)}=a^{g(x)}\quad a>0\quad  a\neq1 \]
-\end{definizione}
+\end{definizionet}
 L'equazione esponenziale ha una sola soluzione. 
 Dall'equazione esponenziale\nobs\vref{def:EquazioneEsponenziale} è possibile passare all'equazione \[f(x)=g(x) \]Non tutte le equazioni esponenziali sono riconducibili alla forma canonica.
-\begin{esempio}
+\begin{esempiot}
 	Risolvere l'equazione $2^{3x+1}=2^{5x+2} $
+\end{esempiot}
 \begin{NodesList}[margin=4cm]
 \begin{align*}
 2^{3x+1}=2^{5x+2}\AddNode\\
@@ -202,10 +203,11 @@ x=-\dfrac{1}{2}\AddNode
 \end{NodesList}
 \[x=-\dfrac{1}{2}\]
 \'{e} la soluzione.
-\end{esempio}
+
 Un altro tipo di equazione esponenziale si ha quando una base è una potenza dell'altra. In questo caso bisogna prima trasformare una base nell'altra utilizzando le proprietà delle potenze.
-\begin{esempio}
+\begin{esempiot}
 	Risolvere l'equazione $9^{x+1}=3^{3x+4}$
+\end{esempiot}
 	In questo caso le basi sembrano diverse $9\neq 3$ ma $9$ \'{e} una potenza del $3$ si procede come segue:
 	\begin{NodesList}[margin=4cm]
 		\begin{align*}
@@ -225,10 +227,10 @@ Un altro tipo di equazione esponenziale si ha quando una base è una potenza del
 	\end{NodesList}
 	\[x=-4\]
 	\'{e} la soluzione.
-\end{esempio}
-Un altro caso è il caso in cui le basi non sono uguali. In questo caso dobbiamo avere esponenti uguali. In questo caso, con procedimenti algebrici, si tende a trasformare l'equazione semplificando l'espressione. 
-\begin{esempio}
+Un altra situazione è il caso in cui le basi non sono uguali. Per risolverla dobbiamo avere esponenti uguali. Con procedimenti algebrici, si tende a trasformare l'equazione semplificando l'espressione. 
+\begin{esempiot}{}{}
 	Risolvere l'equazione $7^{x+1}+2\cdot7^{x}=4\cdot3^{x+2}+13\cdot 3^x$
+\end{esempiot}
 	\begin{NodesList} [margin=4cm]
 		\begin{align*}
 			7^{x+1}+2\cdot7^{x}=4\cdot3^{x+2}+13\cdot 3^x\AddNode\\
@@ -247,11 +249,11 @@ Un altro caso è il caso in cui le basi non sono uguali. In questo caso dobbiamo
 	\end{NodesList}
 	\[x=2\]
 	\'{e} la soluzione accettabile.
-\end{esempio}
 Un altro tipo di equazione che è riconducibile alle precedenti si ha quando una base si ripete. Il procedimento è semplice, con un raccoglimento totale raccolgo l'elemento in comune. 
-\begin{esempio}
+\begin{esempiot}{}{}
 	Risolvere l'equazione $3^{2x+1}+3^{2x}-3^{2x+2}=-45$
-	In questo caso si ripete sempre la potenza $3^{2x}$  si procede come segue:
+\end{esempiot}
+	In questa situazione si ripete sempre la potenza $3^{2x}$  si procede come segue:
 	\begin{NodesList}[margin=4cm]
 		\begin{align*}
 			3^{2x+1}+3^{2x}-3^{2x+2}=-45\AddNode\\
@@ -273,10 +275,10 @@ Un altro tipo di equazione che è riconducibile alle precedenti si ha quando una
 	\end{NodesList}
 	\[x=1\]
 	\'{e} la soluzione.
-\end{esempio}
-Equazioni esponenziali risolvibili tramite sostituzioni. In questo caso si trasforma l'equazione esponenziale in un altra non esponenziale. Si risolve la nuova equazione le cui soluzioni permettono di risolvere l'equazione esponenziale di partenza.
-\begin{esempio}
+Equazioni esponenziali risolvibili tramite sostituzioni. Questa volta si trasforma l'equazione esponenziale in un altra non esponenziale. Si risolve la nuova equazione le cui soluzioni permettono di risolvere l'esponenziale di partenza.
+\begin{esempiot}{}{}
 	Risolvere l'equazione $3^{2x}-8\cdot 3^x-9=0$
+\end{esempiot}
 	 è un'equazione del tipo $a^{2x}+a^{x}+c=0$ si risolve con la sostituzione $a^{x}=t$ Ovviamente $t>0$ 
 	\begin{NodesList} [margin=4cm]
 		\begin{align*}
@@ -302,10 +304,10 @@ Equazioni esponenziali risolvibili tramite sostituzioni. In questo caso si trasf
 	\end{NodesList}
 	\[x=2\]
 	\'{e} la soluzione.
-\end{esempio}
 Un altro esempio è il seguente
-\begin{esempio}
+\begin{esempiot}{}{}
 	Risolvere l'equazione $ 2^{x+1}-2^{2-x}=7$ 
+\end{esempiot}
 	è un'equazione del tipo $a^{x}+a^{-x}+c=0$ si risolve con la sostituzione $a^{x}=t$
 	Ovviamente $t>0$ 
 	\begin{NodesList} [margin=4cm]
@@ -336,5 +338,4 @@ Un altro esempio è il seguente
 	\end{NodesList}
 	\[x=2\]
 	\'{e} la soluzione accettabile.
-\end{esempio}
 \altapriorita{risistemare il tutto non  funziona qualcosa in tikz}
