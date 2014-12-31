@@ -96,7 +96,7 @@ La moltiplicazione\index{Operazione!moltiplicazione} è una operazione binaria\n
 	\caption{I nomi della divisione}
 	\label{fig:ProprietaDivisione}
 	\end{figure}
-La divisione\index{Operazione!divisione} è una operazione binaria \nobs\vref{fig:Nat_operazione_Divisione} non sempre interna in $\N$. I termini in ingresso si dicono dividendo\index{Operazione!divisione!dividendo} e divisore\index{Operazione!divisione!divisore}, il risultato quoziente\index{Operazione!divisione!quoziente}. Se il dividendo non è  multiplo  del divisore l'operazione è esterna. La divisione non è commutativa \[3\div2\neq2\div3\] e neppure associativa \[(4\div3)\div2\neq4\div(3\div2)\]. L'operazione gode della proprietà invariantiva\index{Operazione!divisione!invariantiva}, per cui moltiplicando  o dividendo la stessa quantità diverso da zero, al dividendo e al divisore il quoziente non cambia\nobs\vref{fig:ProprietaDivisione}. Casi particolari sono \[1\div0\] \[0\div a\] Nel primo caso la divisione è impossibile. Nel secondo è indeterminata.
+La divisione\index{Operazione!divisione} è una operazione binaria \nobs\vref{fig:Nat_operazione_Divisione} non sempre interna in $\N$. I termini in ingresso si dicono dividendo\index{Operazione!divisione!dividendo} e divisore\index{Operazione!divisione!divisore}, il risultato quoziente\index{Operazione!divisione!quoziente}. Se il dividendo non è  multiplo  del divisore l'operazione è esterna. La divisione non è commutativa \[3\div2\neq2\div3\] e neppure associativa \[(4\div3)\div2\neq4\div(3\div2)\] L'operazione gode della proprietà invariantiva\index{Operazione!divisione!invariantiva}, per cui moltiplicando  o dividendo la stessa quantità diverso da zero, al dividendo e al divisore il quoziente non cambia\nobs\vref{fig:ProprietaDivisione}. Casi particolari sono \[1\div0\] \[0\div a\] Nel primo caso la divisione è impossibile. Nel secondo è indeterminata.
 \begin{figure} %
 	\centering
 \includestandalone[width=.5\textwidth]{primo/numeri_naturali/Operazione_Divisione2_}
@@ -105,16 +105,17 @@ La divisione\index{Operazione!divisione} è una operazione binaria \nobs\vref{fi
 	\end{figure}
 \subsection{Potenza}
 \label{sec:NumerinatPot}
+
+La potenza\index{Operazione!potenza} è una operazione binaria\nobs\vref{fig:Nat_operazione_Potenza}  interna in $\N$. I termini in ingresso si dicono base\index{Operazione!potenza!base} ed esponente\index{Operazione!potenza!esponente} il risultato potenza. L'indice della potenza indica quante volte la base deve essere moltiplicata per se stessa. Quindi\[a^1=a\; a^2=a\cdot a\; a^3=a\cdot a\cdot a\; \text{eccetera} \] 
 \newgeometry{left=0.5cm,right=0.5cm}
 \begin{figure} %
 	\centering
-\includestandalone[width=\textwidth]{primo/mappe/mappe_concettuali_6}
+	\includestandalone[width=\textwidth]{primo/mappe/mappe_concettuali_6}
 	\caption{Proprietà Potenza}
 	\label{fig:ProprietaPotenza}\end{figure}
 \restoregeometry
-La potenza\index{Operazione!potenza} è una operazione binaria\nobs\vref{fig:Nat_operazione_Potenza}  interna in $\N$. I termini in ingresso si dicono base\index{Operazione!potenza!base} ed esponente\index{Operazione!potenza!esponente} il risultato potenza. L'indice della potenza indica quante volte la base deve essere moltiplicata per se stessa. Quindi\[a^1=a\; a^2=a\cdot a\; a^3=a\cdot a\cdot a\; \text{eccetera} \] 
+La potenza ha varie proprietà rispetto al prodotto e la divisione. non ha nessuna proprietà rispetto la somma e la sottrazione ciò segue dal fatto che la potenza si basa sulla moltiplicazione. 
 
-La potenza ha vari proprietà. Rispetto al prodotto e la divisione. non ha nessuna proprietà rispetto la somma e la sottrazione. Questo dipende dal fatto che la potenza si basa sulla moltiplicazione. 
 Per la moltiplicazione\index{Operazione!potenza!moltiplicazione} vale che il prodotto di potenze con base uguale, è una potenza che ha per base la stessa base e per esponente la somma degli esponenti.\[ 2^3\cdot 2^4=2^7 \] Il prodotto di potenze di basi diverse ma esponente uguale è una potenza che ha per base il prodotto delle basi e per esponente lo stesso esponente.\[2^3\cdot 4^3=8^3\] 
 
 Per la divisione\index{Operazione!potenza!divisione} vale che la divisione di potenze con base uguale, è una potenza che ha per base la stessa base e per esponente la differenza degli esponenti.\[ 2^5\div 2^3=2^2 \]Questa proprietà non è sempre definita. La proprietà è valida se il grado del dividendo è maggiore del grado del divisore e la divisione è definita.  La divisione di potenze di basi diverse ma esponente uguale è una potenza che ha per base il quoziente delle basi e per esponente lo stesso esponente. Anche in questo caso la divisione deve essere definita.\[4^3\cdot 2^3=2^3\] 
