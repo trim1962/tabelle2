@@ -574,12 +574,32 @@ Supponiamo di conoscere un valore di $\tan\alpha$
 \label{sec:goniometriaAngoliAssociati}
 \altapriorita{Inserire esempi}
 \subsection{Angoli supplementari}
-Sono angoli la cui somma\index{Angoli!Somma!$\ang{180}$} è $\ang{180}$, $\alpha$, $\ang{180}-\alpha$ la figura corrispondente è la\nobs\vref{fig:AngoliAssociatisupplementari}
 \begin{figure}
 	\centering
-\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angoliassociati1}
-	\caption{Angoli supplementari $\alpha$ $\ang{180}-\alpha$}\label{fig:AngoliAssociatisupplementari}
+	\begin{subfigure}[b]{.48\linewidth}
+	\centering
+	\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angoliassociati1}\caption{Angoli supplementari $\alpha$ $\ang{180}-\alpha$}\label{fig:AngoliAssociatisupplementari}		
+   \end{subfigure}
+ \begin{subfigure}[b]{.48\linewidth}
+ 	\centering
+ 	\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angoliassociati2}
+ 	\caption{Angoli che differiscono di $\ang{180}$ $\alpha$ e $\ang{180}+\alpha$}
+ 	\label{fig:AngoliAssociatidiff180}	
+ \end{subfigure}
+ 	\begin{subfigure}[b]{.49\linewidth}
+ 		\centering
+ 		\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angoliassociati3}
+ 		\caption{Angoli esplementari $\alpha$ e $\ang{360}-\alpha$}\label{fig:Angolidif360}
+ 	\end{subfigure}
+ 	\begin{subfigure}[b]{.49\linewidth}
+ 		\centering
+ 		\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angoliopposti}
+ 		\caption{Angoli opposti}\label{fig:angoliopposti}
+ 	\end{subfigure}
+\caption{Angoli associati}
+	\label{fig:angoliassociatii}
 \end{figure}
+Sono angoli la cui somma\index{Angoli!Somma!$\ang{180}$} è $\ang{180}$, $\alpha$, $\ang{180}-\alpha$ la figura corrispondente è la\nobs\vref{fig:AngoliAssociatisupplementari}
 Per questi angoli valgono le seguenti relazioni
 \begin{align*}
 \cos\alpha=&{}-\cos(\ang{180}-\alpha)\\
@@ -590,12 +610,7 @@ Per questi angoli valgono le seguenti relazioni
 \subsection{Angoli la cui differenza è $\ang{180}$}
 \label{sub:Dif180}
 Gli angoli $\alpha$, $\ang{180}+\alpha$ sono angoli la cui differenza\index{Angoli!Differenza!$\ang{180}$} è $\ang{180}$.  Costruiamo la figura\nobs\vref{fig:AngoliAssociatidiff180}
-\begin{figure}
-	\centering
-	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angoliassociati2}
-	\caption{Angoli che differiscono di $\ang{180}$ $\alpha$ e $\ang{180}+\alpha$}
-			\label{fig:AngoliAssociatidiff180}
-\end{figure}
+
 Per questi angoli valgono le seguenti relazioni
 \begin{align*}
 \cos\alpha=&{}-\cos(\ang{180}+\alpha)\\
@@ -605,11 +620,6 @@ Per questi angoli valgono le seguenti relazioni
 \end{align*}
 \subsection{Angoli esplementari}
 Sono angoli la cui somma\index{Angoli!Somma!$\ang{360}$} è $\ang{360}$, $\alpha$, $\ang{360}-\alpha$ la figura corrispondente è la\nobs\vref{fig:Angolidif360}
-\begin{figure} %[H]
-		\centering
-			\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angoliassociati3}
-			\caption{Angoli esplementari $\alpha$ e $\ang{360}-\alpha$}\label{fig:Angolidif360}
-	\end{figure}
 Per questi angoli valgono le seguenti relazioni
 \begin{align*}
 \cos\alpha=&{}\cos(\ang{360}-\alpha)\\
@@ -619,11 +629,6 @@ Per questi angoli valgono le seguenti relazioni
 \end{align*}
 \subsection{Angoli opposti}
 Sono angoli la cui somma\index{Angoli!Somma!$\ang{0}$} è $\ang{0}$, $\alpha$, $-\alpha$ la figura corrispondente è la\nobs\vref{fig:angoliopposti}
-\begin{figure} %[H]
-	\centering
-	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angoliopposti}
-	\caption{Angoli opposti}\label{fig:angoliopposti}
-\end{figure}
 Per questi angoli valgono le seguenti relazioni
 \begin{align*}
 \cos\alpha=&{}-\cos(-\alpha)\\
@@ -633,12 +638,36 @@ Per questi angoli valgono le seguenti relazioni
 \end{align*}
 \subsection{Angoli complementari}
 \label{sub:AngoliComp}
-Sono angoli la cui somma\index{Angoli!Somma!$\ang{90}$} è $\ang{90}$, $\alpha$ e $\ang{90}-\alpha$ la figura corrispondente è la\nobs\vref{fig:angolicomplementari1}
-\begin{figure} %[H]
-	\centering
-	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari1}
-		\caption{Angoli complementari $\alpha$ e  $\ang{90}-\alpha$}\label{fig:angolicomplementari1}
+\begin{figure}
+	\begin{subfigure}[b]{.49\linewidth}
+    	\centering
+    	\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angolicomplementari1}
+    	\caption{Angoli complementari $\alpha$ e  $\ang{90}-\alpha$}\label{fig:angolicomplementari1}
+    \end{subfigure}
+  	\begin{subfigure}[b]{.49\linewidth}
+  		\centering
+  		\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angolicomplementari2}
+  		\caption{Angoli che differiscono di $\ang{90}$, $\alpha$ e $\ang{90}+\alpha$}\label{fig:angolicomplementari2}
+  	\end{subfigure}
+    \begin{subfigure}[b]{.49\linewidth}
+  		\centering
+  		\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angolicomplementari3}
+  		\caption{Angoli la cui somma è $\ang{270}$,  $\alpha$ e $\ang{270}-\alpha$}\label{tab:angolicomplementari3}	
+  	\end{subfigure}
+	\begin{subfigure}[b]{.49\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{terzo/funzgonioTikz/angolicomplementari4}
+		\caption{Angoli la cui differenza è $\ang{270}$, $\alpha$ e $\ang{270}+\alpha$}\label{tab:angolicomplementari4}	
+	\end{subfigure}
+	\caption{Angoli complementari}
+	\label{fig:angolicomplementari}
 \end{figure}
+Sono angoli la cui somma\index{Angoli!Somma!$\ang{90}$} è $\ang{90}$, $\alpha$ e $\ang{90}-\alpha$ la figura corrispondente è la\nobs\vref{fig:angolicomplementari1}
+%\begin{figure} %[H]
+%	\centering
+%	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari1}
+%		\caption{Angoli complementari $\alpha$ e  $\ang{90}-\alpha$}\label{fig:angolicomplementari1}
+%\end{figure}
 Per questi angoli valgono le seguenti relazioni
 \begin{align*}
 \cos\alpha=&{}\sin(\ang{90}-\alpha)\\
@@ -648,11 +677,11 @@ Per questi angoli valgono le seguenti relazioni
 \end{align*}
 \subsection{Angoli la cui differenza\index{Angoli!Differenza!$\ang{90}$} è $\ang{90}$}
 Sono angoli la cui differenza è $\ang{90}$, $\alpha$ e $\ang{90}+\alpha$ la figura corrispondente è la\nobs\vref{fig:angolicomplementari2}
-\begin{figure} %[H]
-	\centering
-	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari2}
-\caption{Angoli che differiscono di $\ang{90}$, $\alpha$ e $\ang{90}+\alpha$}\label{fig:angolicomplementari2}
-\end{figure}
+%\begin{figure} %[H]
+%	\centering
+%	\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari2}
+%\caption{Angoli che differiscono di $\ang{90}$, $\alpha$ e $\ang{90}+\alpha$}\label{fig:angolicomplementari2}
+%\end{figure}
 Per questi angoli valgono le seguenti relazioni
 \begin{align*}
 \cos\alpha=&{}\sin(\ang{90}+\alpha)\\
@@ -662,11 +691,11 @@ Per questi angoli valgono le seguenti relazioni
 \end{align*}
 \subsection{Angoli la cui somma è $\ang{270}$}
 Sono angoli la cui somma\index{Angoli!Somma!$\ang{270}$} è $\ang{270}$, $\alpha$ e $\ang{270}-\alpha$ la figura corrispondente è la\nobs\vref{tab:angolicomplementari3}
-\begin{figure} %[H]
-	\centering
-		\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari3}
-		\caption{Angoli la cui somma è $\ang{270}$,  $\alpha$ e $\ang{270}-\alpha$}\label{tab:angolicomplementari3}
-\end{figure}
+%\begin{figure} %[H]
+%	\centering
+%		\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari3}
+%		\caption{Angoli la cui somma è $\ang{270}$,  $\alpha$ e $\ang{270}-\alpha$}\label{tab:angolicomplementari3}
+%\end{figure}
 Per questi angoli valgono le seguenti relazioni
 \begin{align*}
 \cos\alpha=&{}-\sin(\ang{270}-\alpha)\\
@@ -676,11 +705,11 @@ Per questi angoli valgono le seguenti relazioni
 \end{align*}
 \subsection{Angoli la cui differenza\index{Angoli!Differenza!$\ang{270}$} è $\ang{270}$}
 Sono angoli la cui differenza è $\ang{270}$, $\alpha$ e $\ang{270}+\alpha$ la figura corrispondente è la\nobs\vref{tab:angolicomplementari4}
-\begin{figure} %[H]
-	\centering
-		\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari4}
-		\caption{Angoli la cui differenza è $\ang{270}$, $\alpha$ e $\ang{270}+\alpha$}\label{tab:angolicomplementari4}
-\end{figure}
+%\begin{figure} %[H]
+%	\centering
+%		\includestandalone[width=8.5cm]{terzo/funzgonioTikz/angolicomplementari4}
+%		\caption{Angoli la cui differenza è $\ang{270}$, $\alpha$ e $\ang{270}+\alpha$}\label{tab:angolicomplementari4}
+%\end{figure}
 Per questi angoli valgono le seguenti relazioni
 \begin{align*}
 \cos\alpha=&{}-\sin(\ang{270}+\alpha)\\
