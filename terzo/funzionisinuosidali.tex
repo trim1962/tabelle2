@@ -1,0 +1,60 @@
+\chapter{Funzione sinusoidale}
+\section{Definizioni}
+\label{cha:FunzioneSinusoidale}
+\begin{definizionet}{Funzione sinusoidale}{}
+	Chiamo funzione sinusoidale una funzione del tipo:
+	\[ y=R\sin(\omega t+\phi)\]
+	\begin{itemize}
+		\item $R$ è l'ampiezza positiva
+		\item $\omega$ è la pulsazione positiva
+		\item $\phi$ è lo sfasamento $-\pi\leq\phi\leq\pi$
+		
+	\end{itemize}
+\end{definizionet}
+\begin{osservazionet}{Periodicità}{}
+	La funzione\[ y=R\sin(\omega t+\phi)\]è periodica di periodo\[T=\dfrac{2\pi}{\omega}\]
+\end{osservazionet}
+infatti\[ y=R\sin[\omega(t+T)+\phi]=R\sin[\omega(t+\dfrac{2\pi}{\omega})+\phi]=R\sin(\omega
+t+2\pi+\phi)=R\sin(\omega
+t+\phi)\]
+Datato che il seno ha periodo \[2\pi\]
+\begin{definizionet}{Frequenza}{}
+	Se $T$ indica il periodo allora  $f=\dfrac{1}{T}$ è la frequenza.
+\end{definizionet}
+\section{Andamento funzione sinusoidale}
+Considero la funzione sinusoidale\[y=R\sin\omega t\] Dato che la funzione è periodica, ne traccio il grafico nell'intervallo \[[0\leq t\leq T]\] come nella figura\nobs\vref{fig:FunzioneSinusoidale1}
+
+La funzione assume il suo massimo valore $R$ per $t=\dfrac{T}{4}$ mentre il suo valore minimo è per $t=\dfrac{3}{4}T$. Questo si può velocemente verificare osservando che $\sin x=1$ quando $x=\dfrac{\pi}{2}$ quindi 
+\begin{align*}
+\omega t=&\dfrac{\pi}{2}\\
+\intertext{ma}
+\omega=&\dfrac{2\pi}{T}
+\intertext{quindi}
+t\dfrac{2\pi}{T}=&\dfrac{\pi}{2}\\
+t=&\dfrac{T}{4}
+\end{align*} 
+In maniera analoga si dimostra per il punto di minimo. Dal grafico è evidente che la funzione è positiva per valori di $t$ compresi tra zero e metà periodo cioè: \[[0\leq t\leq \dfrac{T}{2}]\] Mentre per \[[\dfrac{T}{2}\leq t\leq T]\] assume valori negativi. 
+\begin{figure}
+	\centering
+	\includestandalone[width=7.5cm]{terzo/FunzSinuo/sinuo1}
+	\caption{Funzione sinusoidale}
+	\label{fig:FunzioneSinusoidale1}
+\end{figure}
+\begin{definizionet}{Anticipo e ritardo di fase}{}
+	Consideriamo le funzioni \[y=R\sin\omega t\] e\[y=R\sin(\omega t +\phi)\] Queste funzioni hanno la stessa ampiezza $R$ e 
+	
+\end{definizionet}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone[width=7.5cm]{terzo/FunzSinuo/sinuo2P}
+		\caption{Anticipo di fase}\label{fig:FunzioneSinusoidaleAnticipo1}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone[width=7.5cm]{terzo/FunzSinuo/sinuo2A}
+		\caption{Ritardo di fase}\label{fig:FunzioneSinusoidalePosticipo1}
+	\end{subfigure}
+	\captionof{figure}{Fasi}
+	\label{fig:sinuoAnticipoPosticipo}
+\end{figure}
