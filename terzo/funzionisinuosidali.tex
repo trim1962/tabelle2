@@ -40,21 +40,78 @@ In maniera analoga si dimostra per il punto di minimo. Dal grafico è evidente c
 	\caption{Funzione sinusoidale}
 	\label{fig:FunzioneSinusoidale1}
 \end{figure}
+\section{Classificazioni}
+I parametri che caratterizzano una funzione sinusoidale sono molti. Il confronto fra essi permette una classificazione.
+\begin{definizionet}{Ampiezze diverse}{}
+ Se due funzioni, come nella figura\nobs\vref{fig:FunzionegonioAmpiezzaDiv1}  \[y_1=R\sin\omega t\] \[y_2=S\sin\omega t\] hanno $R$ e $S$ diversi allora differiscono in ampiezza\index{Funzione sinusoidale!ampiezze diverse} ma hanno frequenza e periodo uguali.
+\end{definizionet}
+\begin{figure}
+	\centering
+	\includestandalone[width=7.5cm]{terzo/FunzSinuo/gonioAmpiezza1}
+	\caption{Ampiezze diverse}
+	\label{fig:FunzionegonioAmpiezzaDiv1}
+\end{figure}
+\begin{definizionet}{Frequenze diverse}{}
+	Se due funzioni, come nella figura\nobs\vref{fig:FunzionegonioFrequenzaDiv1} \[y_1=R\sin\omega_1 t\] \[y_2=R\sin\omega_2 t\] hanno $\omega_1$ e $\omega_2$ diversi allora differiscono in frequenza\index{Funzione sinusoidale!frequenze diverse} quindi hanno la stessa ampiezza ma periodo e frequenza diverse.
+	\begin{align*}
+		T_1&=\dfrac{2\pi}{\omega_1}& T_2&=\dfrac{2\pi}{\omega_2}\\
+		f_1&=\dfrac{1}{T_1}& f_2&=\dfrac{1}{T_2}\\
+	\end{align*}
+\end{definizionet}
+\begin{figure}
+	\centering
+	\includestandalone[width=7.5cm]{terzo/FunzSinuo/gonioFrequenza1}
+	\caption{Frequenze diverse}
+	\label{fig:FunzionegonioFrequenzaDiv1}
+\end{figure}
 \begin{definizionet}{Anticipo e ritardo di fase}{}
-	Consideriamo le funzioni \[y=R\sin\omega t\] e\[y=R\sin(\omega t +\phi)\] Queste funzioni hanno la stessa ampiezza $R$ e 
-	
+	Consideriamo le funzioni \[y_1=R\sin\omega t\] e\[y_2=R\sin(\omega t +\phi)\] Queste funzioni hanno la stessa ampiezza $R$ e la stessa pulsazione $\omega$ se $\phi>0$, figura\nobs\vref{fig:FunzioneSinusoidaleAnticipo1}, allora $y_2$ è in anticipo di fase\index{Funzione sinusoidale!anticipo fase}. Invece se $\phi<0$, figura\nobs\vref{fig:FunzioneSinusoidalePosticipo1}, allora $y_2$ è in ritardo di fase\index{Funzione sinusoidale!ritardo fase}.
 \end{definizionet}
 \begin{figure}
 	\begin{subfigure}[b]{.5\linewidth}
 		\centering
 		\includestandalone[width=7.5cm]{terzo/FunzSinuo/sinuo2P}
-		\caption{Anticipo di fase}\label{fig:FunzioneSinusoidaleAnticipo1}
+		\caption{Ritardo di fase}\label{fig:FunzioneSinusoidaleAnticipo1}
 	\end{subfigure}%
 	\begin{subfigure}[b]{.5\linewidth}
 		\centering
 		\includestandalone[width=7.5cm]{terzo/FunzSinuo/sinuo2A}
-		\caption{Ritardo di fase}\label{fig:FunzioneSinusoidalePosticipo1}
+		\caption{Anticipo di fase}\label{fig:FunzioneSinusoidalePosticipo1}
 	\end{subfigure}
 	\captionof{figure}{Fasi}
 	\label{fig:sinuoAnticipoPosticipo}
+\end{figure}
+\begin{definizionet}{Quadratura di fase}{}
+	Consideriamo le funzioni \[y_1=R\sin\omega t\] e\[y_2=R\sin(\omega t +\phi)\]Queste funzioni sono in anticipo o in ritardo di fase, se $\phi=+\dfrac{\pi}{2}$ o  $\phi=-\dfrac{\pi}{2}$ allora $y_1$ e$y_2$ si dice che sono in quadratura\index{Funzione sinusoidale!quadratura di fase}, figura\nobs\vref{fig:sinuoQuadratura} come in una corrente bifase.
+\end{definizionet}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone[width=7.5cm]{terzo/FunzSinuo/sinuo2QuadraturaAnticipo}
+		\caption{Ritardo di fase}\label{sinuo2QuadraturaAnticipo}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone[width=7.5cm]{terzo/FunzSinuo/sinuo2QuadraturaPosticipo}
+		\caption{Anticipo di fase}\label{fig:sinuo2QuadraturaPosticipo}
+	\end{subfigure}
+	\captionof{figure}{Quadratura di fase}
+	\label{fig:sinuoQuadratura}
+\end{figure}
+\begin{definizionet}{Opposizione di fase}{}
+	Consideriamo le funzioni \[y_1=R\sin\omega t\] e\[y_2=R\sin(\omega t +\phi)\]Queste funzioni sono in anticipo o in ritardo di fase, se $\phi=+\pi$ o  $\phi=-\pi$ allora $y_1$ e$y_2$ si dice che sono in opposizione\index{Funzione sinusoidale!opposizione di fase}, figura\nobs\vref{fig:sinuOpposizione}.
+\end{definizionet}
+\begin{figure}
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone[width=7.5cm]{terzo/FunzSinuo/sinuo2OpposizioneAnticipo}
+		\caption{Ritardo di fase}\label{fig:sinuo2OpposizioneAnticipo}
+	\end{subfigure}%
+	\begin{subfigure}[b]{.5\linewidth}
+		\centering
+		\includestandalone[width=7.5cm]{terzo/FunzSinuo/sinuo2OpposizionePosticipo}
+		\caption{Anticipo di fase}\label{fig:sinuo2OpposizionePosticipo}
+	\end{subfigure}
+	\captionof{figure}{Opposizione di fase}
+	\label{fig:sinuOpposizione}
 \end{figure}
