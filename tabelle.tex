@@ -158,7 +158,7 @@
 \setcounter{page}{2}
 \input{../Mod_base/copyright}
 \tableofcontents 
-\opt{prima,secondo,terzo,quarto,extra}{
+%\opt{prima,secondo,terzo,quarto,extra}{
 \cleardoublepage
 \listoftables
 \addcontentsline{toc}{chapter}{\listtablename}
@@ -168,10 +168,17 @@
 \listoffigures
 \addcontentsline{toc}{chapter}{\listfigurename}
 %\mtcaddchapter
-\todototoc
-\cleardoublepage
-\listoftodos
-}
+%\todototoc
+%\cleardoublepage
+%\listoftodos
+\cleardoublepage\renewcommand\lstlistlistingname{Elenco esempi}
+\addcontentsline{toc}{chapter}{\lstlistlistingname}
+\addcontentsline{toc}{section}{Esempi}
+\lstlistoflistings{}
+\tcblistof[\section*]{thm}{Esempi}
+\addcontentsline{toc}{section}{Contro esempi}
+\tcblistof[\section*]{cthm}{Contro esempi}
+%}
 \mainmatter%
 \opt{prima}{\input{primo/prima}}
 \opt{secondo}{\input{secondo/secondo}}
