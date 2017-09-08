@@ -84,7 +84,7 @@ Risolvere una disequazione frazionaria di secondo grado equivale a trovare il se
 	\caption{Segno disequazione frazionaria}
 	\label{fig:DFesempio1}
 \end{figure}
-\begin{esempiot}{Disequazione frazionaria due}{frazionaria1} 
+\begin{esempiot}{Disequazione frazionaria due}{frazionaria2} 
 	Consideriamo la disequazione \[\dfrac{1-3x}{7x-6x^2-2}\leq 0 \]
 Calcolo i segno della frazione iniziando dal segno  del numeratore.
 \begin{align*}
@@ -126,4 +126,49 @@ Si ottiene un grafico come il grafico~\cref{fig:DFesempio2}. Dato che la disequa
 	\includestandalone[width=8.5cm]{quarto/DisSecGrado/DFesempio2}
 	\caption{Segno disequazione frazionaria}
 	\label{fig:DFesempio2}
+\end{figure}
+\begin{esempiot}{Disequazione frazionaria tre}{frazionaria3} 
+	Consideriamo la disequazione \[\dfrac{6-x-x^2}{1-x}\geq 0 \]
+Calcolo i segno della frazione iniziando dal segno  del numeratore.
+\begin{align*}
+&6-x-x^2\geq0\\
+\intertext{ad essa è associata l'equazione}
+&-x^2-x-6=0\\
+&x_{1,2}=\dfrac{1\pm\sqrt{1+24}}{-2}=\dfrac{1\pm5}{-2}=
+\begin{cases}
+x_1=-3\\
+\\x_2=2
+\end{cases}
+\end{align*}
+Il grafico della disequazione è quindi DICE ed è quello riportato dalla~\vref{fig:DeltaMaggioreZeroGraficoEsempioDF4}
+
+Determino il segno del denominatore
+\begin{align*}
+&1-x>0\\
+&-x>-1\\
+&x<1
+\end{align*}
+Ottengo il grafico~\vref{fig:primogradopiumeno1}
+Resta da sovrapporre i due grafici ed ottenere il grafico della frazione.
+
+Si ottiene un grafico come il grafico~\cref{fig:DFesempio3}. Dato che la disequazione chiede quando la frazione sia maggiore o uguale a zero leggendo il grafico otteniamo la soluzione \[-3\leq x<1\]
+\[2\leq x\]
+\end{esempiot}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltapiuAmenoGrafico4}
+	\caption{Segno $\Delta>0$ $a<0$}
+	\label{fig:DeltaMaggioreZeroGraficoEsempioDF4}
+\end{figure}
+\begin{figure}
+	\centering 
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/primogradoPiuMeno2}
+	\caption{Segno disequazione primo grado}
+	\label{fig:primogradopiumeno1}
+\end{figure}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/DFesempio3}
+	\caption{Segno disequazione frazionaria}
+	\label{fig:DFesempio3}
 \end{figure}
