@@ -1,0 +1,213 @@
+\chapter{Sistemi lineari in due incognite}
+\label{sec:sistemiLineariInDueIncognite}
+\section{Equazioni in più variabili}
+\label{sec:EquazioniInPiuVariabili}
+\begin{definizionet}{Equazione in più variabili}{}\index{Equazione!più variabili!definizione}
+	Un'equazione in più variabili è un'equazione in più incognite.
+\end{definizionet}
+\begin{definizionet}{Definizione di soluzione}{}\index{Equazione!più variabili!soluzione}
+Per un'equazione in più variabili, una soluzione, è un insieme ordinato di valori che verificano l'equazione.
+\end{definizionet}
+\begin{esempiot}{}{}
+	Risolviamo l'equazione\[ 3x+y=7\]
+\end{esempiot}	
+Questa equazione, in due incognite, ha per soluzione
+$x=2$ e $y=1$ infatti \[3\cdot2+1=7\]
+Ma anche $x=3$ e $y=-2$ infatti \[3\cdot3-2=7\] è soluzione.
+In genere un'equazione in più incognite ha più di una soluzione.
+\begin{figure}
+	\centering
+\includestandalone[width=.9\textwidth]{secondo/sistemi/mappe_concettuali_sistema_1}
+	\caption{Classificazione di un sistema}
+	\label{fig:ClassificazioneDiUnSistema}
+\end{figure}
+\section{Sistemi}
+\label{sec:Sistemi}
+Più  equazioni  possono avere le stesse soluzioni. Un sistema è un'insieme di due o più equazioni. Risolvere un sistema è verificare che più equazioni hanno le stesse soluzioni.
+\begin{definizionet}{Definizione di sistema}{}\index{Sistema!definizione}
+Un sistema è un'insieme di due o più  equazioni.
+\end{definizionet}
+\begin{definizionet}{Definizione di grado di sistema}{}\index{Sistema!grado}\label{def:sistemaGrado}
+Il grado di un sistema, di più equazioni in tante incognite,  è il prodotto dei gradi delle equazioni del sistema ridotte in forma normale.
+\end{definizionet}
+\begin{definizionet}{Definizione di soluzione}{}\index{Sistema!definizione!soluzione}
+Una soluzione per un sistema è un insieme ordinato di valori che sono soluzione per ogni equazione del sistema.
+\end{definizionet}
+\section[Classificazione rispetto alle soluzioni]{Classificazione dei sistemi rispetto alle soluzioni}
+\begin{definizionet}{Definizione di equivalenza}{}\index{Sistema!definizione di equivalenza}
+Due sistemi sono equivalenti quando hanno lo stesso insieme soluzione.
+\end{definizionet}
+\begin{definizionet}{Forma normale di un sistema lineare}{}\index{Sistema!lineare!forma normale}{}
+Un sistema di due equazioni di 1 grado in due incognite x, y, a coefficienti numerici, si dice ridotto in forma normale se è del tipo
+\[\left\{\begin{array}{l} {ax+by=c} \\ {a'x+b'y=c'}\end{array}\right. \]
+dove a, b, a', b' si chiamano coefficienti delle incognite c, c' si chiamano termini noti
+\end{definizionet}
+\begin{teoremat}{Teorema fondamentale}{}\index{Sistema!lineare!teorema fondamentale}{}
+Se i coefficienti del sistema lineare sono diversi da zero e non sono tra loro proporzionali $\dfrac{a}{a'} \ne \dfrac{b}{b'}$ il sistema ammette una e una sola soluzione data da
+\[
+\begin{cases}
+	x=\dfrac{b'c-bc'}{ab'-a'b}\\
+	y=\dfrac{ac'-a'c}{ab'-a'b}
+\end{cases}
+\]
+Se, invece, sono proporzionali solo i coefficienti delle incognite cioè; $\dfrac{a'}{a} =\dfrac{b'}{b} \ne \dfrac{c'}{c} $, allora il sistema è impossibile
+Se, invece, sono proporzionali i coefficienti e i termini noti delle equazioni cioè; $\dfrac{a'}{a} =\dfrac{b'}{b} =\dfrac{c'}{c} $, allora il sistema è indeterminato.
+\end{teoremat}
+Consideriamo il sistema canonico, \[ \left\{\begin{array}{l} {ax+by=c} \\ {a'x+b'y=c'} \end{array}\right. \]
+moltiplicando la prima equazione per b' e la seconda per --b, avremo  \[\left\{\begin{array}{l} {ab'x+bb'y=b'c} \\ {-ba'x-bb'y=-bc'} \end{array}\right. \]
+sommando lungo le colonne otteniamo \[\dfrac{\left\{\begin{array}{l} {ab'x+bb'y=b'c} \\ {-ba'x-bb'y=-bc'} \end{array}\right. }{\left(ab'-ba'\right)x=b'c-bc'} \]  da cui  \[x=\dfrac{b'c-bc'}{ab'-a'b} \]
+moltiplicando la prima equazione per a' e la seconda per --a avremo  \[\left\{\begin{array}{l} {aa'x+ba'y=a'c} \\ {-aa'x-ab'y=-ac'} \end{array}\right. \] sommando lungo le colonne otteniamo  \[\dfrac{\left\{\begin{array}{l} {aa'x+ba'y=a'c} \\ {-aa'x-ab'y=-ac'} \end{array}\right. }{\left(a'b-ab'\right)y=a'c-ac'} \] da cui \[y=\dfrac{ac'-a'c}{ab'-a'b} \]  da cui se  \[\dfrac{a'}{a} \ne \dfrac{b'}{b} \] avremo  \[ab'-a'b\ne 0\]  quindi il sistema ha una e una sola soluzione.
+Se \[\dfrac{a'}{a} =\dfrac{b'}{b} \]  avremo due casi  \[\dfrac{a'}{a} =\dfrac{b'}{b} \ne \dfrac{c'}{c} \]  e  \[\dfrac{a'}{a} =\dfrac{b'}{b} =\dfrac{c'}{c} \]
+Nel primo caso il sistema è impossibile perché  $ab'-a'b=0$, $a'c-ac'\ne 0$, $b'c-bc'\ne 0$  e quindi poiché è possibile riscrivere il sistema canonico nella forma  \[\left\{\begin{array}{l} {\left(ab'-ab'\right)x=b'c-bc'} \\ {\left(ab'-ab'\right)y=ac'-a'c} \end{array}\right. \]  da cui  \[\left\{\begin{array}{l} {0=b'c-bc'} \\ {0=ac'-a'c} \end{array}\right. \] impossibile.
+Nel secondo caso il sistema è indeterminato perché  $ab'-a'b=0$, $a'c-ac'=0$, $b'c-bc'=0$  e quindi giacché è possibile riscrivere il sistema canonico nella forma  \[\left\{\begin{array}{l} {\left(ab'-ab'\right)x=b'c-bc'} \\ {\left(ab'-ab'\right)y=ac'-a'c} \end{array}\right. \]  da cui \[\left\{\begin{array}{l} {0=0} \\ {0=0} \end{array}\right. \]  indeterminato
+\section{Metodi di risoluzione}
+\label{sec:MetodiDiRisoluzione}
+\subsection{Sostituzione}
+\label{sec:Sostituzione}
+Un sistema lineare in forma canonica si risolve con il metodo di sostituzione\index{Sistema!metodo!sostituzione} isolando una variabile in una equazione e sostituendola nelle altre. 
+\begin{esempiot}{}{}
+Supponiamo di avere un sistema lineare in forma normale
+\[
+\begin{cases}
+	x+2y=1\\
+	3x-y=2
+\end{cases}
+\]
+\end{esempiot}
+risolvo la prima rispetto alla x e ottengo 
+\[
+\begin{cases}
+	x=1-2y\\
+	3x-y=2
+\end{cases}
+\]
+sostituisco nella seconda ed ottengo
+\[
+\begin{cases}
+	x=1-2y\\
+	3(1-2y)-y=2
+\end{cases}
+\begin{cases}
+	x=1-2y\\
+	3-6y-y=2
+\end{cases}
+\begin{cases}
+	x=1-2y\\
+	-7y=2-3
+\end{cases}
+\begin{cases}
+	x=1-2y\\
+	-7y=-1
+\end{cases}
+\begin{cases}
+	x=1-2y\\
+	y=\dfrac{1}{7}
+\end{cases}
+\begin{cases}
+	x=1-2\dfrac{1}{7}\\
+	y=\dfrac{1}{7}
+\end{cases}
+\]
+\[
+\begin{cases}
+	x=\dfrac{7-2}{7} \\
+	y=\dfrac{1}{7}
+\end{cases}
+\begin{cases}
+	x=\dfrac{5}{7}\\
+	y=\dfrac{1}{7}
+\end{cases}
+\]
+\subsection{Confronto}
+\label{sec:Confronto}
+Un sistema lineare in forma canonica si risolve con il metodo del confronto\index{Sistema!metodo!confronto} risolvendo due equazioni rispetto ad un stessa variabile e confrontando i valori attenuti.
+\begin{esempiot}{}{}
+supponiamo di avere un sistema lineare in forma normale
+\[
+\begin{cases}
+	x+2y=1\\
+	3x-y=2
+\end{cases}
+\]
+\end{esempiot}
+Risolvo rispetto ad x e ottengo
+\[
+\begin{cases}
+	x=-2y+1\\
+	x=\dfrac{2+y}{3}
+\end{cases}
+\begin{cases}
+	-2y+1=\dfrac{2+y}{3}\\
+		x=-2y+1
+\end{cases}
+\begin{cases}
+	-6y+3=2+y\\
+	x=-2y+1
+\end{cases}
+\begin{cases}
+	-7y=-1\\
+	x=-2y+1
+\end{cases}
+\begin{cases}
+	y=\dfrac{1}{7}\\
+	x=-2y+1
+\end{cases}
+\]
+\[
+\begin{cases}
+	y=\dfrac{1}{7}\\
+	x=-2\dfrac{1}{7}+1
+\end{cases}
+\begin{cases}
+	y=\dfrac{1}{7}\\
+	x=\dfrac{5}{7}
+\end{cases}
+\]
+
+\subsection{Riduzione}
+\label{sec:Riduzionesist}
+Questo metodo è chiamato anche di somma sottrazione e consiste nel sommare o sottrarre le equazioni in modo che vengano determinate le incognite. Iniziamo con un po di vocabolario, chiamiamo riga un'equazione del sistema. Mentre la colonna è formate in verticale dalla stessa incognita nelle varie equazioni.
+\begin{esempiot} {}{}
+	Risolvere il sistema \[
+	\begin{cases}
+	2y+3x=2\\
+	x+y=5
+	\end{cases}\]
+\end{esempiot}
+Il sistema è formato da due equazioni, quindi da due righe. Il sistema non è ordinato per colonne quindi bisogna riscriverlo in questo modo \[
+\begin{cases}
+3x+2y=2\\
+x+y=5
+\end{cases}\]
+Il metodo consiste nel moltiplicare le righe per dei valori  opportuni e  sommare o sottrarre lungo le colonne in modo che una variabile scompaia.
+\[
+\begin{cases}
+3x+2y=2\\
+\tikzmark{1}3x+3y=15\tikzmark{2}
+\end{cases}\]
+\begin{tikzpicture}[remember picture, overlay]
+\node[below=0.1cm and 0cm of 1](3){};
+\node[below=0.1cm and 0cm of 2](4){};
+\node[left=2cm and 0cm of 1](5){$3$};
+\node[below right=0.2cm and 0.1cm of 5](6) {$0-y=-13$};
+\draw (3) edge  (4);
+\end{tikzpicture}\\
+
+Moltiplicando la seconda riga per tre e sottraendola alla prima otteniamo che $y=13$. 
+
+\[
+\begin{cases}
+3x+2y=2\\
+\tikzmark{1}2x+2y=10\tikzmark{2}
+\end{cases}\]
+\begin{tikzpicture}[remember picture, overlay]
+\node[below=0.1cm and 0cm of 1](3){};
+\node[below=0.1cm and 0cm of 2](4){};
+\node[left=2cm and 0cm of 1](5){$2$};
+\node[below right=0.2cm and 0.1cm of 5](6) {$x+0 =-8$};
+\draw (3) edge  (4);
+\end{tikzpicture}\\
+
+Ripartendo dal sistema iniziale e moltiplicando la seconda riga per due otteniamo che $x=-8$
+
+     

@@ -1,0 +1,426 @@
+\chapter{Radicali}
+\label{Radicaliradici}
+\section{Glossario}
+\begin{table}[H]
+\centering
+$\sqrt[n]{a^m}=b$
+\begin{itemize}
+\item n Indice del radicale
+\item $a^m$ Radicando
+\item m Esponente o potenza del radicando
+\item b Radice
+\end{itemize}
+\caption{Glossario}
+\label{tab:RadicaliGlossario}
+\end{table}
+\begin{table}[H]
+\centering
+$
+\begin{array}{rccc}
+\toprule
+ &\text{Indice} & \text{Potenza} & \text{Radicando} \\ 
+ \midrule
+ \sqrt[3]{a}& 3 &1  & a \\ 
+ \sqrt[4]{a^3b}& 4 &1  & a^3b \\ 
+ \sqrt[4]{a^2}& 4 &2  & a^2 \\
+\sqrt{a^5}& 2 &5 & a^5 \\ 
+\sqrt[2]{a^5}& 2 &5 & a^5 \\ 
+\sqrt[4]{\dfrac{\left( a+b\right)^2 }{c}}& 4 &1 &\dfrac{\left( a+b\right)^2 }{c} \\
+\sqrt[3]{a^2+b}& 3 &1 & a^2+b\\
+\bottomrule	
+\end{array}
+$ 
+\label{tab:esempiglossario}
+\caption{Esempi Glossario}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{itemize}
+	\item $\sqrt[1]{a}=a\; \forall a\in\R^{+}\forall\; n\in\Ni$
+	\item $\sqrt[n]{a^n}=a\; \forall a\in\R^{+}\forall\; n\in\Ni$
+	\item $\left(\sqrt[n]{a}\right)^n=a\; \forall a\in\R^{+}\forall\; n\in\Ni$
+	\item $\sqrt[nk]{a^{mk}}=\sqrt[n]{a^m}\;  \forall a\in\R^{+}\forall\; n,m,k\in\Ni$\label{Rad:invariantiva}\index{Radicali!proprietà invariantiva}
+\end{itemize}
+\label{tab:propRadicli}
+\caption{Proprietà dei radicali}
+\end{table}
+\section{Proprietà invariantiva}
+\label{Sec:Propinvariantivaradicali}
+\begin{definizionet}
+Si ottiene una radice equivalente moltiplicando o dividendo la potenza e l'indice per lo stesso valore diverso da zero.
+\end{definizionet}
+\subsection{Riduzione allo stesso indice}
+\label{sec:RiduzioneAlloStessoIndice}
+
+La Proprietà invariantiva permette di ridurre due radici allo stesso indice. Procediamo in questo modo
+\begin{enumerate}
+	\item Calcolo in m.c.m fra gli indici di tutte le radici
+	\item Scrivo delle nuove radici di indice uguale al m.c.m. e per ogni radice
+	\begin{itemize}
+	\item Divido il m.c.m per l'indice  della radice e moltiplico il numero ottenuto per l'esponente m del radicando della  radice.
+	\end{itemize}
+\end{enumerate}
+
+\begin{table}[H]
+\centering
+$
+\begin{array}{cccl}
+\toprule
+\text{Passo} &  &  & \text{Note} \\  
+\midrule
+0 & \sqrt[3]{a} &\sqrt[5]{b}  &\text{Inizio} \\ 
+1 & 15\div 3=5 &15\div 5=3  & mcm(3,5)=15 \\  
+2 &\sqrt[15]{a^{1\cdot5}}=\sqrt[15]{a^{5}}  &\sqrt[15]{b^{1\cdot3}}=\sqrt[15]{b^{1\cdot3}}  &\text{Fine} \\
+\bottomrule	
+\end{array} 
+$
+\label{tab:Es1Ridstessoindice}
+\caption{Esempio riduzione stesso indice}
+\end{table}
+\begin{table}[H]
+\centering
+$
+\begin{array}{cccl}
+\toprule
+\text{Passo} &  &  &\text{Note} \\  
+\midrule
+0 & \sqrt{ab^2} &\sqrt[5]{a+b^2}  &\text{Inizio} \\ 
+1 & 10\div 2=5 &10\div 5=2  & mcm(2,5)=10 \\  
+2 &\sqrt[10]{a^{1\cdot 5}b^{2\cdot 5}}=\sqrt[10]{a^{2}b^{10}}& \sqrt[10]{\left( a+b^2\right)^{1\cdot 2} }=\sqrt[10]{\left( a+b^2\right)^{2} }   &\text{Fine} \\
+\bottomrule	
+\end{array} 
+$
+\label{tab:Es1Ridstessoindice2}
+\caption{Esempio riduzione stesso indice}
+\end{table}
+\subsection{Ordinamento fra radici}
+\label{sec:OrdinamentoFraRadici}
+Il procedimento di riduzione allo stesso indice permette di confrontare due radici di indice diverso. Basta, dopo aver ridotto le radici allo stesso indice, confrontare i radicandi.
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccccl}
+\toprule
+\text{Passo} &  &  &  &\text{Note} \\ 
+\midrule
+0 & \sqrt{5} &  &\sqrt[3]{6} & \text{Inizio} \\ 
+1 & \sqrt[6]{5^3} &  &\sqrt[6]{6^2}  &\text{Riduzione stesso indice} \\ 
+2 & 5^3=125 & > & 6^2=36 & \text{Confronto fra radicandi} \\ 
+3 & \sqrt{5} & > & \sqrt[3]{6} & \text{Fine} \\
+\bottomrule	
+\end{array} 
+$
+\label{tab:confrontoradicali}
+\caption{Esempio confronto radicali}
+\end{table}
+
+\subsection{Semplificare radici}
+\label{sec:RadiciIriducibili}
+La proprietà invariantiva permette di semplificare l'indice e l'esponente  di una radice.
+Una radice è irriducibile se non è possibile semplificare l'indice con l'esponente\footnote{Cioè quando l'indice e l'esponente sono primi fra loro}
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccl}
+\toprule
+\text{Passo} &  & \text{Note} \\ 
+\midrule
+0 &\sqrt[10]{a^2b^4} & \text{Inizio} \\ 
+1 &  &  10,2,4 \text{ si dividono per }2\\ 
+2 &\sqrt[5]{ab^2}  &\text{Fine}\\
+\bottomrule
+\end{array} 
+$
+\label{Tab:radiceriducibile}
+\caption{Esempio radice riducibile}
+\end{table}
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccl}
+\toprule
+\text{Passo} &  & \text{Note} \\ 
+\midrule
+0 &\sqrt[10]{a^2+b^4} & \text{Inizio} \\ 
+1 &  &  10,2,4 \text{ si dividono per }2 \text{ ma è una somma}\\ 
+2 &\sqrt[10]{a^2+b^4}  &\text{Fine}\\
+\bottomrule
+\end{array} 
+$
+\label{Tab:radiceriducibilece}
+\caption{Esempio radice irriducibile}
+\end{table}
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccl}
+\toprule
+\text{Passo} &  & \text{Note} \\ 
+\midrule
+0 &\sqrt[20]{\dfrac{a^5\left( a^5+b\right)^{10} }{x^{15}}} & \text{Inizio} \\ 
+1 &  &  20,10,5,15 \text{ si dividono per }5 \\ 
+2 &\sqrt[4]{\dfrac{a\left( a^5+b\right)^{2} }{x^{3}}} & \text{Fine} \\ 
+\bottomrule
+\end{array} 
+$
+\label{Tab:radiceriducibilece2}
+\caption{Esempio radice riducibile}
+\end{table}
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccl}
+\toprule
+\text{Passo} &  & \text{Note} \\ 
+\midrule
+0 &\sqrt[10]{a^{20}}= & \text{Inizio} \\ 
+1 &  &  20,10 \text{ si dividono per }10 \\ 
+2 &=\sqrt[1]{a^2}=a^2 & \text{Fine} \\ 
+\bottomrule
+\end{array} 
+$
+\label{Tab:radiceriducibilece3}
+\caption{Esempio radice riducibile}
+\end{table}
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccl}
+\toprule
+\text{Passo} &  & \text{Note} \\ 
+\midrule
+0 &\sqrt[8]{(-2)^{20}}= & \text{Inizio} \\ 
+1 &  &  8,10 \text{ si dividono per }2\\
+& \sqrt[4]{(-2)^{5}}&\text{ ma il radicando è negativo, quindi non esiste radice reale} \\ 
+ & & \text{Fine} \\ 
+\bottomrule
+\end{array} 
+$
+\label{Tab:radiceriducibilece4}
+\caption{Esempio radice non riducibile}
+\end{table}
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccl}
+\toprule
+\text{Passo} &  & \text{Note} \\ 
+\midrule
+0 &\sqrt[10]{(-2)^{6}}= & \text{Inizio} \\ 
+1 &  &  10,6 \text{ si dividono per }2\\
+& \sqrt[5]{(-2)^{3}}&\text{il radicando è negativo ma l'indice è dispari quindi esiste la radice reale} \\ 
+2 &=\sqrt[5]{(-2)^{3}} & \text{Fine} \\ 
+\bottomrule
+\end{array} 
+$
+\label{Tab:radiceriducibilece5}
+\caption{Esempio radice riducibile}
+\end{table}
+\section{Operazioni con le Radici}
+\label{sec:operazioniradici}
+\subsection{Prodotto}
+\label{sec:prodottoradici}
+Il prodotto di due o più radici, con lo stesso indice, è una radice che ha per indice lo stesso indice e per radicando il prodotto dei radicandi.
+
+\[\sqrt[n]{a}\cdot\sqrt[n]{b}=\sqrt[n]{a\cdot b}\]
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccl}
+\toprule
+\text{Passo} &  & \text{Note} \\ 
+\midrule
+0 &\sqrt[3]{a^3b}\cdot\sqrt[3]{a^4b^2x}=  & \text{Inizio} \\ 
+1 &  &  \text{i due radicali hanno lo stesso indice} \\ 
+2 &=\sqrt[3]{a^3b}\cdot\sqrt[3]{a^4b^2x}=\sqrt[3]{a^7b^3x} & \text{Fine} \\ 
+\bottomrule
+\end{array} 
+$
+\label{Tab:radicprodotto1}
+\caption{Esempio prodotto di radici con lo stesso indice}
+\end{table}
+Se le radici hanno indice diverso bisogna prima ridurle allo stesso indice.
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccl}
+\toprule
+\text{Passo} &  & \text{Note} \\ 
+\midrule
+0 &\sqrt[3]{a^3b}\cdot\sqrt[5]{a^4b^2x}=  & \text{Inizio} \\ 
+1 &  &   \text{I due radicali hanno indice diverso} \\ 
+2 &=\sqrt[15]{a^{15}b^5}\cdot\sqrt[15]{a^4b^2x}= & \text{Riduco allo stesso indice} \\ 
+3 &=\sqrt[15]{a^{15}b^5}\cdot\sqrt[15]{a^4b^2x}=\sqrt[15]{a^{17}b^{11}x^3} & \text{Fine} \\ 
+\bottomrule
+\end{array} 
+$
+\label{Tab:radiceprodotto2}
+\caption{Esempio prodotto di radici con indice diverso}
+\end{table}
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccl}
+\toprule
+\text{Passo} &  & \text{Note} \\ 
+\midrule
+0 &\sqrt[3]{\dfrac{ya}{x}}\cdot\sqrt{\dfrac{x^2}{y}}\cdot\sqrt[6]{\dfrac{y}{x^4}}  & \text{Inizio} \\ 
+1 &  &   \text{I due radicali hanno indice diverso} \\ 
+2 &=\sqrt[15]{a^{15}b^5}\cdot\sqrt[15]{a^4b^2x}= & \text{Riduco allo stesso indice} \\ 
+3 &=\sqrt[15]{a^{15}b^5}\cdot\sqrt[15]{a^4b^2x}=\sqrt[15]{a^{17}b^{11}x^3} & \text{Fine} \\ 
+\bottomrule
+\end{array} 
+$
+\label{Tab:radiceprodotto3}
+\caption{Esempio prodotto di radici con indice diverso}
+\end{table}
+\subsubsection{Trasporto di un termine fuori del segno di radice}
+\label{sec:Trasportofuoriradici}
+Se la potenza m del radicando è maggiore o uguale all'indice n del radicando allora:
+\[\sqrt[n]{a^m}=a^q\sqrt[n]{a^r}\] 
+\begin{itemize}
+\item n Indice radice
+\item m Esponente o potenza del radicando
+\item q Quoziente della divisione di m per n
+\item r Resto della divisione di m per n\footnote{Per ottenere r basta moltiplicare la parte decimale della divisione di per n. Es $3\div 2=1,5$ $r=0,5\cdot 2=1$ }
+\end{itemize}
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccc}
+\toprule
+\text{Passo} &  & \text{Note} \\
+\midrule
+0& \sqrt[3]{32}=\sqrt[3]{2^5} & \text{Inizio} \\ 
+1 & \text{Divido } 5 \text{  per } 3 &q=1\text{  }r=2  \\ 
+2&  \sqrt[3]{32}=\sqrt[3]{2^5}=2^1\sqrt[3]{2^2}=2\sqrt[3]{4}& \text{Fine} \\ 
+\bottomrule 
+\end{array}
+$ 
+\label{tab:Trasportofuoriradici1}
+\caption{Esempio trasporto di un termine fuori del segno di radice}
+\end{table}
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccc}
+\toprule
+\text{Passo} &  & \text{Note} \\
+\midrule
+0& \sqrt[8]{a^{15}} & \text{Inizio} \\ 
+1 & \text{Divido } 15 \text{  per } 8 &q=1\text{  }r=7  \\ 
+2&  \sqrt[8]{a^{15}}=a^1\sqrt[8]{a^7}=a\sqrt[8]{a^7}& \text{Fine} \\ 
+\bottomrule 
+\end{array}
+$ 
+\label{tab:Trasportofuoriradici2}
+\caption{Esempio trasporto di un termine fuori del segno di radice}
+\end{table}
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccc}
+\toprule
+\text{Passo} &  & \text{Note} \\
+\midrule
+0& \sqrt{72}=\sqrt{3^2\cdot 2^3} & \text{Inizio} \\ 
+1 & \text{Divido } 2 \text{  per } 2 q=1\text{  }r=0 \\
+&\text{ Divido } 3 \text{  per } 2\text{  } q=1\text{  }r=1    \\ 
+2&  \sqrt{72}=\sqrt{3^2\cdot 2^3}=3^1\cdot 2^1\sqrt{3^0 2}=6\sqrt{2}& \text{Fine} \\ 
+\bottomrule 
+\end{array}
+$ 
+\label{tab:Trasportofuoriradici3}
+\caption{Esempio trasporto di un termine fuori del segno di radice}
+\end{table}
+\begin{table}
+\centering
+$
+\begin{array}{ccc}
+\toprule
+\text{Passo} &  & \text{Note} \\
+\midrule
+0& \sqrt[3]{\dfrac{a^6b^2}{c^4\left( a+b\right)^3 }} & \text{Inizio} \\ %
+1 & considero gli esponenti maggiori o uguali all'indice della radice cioè 6,4,3 \\
+&\text{ Divido } 6 \text{  per } 3\text{  } q=2\text{  }r=0    \\ 
+&\text{ Divido } 4 \text{  per } 3\text{  } q=1\text{  }r=1    \\
+&\text{ Divido } 3 \text{  per } 3\text{  } q=1\text{  }r=0    \\
+2& \sqrt[3]{\dfrac{a^6b^2}{c^4\left( a+b\right)^3 }}=\dfrac{a^2}{c\left(a+b\right)}\sqrt[3]{\dfrac{a^0b^2}{c^1\left( a+b\right)^0 }} =\dfrac{a^2}{c\left(a+b\right)  }\sqrt[3]{\dfrac{b^2}{c}} & \text{Fine} \\ 
+\bottomrule 
+\end{array}
+$ 
+\label{tab:Trasportofuoriradici4}
+\caption{Esempio trasporto di un termine fuori del segno di radice}
+\end{table}
+\subsubsection{Trasporto di un termine dentro il segno di radice}
+\label{sec:Trasportodentroradici}
+\[b^p\sqrt[n]{a^m}=\sqrt[n]{b^{p\cdot n}a^m}\]
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccc}
+\toprule
+\text{Passo} &  & \text{Note} \\
+\midrule
+0& 3\sqrt[2]{2} & \text{Inizio} \\ 
+1& 3\sqrt[2]{2}=\sqrt{3^2\cdot 2}=\sqrt[2]{18} & \text{Fine} \\ 
+\bottomrule 
+\end{array}
+$ 
+\label{tab:Trasportodentroradici1}
+\caption{Esempio trasporto di un termine dentro il segno di radice}
+\end{table}
+\begin{table}[H]
+\centering
+$
+\begin{array}{ccc}
+\toprule
+\text{Passo} &  & \text{Note} \\
+\midrule
+0& \dfrac{c}{\left( a+b\right)^2 }\sqrt[3]{c} & \text{Inizio} \\ 
+1& \dfrac{c}{\left( a+b\right)^2 }\sqrt[3]{c}=\sqrt[3]{\dfrac{c^{1\cdot 3}c}{\left(a+b \right) }^{2\cdot 3}}=\sqrt[3]{\dfrac{c^{4}}{\left(a+b \right) }^{6}} & \text{Fine} \\ 
+\bottomrule 
+\end{array}
+$ 
+\label{tab:Trasportodentroradici2}
+\caption{Esempio trasporto di un termine dentro il segno di radice}
+\end{table}
+\section{Potenze}
+\label{sec:PotenzeRadici}
+\[\left( \sqrt[n]{a}\right)^m=\sqrt[n]{a^m}\]
+\begin{table}[H]
+\centering
+$
+\begin{array}{cc}
+\toprule
+\left( \sqrt[4]{a}\right)^3=\sqrt[4]{a^3} \\ 
+\left( \sqrt[3]{a+b}\right)^2=\sqrt[2]{\left( a+b\right)^2 } \\ 
+\left( \sqrt[5]{a^2b}\right)^3=\sqrt[4]{a^6b^3} \\ 
+\bottomrule 
+\end{array}
+$ 
+\label{tab:potenzeradici1}
+\caption{Esempi potenze radicali}
+\end{table}
+\section{Quoziente} 
+\label{sec:quozienteradicali}
+\[\dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}=\sqrt[n]{\dfrac{a}{b}}\]
+\section{Radice di radice}
+\label{sec:radicediradice}
+\[\sqrt[n]{\sqrt[p]{a}}=\sqrt[n\cdot p]{a}\]
+\section{Somma}
+\label{sec:SommaReali}
+\begin{itemize}
+\item Due radici sono simile se hanno lo stesso indice e  lo stesso radicando.
+\item Se consideriamo una radice come un monomio avremo che il numero che compare davanti al simbolo di radice è la "`parte numerica' mentre la radice è la "`parte letterale'. Possiamo dare la seguente definizione: La somma di due radici simili è una radice simile alle precedenti che ha per parte numerica la somma algebrica delle parti numeriche.
+\end{itemize}
+\section{Razionalizzazione del denominatore}
+\label{sec:razzionalizzazionedenominatoreradici}
+\subsection{Primo caso}
+\bassapriorita{Inserire razionalizzazioni}
+\label{sec:razionzinalizzadioneden1caso}
+\subsection{Secondo caso}
+\label{sec:razionzinalizzadioneden2caso}
+
+

@@ -1,0 +1,405 @@
+\chapter{Equazioni}
+\label{sec:equazioni}
+\section{Definizioni}
+\begin{definizionet}{}{}
+Un'equazione\index{Equazione} è l'uguaglianza fra due espressioni.
+\end{definizionet}
+ Dato che dipende dai valori che vengono assegnati alle lettere un'equazione è un'uguaglianza condizionata.
+\begin{definizionet}{}{}
+  I valori, che sostituiti alle lettere rendono vere l'uguaglianza,  sono chiamate soluzioni\index{Equazione!soluzione}
+\end{definizionet}
+\begin{esempiot}{}{}
+Classificare le seguenti uguaglianze
+\end{esempiot}
+\begin{itemize}
+\item $2+3=3+5$ non è un'equazione. Mancano le lettere.
+\item $2+x=3x+5y$ è un'equazione. 
+\item $z+3x=0$ è un'equazione.
+\end{itemize}
+\begin{esempiot}{}{}
+Verificare se $x=7$ è soluzione di
+ l'equazione $2x-5=x+2$ 
+\end{esempiot} 
+ $x=7$ è soluzione infatti $2\cdot 7-5=7+2$ $9=9$ l'uguaglianza è verificata. Mentre per $x=3$ $2\cdot 3-5=7+2$ $1\neq5$ quindi non è soluzione.
+
+Le lettere sono chiamate variabili\index{Equazione!variabile} o costanti\index{Equazione!costante}. Una variabile o incognita è una quantità non nota a priori che può assumere qualunque valore. Una costante è una quantità non nota ma fissa. Di solito si usano $x,y,z$ per indicare le incognite $a,b,c,\dots$ per indicare le costanti.  
+
+Un'equazione in cui compare una sola lettera è detta in una incognita, con due diverse in due incognite eccetera. Il segno di uguaglianza divide l'equazione in due parti, la parte a sinistra chiamata primo membro, la parte a destra secondo membro.
+\section{Principi di equivalenza}
+\begin{definizionet}{}{}
+Due o più equazioni sono equivalenti\index{Equazione!equivalente} se hanno le stesse soluzioni.
+\end{definizionet}
+\begin{esempiot}{}{}
+Verificare se le due equazioni sono equivalenti 
+\begin{align*}
+5x+4&=4x+3\\
+3x+2&=2x+3
+\end{align*}
+\end{esempiot}
+le equazioni 
+hanno la stessa soluzione
+\begin{align*}
+5x+4&=4x+3\\
+5\cdot(-1)+4&=4\cdot(-1)+3\\
+-1&=-1\\
+3x+2&=2x+3\\
+3\cdot(-1)+2&=2\cdot(-1)+3\\
+-1&=-1
+\end{align*}
+Quindi le due equazioni sono equivalenti.
+
+\subsection{Primo principio di equivalenza}
+\label{sec:PrimoprincipioEquivalenza}
+\begin{principiot}{Primo principio}{}
+Se aggiungiamo o togliamo la stessa quantità\footnote{Quantità definita} al primo e al secondo membro di una equazione,  otteniamo un'equazione  equivalente\index{Equazione!equivalente} a quella di partenza.
+\end{principiot}
+\begin{esempiot}{Primo principio equivalenza}{}
+$8x+14=6x+10$
+\end{esempiot}
+\begin{align*}
+8x+14&=6x+10
+\intertext{aggiungendo $+10$ ad entrambi i membri}
+8x+14+10&=6x+10+10\\
+8x+24&=6x+20
+\intertext{le due equazioni sono equivalenti infatti}
+8\cdot(-2)+14&=6\cdot(-2)+10\\
+8&=8\\
+8\cdot(-2)+14&=6\cdot(-2)+10\\
+-2&=-2
+\intertext{quindi $-2$ è soluzione per entrambe}
+\end{align*}
+\subsection{Conseguenze primo principio}
+Se un termine passa  dal primo al secondo membro di una equazione o viceversa cambia di segno\index{Regola!del trasporto}.
+\begin{esempiot}{Conseguenze primo principio}{}
+$ x+5 = 8$
+\end{esempiot}
+\begin{NodesList}[dy=5pt,margin=3cm]
+ \[ % formula no "inline"
+ \begin{aligned}
+ x+5 &= 8 \AddNode\\
+ x +5-5 &= 8-5 \AddNode\\
+ x + 0 &= 8-5 \AddNode
+ \end{aligned}
+ \]
+ \LinkNodes{\begin{minipage}{2cm}
+aggiungo $-5$ ad entrambi i membri
+ \end{minipage}
+ }
+ \LinkNodes{ $5-5=0$ }
+ \end{NodesList}
+ in pratica
+ \begin{NodesList}[dy=5pt,margin=3cm]
+  \[ % formula no "inline"
+  \begin{aligned}
+  x+5 &= 8 \AddNode\\
+  x  &= 8-5 \AddNode
+  \end{aligned}
+  \]
+  \LinkNodes{\begin{minipage}{2cm}
+ sposto e cambio di segno
+  \end{minipage}
+  }
+  \end{NodesList}
+Se la stessa quantità è presente nel primo o secondo membro dell'equazione allora può essere eliminata\index{Regola!cancellazione}.
+\begin{esempiot}{Regola di cancellazione}{}
+$ x+5 = 8+5$
+\end{esempiot}
+\begin{NodesList}[dy=5pt,margin=3cm]
+ \[ % formula no "inline"
+ \begin{aligned}
+ x+5 &= 8+5 \AddNode\\
+ x +5-5 &= 8+5-5 \AddNode\\
+ x + 0 &= 8+0 \AddNode
+ \end{aligned}
+ \]
+ \LinkNodes{\begin{minipage}{2cm}
+aggiungo $-5$ ad entrambi i membri
+ \end{minipage}
+ }
+ \LinkNodes{ $5-5=0$ }
+ \end{NodesList}
+ in pratica
+ \begin{NodesList}[dy=5pt,margin=3cm]
+  \[ % formula no "inline"
+  \begin{aligned}
+  x+5 &= 8+5 \AddNode\\
+  x  &= 8 \AddNode
+  \end{aligned}
+  \]
+  \LinkNodes{\begin{minipage}{2cm}
+semplifico
+  \end{minipage}
+  }
+  \end{NodesList}
+
+\subsection{Secondo principio di equivalenza}
+\label{sec:SecondoprincipioEquivalenza}
+\begin{principiot}{Secondo principio}{}
+Se moltiplichiamo o dividiamo per  la stessa quantità diversa da zero il primo e il secondo membro di una equazione,  otteniamo un'equazione  equivalente\index{Equazione!equivalente} a quella di partenza.
+\end{principiot}
+\begin{esempiot}{Secondo principio di equivalenza}{}
+$2x+2=x+5$
+\end{esempiot}
+\begin{align*}
+2x+2&=x+5
+\intertext{moltiplico per  $+5$  entrambi i membri}
+5\cdot(2x+2)&=5\cdot(x+5)\\
+10x+10&=5x+25
+\intertext{le due sono equivalenti infatti}
+2\cdot(3)+2&=3+5\\
+8&=8\\
+10\cdot(3)+10&=5\cdot(3)+25\\
+40&=40
+\intertext{quindi $-2$ è soluzione per entrambe}
+\end{align*}
+\section{Forma normale}
+\label{sec:formanormale}
+\begin{definizionet} {}{}
+Dopo aver trasportato a primo membro tutti i termini di una equazione si ottiene un polinomio ordinato e l'equazione diventa \[P(x)=0\]
+In questo caso l'equazione\index{Equazione!forma normale} si dice in forma normale.
+\end{definizionet}
+\begin{esempiot}{Forma normale}{}
+L'equazione\[3x^2+3=0\] è in forma normale.
+
+L'equazione\[(x-2)(3x+2)+5x=0\] non è in forma normale.
+\end{esempiot}
+Il grado più grande dell'equazione rispetto all'incognita è detto grado dell'equazione\index{Equazione!grado}.
+\section{Equazioni di primo grado}
+\label{sec:equazionidiprimogrado}
+\begin{definizionet}{}{}
+Una equazione\index{Equazione!di primo grado} di primo grado è un'equazione della forma \[ax=b\]
+$a,b\in\R$
+\end{definizionet}
+\begin{esempiot}{}{}
+Risolvere l'equazione $8x+2(x+11) = 6x+3(x-3) $
+\end{esempiot}
+ \begin{NodesList}[margin=3cm]
+  \begin{align*}
+  8x+2(x+11) = 6x+3(x-3) \AddNode\\
+  8x+2x+2  = 6x+3x-9 \AddNode\\
+  \intertext{\hfil isolati i termini con l'incognita \hfil}
+  8x+2x-6x-3x  = -2-9 \AddNode\\
+    x  = -11 \AddNode
+  \end{align*}
+  \LinkNodes{Moltiplico}
+  \LinkNodes{ }
+  \LinkNodes{ Ottengo la soluzione}
+  \end{NodesList}
+  \[x=-11\]
+  è soluzione
+Nell'esempio che segue l'equazione è scritta in maniera più complessa. Questo impone delle priorità nella risoluzione della stessa. 
+\begin{esempiot}{}{}
+Risolvere l'equazione \[2(x+\dfrac{4}{3})-\dfrac{5x-3}{2}=2x+3(x+2) \]
+\end{esempiot}
+ \begin{NodesList}[margin=3cm]
+  \begin{align*}
+  2\overbrace{(x+\dfrac{4}{3})}-\dfrac{5x-3}{2}=2x+\overbrace{3(x+2)} \AddNode\\
+%  \intertext{\hfil isolati i termini con l'incognita \hfil}
+\overbrace{2(\dfrac{3x+4}{3})}-\dfrac{5x-3}{2}=\overbrace{2x+3x}+6 \AddNode\\
+  \dfrac{6x+8}{3}-\dfrac{5x-3}{2}=5x+6   \AddNode\\
+ \dfrac{12x+16-15+9=30x+31}{6}   \AddNode\\
+ -3x+25=30x+31\AddNode\\
+  \intertext{\hfil isolati i termini con l'incognita \hfil}
+ \overbrace{-3x-30x}=\overbrace{-25+31}\AddNode\\
+ -33x=6\AddNode\\
+ x=-\dfrac{6}{33}\AddNode\\
+ x=-\dfrac{2}{11}\AddNode\\
+  \end{align*}
+  \LinkNodes{Precedenze}
+   \LinkNodes{Moltiplico e sommo}
+  \LinkNodes{mcm}
+  \LinkNodes{Moltiplico per $6$}
+  \LinkNodes{Sommo}
+  \LinkNodes{Separo}
+  \LinkNodes{Divido}
+    \LinkNodes{Semplifico}
+  \end{NodesList}
+Le due equazioni precedenti, in origine, non erano in forma normale\index{Equazione!forma normale}, semplificando e separando le variabili otteniamo un'equazione in forma normale,  che viene risolta dividendo per il termine davanti l'incognita. Dato che abbiamo ottenuto una soluzione l'equazione è determinata\index{Equazione!determinata}.
+ 
+\begin{esempiot}{}{}
+Risolvere l'equazione \[2(3x+2)=3(\dfrac{4}{3}x-1)+2(x+1) \]
+\end{esempiot}
+ \begin{NodesList}[margin=3cm]
+  \begin{align*}
+\overbrace{2(3x+2)}=3(\dfrac{4}{3}x-1)+\overbrace{2(x+1)} \AddNode\\
+%  \intertext{\hfil isolati i termini con l'incognita \hfil}
+6x+3=\overbrace{3(\dfrac{4x-3}{3})}+2x+2 \AddNode\\
+ 6x+3=4x-3+2x+2  \AddNode\\
+  \intertext{\hfil isolati i termini con l'incognita \hfil}
+ \overbrace{6x-4x-2x}=\overbrace{-4-3+2}  \AddNode\\
+ 0=-5\AddNode
+  \end{align*}
+  \LinkNodes{Precedenze}
+   \LinkNodes{Moltiplico}
+  \LinkNodes{Separo}
+  \LinkNodes{Sommo}
+  \end{NodesList}
+  a  primo membro abbiamo zero al secondo meno cinque. L'uguaglianza è impossibile l'equazione è impossibile.
+\begin{figure}
+	\centering
+	\includestandalone[width=.3\linewidth]{secondo/diagrammi/AlberoBinario1}
+	\caption[]{Classificazione equazioni}
+	\label{fig:AlberoBinarioeqa1}
+\end{figure}
+
+Anche ne caso che segue l'incognita scompare solo che cambia il tipo della soluzione. Nell'esempio che segue scompare l'incognita ma l'uguaglianza ottenuta non è sempre falsa ma sempre vera. L'uguaglianza è un'identità.
+\begin{esempiot}{}{}
+Risolviamo l'equazione \[ 6(x-3) = 3(x-1)+5(x+\dfrac{2}{5})-(2x+17)\]
+\end{esempiot}
+\begin{NodesList}[margin=3cm]
+  \begin{align*}
+\overbrace{6(x-3)} = \overbrace{3(x-1)}+5(\overbrace{x+\dfrac{2}{5}})\overbrace{-(2x+17)} \AddNode\\
+%  \intertext{\hfil isolati i termini con l'incognita \hfil}
+6x-18 = 3x-3+\overbrace{5(\dfrac{5x+2}{5})}-2x-17\AddNode\\
+6x-18 = 3x-3+5x+2-2x-17  \AddNode\\
+  \intertext{\hfil isolati i termini con l'incognita \hfil}
+ \overbrace{6x-3x-5x+2x}=\overbrace{18-3+2-17}  \AddNode\\
+ 0=0\AddNode
+  \end{align*}
+  \LinkNodes{Precedenze}
+   \LinkNodes{Moltiplico}
+  \LinkNodes{Separo}
+  \LinkNodes{Sommo}
+  \end{NodesList}
+  Il primo membro è uguale al secondo l'uguaglianza è sempre vera. 
+
+
+
+
+
+
+
+%\begin{table}[H]
+%\centering
+%\begin{tabular}{LCR}
+%\toprule
+%+a&=&\ldots\\
+%\ldots&=&-a\\
+%\bottomrule
+%\end{tabular}
+%\caption{Regola del trasporto}
+%\label{tab:regtrasporto}
+%\end{table}
+%\begin{table}[H]
+%\centering
+%\begin{tabular}{LCR}
+%\toprule
+%\dfrac{\cdots\cdots}{a}&=&\dfrac{\cdots\cdots}{a}\\
+%&\\
+%a\cdot\dfrac{\cdots\cdots}{a}&=&a\cdot\dfrac{\cdots\cdots}{a}\\
+%&\\
+%\cdots\cdots&=&\cdots\cdots\\
+%\bottomrule
+%\end{tabular}
+%\caption{Semplificazione denominatore}
+%\label{tab:Semplificazionedenominatore}
+%\end{table}
+%\begin{table}[H]
+%
+%\centering
+%\begin{tabular}{CCCCL}
+%\toprule
+%\multicolumn{5}{c}{ax=b}\\
+%\hline
+%%&\\
+%\multicolumn{2}{c}{coefficienti}&&soluzione&tipo soluzione\\
+%\midrule
+%a\neq0&b\neq0&ax=b&x=\dfrac{b}{a}&determinata\\
+%%&\\
+%a\neq0&b=0&ax=0&x=0&determinata\\
+%%&\\
+%a=0&b=0&0x=0&&indeterminata\\
+%%&\\
+%a=0&b\neq0&0x=b&&impossibile\\
+%\bottomrule	
+%\end{tabular}
+%\caption{Soluzioni equazioni primo grado intere}
+%\label{tab:equazioniprimogrado}
+%\end{table}
+%\begin{table}%
+%
+%\centering
+%\begin{tabular}{LR}
+%\toprule
+%Tipo&Nome\\
+%\midrule
+%ax^2+c=0&Pura\\
+%\hline
+%\multicolumn{2}{c}{Risoluzione}\\
+%\multicolumn{2}{C}{ax^2=-c}\\
+%\multicolumn{2}{C}{x^2=-\dfrac{c}{a}}\\
+%\multirow{3}*{Se $-\dfrac{c}{a}>0$ esistono soluzioni reali} &x_1=-\sqrt{-\dfrac{c}{a}}\\
+%&\\
+%&x_2=+\sqrt{-\dfrac{c}{a}}\\
+%&\\
+%Se -\dfrac{c}{a}<0\text{ non esistono soluzioni reali}&\\
+%&\\
+%\bottomrule	
+%%\end{tabular}
+%%\caption{Equazione secondo grado pura}
+%%\label{tab:equazione2GradoPura}
+%%\end{table}
+%%\begin{table}%
+%%
+%%\centering
+%%\begin{tabular}{LR}
+%\toprule
+%Tipo&Nome\\
+%\midrule
+%ax^2+bx=0&Spuria\\
+%\hline
+%\multicolumn{2}{c}{Risoluzione}\\
+%\multicolumn{2}{C}{ax^2+bx=0}\\
+%\multicolumn{2}{C}{x(ax+b)=0}\\
+%\multicolumn{2}{C}{x_1=0}\\
+%\multicolumn{2}{C}{ax+b=0}\\
+%\multicolumn{2}{C}{x_2=-\dfrac{b}{a}}\\
+%\bottomrule	
+%%\end{tabular}
+%%\caption{Equazione secondo grado spuria}
+%%\label{tab:equazione2GradoSpuria}
+%%\end{table}
+%%\begin{table}%
+%%
+%%\centering
+%%\begin{tabular}{LR}
+%\toprule
+%Tipo&Nome\\
+%\midrule
+%ax^2=0&Monomia\\
+%\hline
+%\multicolumn{2}{c}{Risoluzione}\\
+%\multicolumn{2}{C}{ax^2=0}\\
+%\multicolumn{2}{C}{x_1=0}\\
+%\multicolumn{2}{C}{x_2=0}\\
+%\bottomrule	
+%%\end{tabular}
+%%\caption{Equazione secondo grado monomia}
+%%\label{tab:equazione2GradoMonomia}
+%%\end{table}
+%%\begin{table}%
+%%
+%%\centering
+%%\begin{tabular}{LR}
+%\toprule
+%Tipo&Nome\\%
+%\midrule
+%ax^2+bx+c=0&Completa\\%
+%\hline
+%\multicolumn{2}{c}{Risoluzione}\\%
+%\multirow{3}*{$b^2-4ac>0$}&x_1=\dfrac{-b+\sqrt{b^2-4ac}}{2a}\\%
+%&\\
+%&x_2=\dfrac{-b-\sqrt{b^2-4ac}}{2a}\\%
+%\hline
+%\multirow{3}*{$b^2-4ac=0$}&x_1=-\dfrac{b}{2a}\\%
+%&\\
+%&x_2=-\dfrac{b}{2a}\\%
+%\hline
+%\multirow{3}*{$b^2-4ac<0$}&\\
+%&\text{nessuna soluzione reale}\\%
+%&\\
+%\bottomrule	
+%\end{tabular}
+%\caption{Equazioni secondo grado}
+%\label{tab:equazione2Gradoelenco}
+%\end{table}
