@@ -83,6 +83,87 @@ Nel secondo caso il sistema è indeterminato perché  $ab'-a'b=0$, $a'c-ac'=0$, 
 \label{sec:Sostituzione}
 Un sistema lineare in forma canonica si risolve con il metodo di sostituzione\index{Sistema!metodo!sostituzione} isolando una variabile in una equazione e sostituendola nelle altre. 
 \begin{esempiot}{Risolvere sistema tramite sostituzione}{}
+	Supponiamo di avere un sistema lineare in forma normale
+	\[
+	\begin{cases}
+	2x+y=4\\
+	3x+2y=5
+	\end{cases}
+	\]
+\end{esempiot}
+Il sistema è composto da due equazioni di primo grado in due variabili che formano due righe e tre colonne. Per risolvere un sistema con il metodo di sostituzione è importante sape scegliere quale equazione risolvere per prima. Il criterio di scelta è quello del minimo sforzo. Appare evidente che nella prima riga la variabile $y$ abbia come coefficiente  uno, quindi applicando il metodo di separazione otteniamo \[
+\begin{cases}
+y=4-2x\\
+3x+2y=5
+\end{cases}
+\]
+\'E da notare che se avessimo risolto la stessa riga rispetto a $x$ avremmo ottenuto:
+\[
+\begin{cases}
+	2x=4-y\\
+	3x+2y=5
+\end{cases}
+\begin{cases}
+	x=\dfrac{4-y}{2}\\
+	3x+2y=5
+\end{cases}
+\]
+Introducendo una frazione e per ciò, calcoli più complessi.
+Ritorniamo a \[
+\begin{cases}
+y=4-2x\\
+3x+2y=5
+\end{cases}
+\] Per il vocabolario Treccani sostituire significa [mettere una persona o una cosa al posto di un'altra] In questo caso sostituiamo nella seconda riga il valore trovato di $y$ e otteniamo:
+\[
+\begin{cases}
+y=4-2x\\
+3x+2(4-2x)=5
+\end{cases}
+\]
+Da cui segue che 
+\[
+\begin{cases}
+y=4-2x\\
+3x+2(4-2x)=5
+\end{cases}
+\begin{cases}
+y=4-2x\\
+3x+8-4x=5
+\end{cases}
+\]
+Nella seconda riga abbiamo un'equazione di primo grado in un'incognita che risolviamo con il metodo di separazione.
+\[ 
+\begin{cases}
+	y=4-2x\\
+	x=3
+\end{cases}\]
+Riapplichiamo il metodo di sostituzione e sostituiamo quanto presente nella seconda riga nella prima e otteniamo
+\[ 
+\begin{cases}
+y=4-2(3)\\
+x=3
+\end{cases}\]
+da cui
+\[ 
+\begin{cases}
+y=4-6\\
+x=3
+\end{cases}
+\begin{cases}
+y=-2\\
+x=3
+\end{cases}\]
+
+la coppia ordinata ottenuta è soluzione per entrambe le equazioni che compongono il sistema di partenza infatti basta sostituire i valori ed ottenere
+	\[
+\begin{cases}
+2(3)+(-2)=4\\
+3(3)+2(-2)=5
+\end{cases}
+\]
+La coppia è soluzione per entrambe le equazioni. Abbiamo risolto il sistema.
+\begin{esempiot}{Risolvere sistema tramite sostituzione}{}
 Supponiamo di avere un sistema lineare in forma normale
 \[
 \begin{cases}
@@ -139,7 +220,7 @@ sostituisco nella seconda ed ottengo
 \label{sec:Confronto}
 Un sistema lineare in forma canonica si risolve con il metodo del confronto\index{Sistema!metodo!confronto} risolvendo due equazioni rispetto ad un stessa variabile e confrontando i valori attenuti.
 \begin{esempiot}{}{}
-supponiamo di avere un sistema lineare in forma normale
+Supponiamo di avere un sistema lineare in forma normale
 \[
 \begin{cases}
 	x+2y=1\\
