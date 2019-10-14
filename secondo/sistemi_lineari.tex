@@ -219,7 +219,68 @@ sostituisco nella seconda ed ottengo
 \subsection{Confronto}
 \label{sec:Confronto}
 Un sistema lineare in forma canonica si risolve con il metodo del confronto\index{Sistema!metodo!confronto} risolvendo due equazioni rispetto ad un stessa variabile e confrontando i valori attenuti.
-\begin{esempiot}{}{}
+\begin{esempiot}{Metodo confronto}{}
+	Supponiamo di avere un sistema lineare in forma normale
+	\[
+	\begin{cases}
+	3x+2y=5\\
+	x+5y=6
+	\end{cases}
+	\]
+\end{esempiot}
+Per trovare le soluzioni di  un sistema con il metodo occorre risolvere le due equazioni rispetto alla stessa incognita e confrontare i risultati ottenuti. Nella prima riga le incognite sono moltiplicate per valori numerici diversi. Nella seconda riga il coefficiente della $x$ vale uno. Quindi ci conviene risolvere rispetto questa incognita da cui   \[
+\begin{cases}
+3x=5-2y\\
+x=6-5y
+\end{cases}\begin{cases}
+3x=\dfrac{5-2y}{3}\\
+x=6-5y
+\end{cases}
+\]
+Confortando i risultati	\[\begin{cases}
+\dfrac{5-2y}{3}=6-5y\\
+x=6-5y
+\end{cases}
+\]La prima riga è il confronto la seconda permette di ottenere una coppia di soluzioni. Moltiplico la prima riga per tre \[\begin{cases}
+3\dfrac{5-2y}{3}=3(6-5y)\\
+x=6-5y
+\end{cases}
+\]
+da cui \[\begin{cases}
+5-2y=18-15y\\
+x=6-5y
+\end{cases}
+\]Risolvo la prima riga rispetto a $y$\[\begin{cases}
+15y-2y=18-5\\
+x=6-5y
+\end{cases}
+\begin{cases}
+13y=13\\
+x=6-5y
+\end{cases}
+\begin{cases}
+y=1\\
+x=6-5y
+\end{cases}
+\]
+Sostituisco il risultato della prima riga nella seconda\[\begin{cases}
+y=1\\
+x=6-5(1)
+\end{cases}
+\begin{cases}
+y=1\\
+x=1
+\end{cases}
+ \]Resta da verificare che il risultato sia soluzione per il sistema. Cosa che facciamo sostituendo il risultato 
+alle incognite del sistema originario.
+\[
+\begin{cases}
+3(1)+2(1)=5\\
+(1)+5(1)=6
+\end{cases}
+\]
+Il risultato trovato è soluzione per il sistema.
+ \begin{esempiot}{Metodo confronto}{}
 Supponiamo di avere un sistema lineare in forma normale
 \[
 \begin{cases}
@@ -229,7 +290,7 @@ Supponiamo di avere un sistema lineare in forma normale
 \]
 \end{esempiot}
 Risolvo rispetto ad x e ottengo
-\[
+\[ 
 \begin{cases}
 	x=-2y+1\\
 	x=\dfrac{2+y}{3}
