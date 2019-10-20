@@ -413,6 +413,7 @@ Questo metodo è chiamato anche di somma sottrazione e consiste nel sommare o so
 	2y+3x=2\\
 	x+y=5
 	\end{cases}\]
+	con il metodo di riduzione.
 \end{esempiot}
 Il sistema è formato da due equazioni, quindi da due righe. Il sistema non è ordinato per colonne quindi bisogna riscriverlo in questo modo \[
 \begin{cases}
@@ -447,8 +448,45 @@ Moltiplicando la seconda riga per tre e sottraendola alla prima otteniamo che $y
 \node[left=2cm and 0cm of 1](5){$2$};
 \node[below right=0.2cm and 0.1cm of 5](6) {$x+0 =-8$};
 \draw (3) edge  (4);
-\end{tikzpicture}
+\end{tikzpicture}\\
 
 Ripartendo dal sistema iniziale e moltiplicando la seconda riga per due otteniamo che $x=-8$
+\begin{esempiot} {Metodo di riduzione}{}
+	Risolvere il sistema \[
+	\begin{cases}
+	3x-4y=7\\
+	9x+7y=4
+	\end{cases}\]
+con il metodo di riduzione.
+\end{esempiot}
+Iniziamo a determinare il valore di $y$. Dobbiamo fare in modo che nella prima colonna la somma sia zero. Il minimo comune multiplo tra nove e tre  è nove, quindi basta moltiplicare la prima riga per tre. Otteniamo:
+\newpage
+\[
+\begin{cases}
+\tikzmark{1}-9x+12y=-21\tikzmark{2}\\
+\phantom{++}9x+7y=4
+\end{cases}\]
+\begin{tikzpicture}[remember picture, overlay]
+\node[below=0.6cm and 0cm of 1](3){};
+\node[below=0.6cm and 0cm of 2](4){};
+\node[left=2cm and 0cm of 1](5){$-3$};
+\node[below right=0.8cm and 1.2cm of 5](6) {$19y=-17$};
+\draw (3) edge  (4);
+\end{tikzpicture}\\
+ Quindi la soluzione è $y=-\dfrac{17}{19}$
+ 
+\[
+\begin{cases}
+\tikzmark{1}21x-28y=49\tikzmark{2}\\
+27x+28y=12
+\end{cases}\]
+\begin{tikzpicture}[remember picture, overlay]
+\node[below=0.6cm and 0cm of 1](3){};
+\node[below=0.6cm and 0cm of 2](4){};
+\node[left=2cm and 0cm of 1](5){$7$};
+\node[below=0.1cm and 0cm of 5](6){$3$};
+\node[below right=0.8cm and 0.4cm of 5](6) {$48x+0=61$};
+\draw (3) edge  (4);
+\end{tikzpicture}\\ 
 
-     
+Quindi la soluzione è $x=\dfrac{61}{48}$
