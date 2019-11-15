@@ -1,10 +1,11 @@
 \chapter{Radicali}
 \label{Radicaliradici}
-\section{Glossario}
+\section{Glossario}Iniziamo con il definire un glossario dei termini che saranno utilizzati nel resto del testo.
 \begin{table}[H]
 \centering
 $\sqrt[n]{a^m}=b$
 \begin{itemize}
+\item $\sqrt[n]{a^m}$ Radicale
 \item n Indice del radicale
 \item $a^m$ Radicando
 \item m Esponente o potenza del radicando
@@ -33,23 +34,58 @@ $
 \label{tab:esempiglossario}
 \caption{Esempi Glossario}
 \end{table}
-
-\begin{table}[H]
-\centering
-\begin{itemize}
-	\item $\sqrt[1]{a}=a\; \forall a\in\R^{+}\forall\; n\in\Ni$
-	\item $\sqrt[n]{a^n}=a\; \forall a\in\R^{+}\forall\; n\in\Ni$
-	\item $\left(\sqrt[n]{a}\right)^n=a\; \forall a\in\R^{+}\forall\; n\in\Ni$
-	\item $\sqrt[nk]{a^{mk}}=\sqrt[n]{a^m}\;  \forall a\in\R^{+}\forall\; n,m,k\in\Ni$\label{Rad:invariantiva}\index{Radicali!proprietà invariantiva}
-\end{itemize}
-\label{tab:propRadicli}
-\caption{Proprietà dei radicali}
-\end{table}
-\section{Proprietà invariantiva}
-\label{Sec:Propinvariantivaradicali}
-\begin{definizionet}{Proprietà invariantiva}{}
-Si ottiene una radice equivalente moltiplicando o dividendo la potenza e l'indice per lo stesso valore diverso da zero.
+Iniziamo a definire il concetto di radice, vale la seguente definizione:
+\begin{definizionet}{Radice}{}
+	\begin{align*}
+	\intertext{Se l'indice  $n$ è pari}
+	\sqrt[n]{a}=&b&\Longleftrightarrow&&b^n=a\qquad a\geq 0\quad  n\in\Ni-\lbrace0\rbrace\\
+	\intertext{Se l'indice  $n$ è dispari}
+	\sqrt[n]{a}=&b&\Longleftrightarrow&&b^n=a\qquad n\in\Ni-\lbrace0\rbrace\\
+	\end{align*}
 \end{definizionet}
+La definizione precedente mostra un legame tra la radice e l'elevamento a potenza. 
+\begin{esempiot}{N pari e dispari}{}
+\[\sqrt[2]{4}=2\]infatti abbiamo che \[2^2=4\]
+Tuttavia non esiste la radice quadrata di indice pari di numeri negativi. Supponiamo che esista, allora \[\sqrt[2]{-4}=x\] Ma per definzione deve accadere che \[x^2=-4\]
+Ma il lato sinistro dell'uguaglianza è una quantità positiva mentre il lato destro è negativo quindi, l'uguaglianza non può essere vera. Non esiste la radice quadrata di meno quattro.
+
+Caso diverso sono le radici di indice dispari. Infatti \[\sqrt[3]{-8}=-2\]Infatti \[(-2)^3=-8\]
+Quindi esiste la radice cubica di un numero negativo.
+\end{esempiot}
+%\begin{table}[H]
+%\centering
+%\begin{itemize}
+%%	\item $\sqrt[1]{a}=a\; a\geq 0\forall\; n\in\Ni-\lbrace0\rbrace$
+%%	\item $\sqrt[n]{a^n}=a\; a\geq 0\forall\; n\in\Ni-\lbrace 0\rbrace$
+%%	\item $\left(\sqrt[n]{a}\right)^n=a\; a\geq 0\forall\; n\in\Ni-\lbrace 0\rbrace$
+%%	\item $\sqrt[nk]{a^{mk}}=\sqrt[n]{a^m}\;  a\geq 0\forall\; n,m,k\in\Ni-\lbrace 0\rbrace$\label{Rad:invariantiva}\index{Radicali!proprietà invariantiva}
+%\end{itemize}
+%\label{tab:propRadicli}
+%\caption{Proprietà dei radicali}
+%\end{table}
+\section{Proprietà dei radicali}
+Ponendo che le radici esistano allora:
+\subsection{Indice unitario}
+\begin{proprietat}{Indice unitario}{}
+La radice prima di un numero è il radicando.
+\end{proprietat}
+\[\sqrt[1]{a}=a\quad a\geq 0\quad\forall n\in\Ni-\lbrace0\rbrace\]
+\subsection{Radice elevata all'indice}
+\begin{proprietat}{Radice elevata all'indice}{}
+	La radice elevata all'indice è il radicando.
+\end{proprietat}
+\[\left(\sqrt[n]{a}\right)^n=a\quad a\geq 0\quad\forall n\in\Ni-\lbrace 0\rbrace\]
+\subsection{Indice e potenza uguali}
+\begin{proprietat}{Indice e potenza uguali}{}
+	Se l'indice e la potenza sono uguali, la radice è il radicando
+\end{proprietat}
+\[\sqrt[n]{a^n}=a\quad a\geq 0\forall\quad n\in\Ni-\lbrace 0\rbrace \]
+\subsection{Proprietà invariantiva}
+\label{Sec:Propinvariantivaradicali}
+\begin{proprietat}{Invariantiva}{}
+Si ottiene una radice equivalente moltiplicando o dividendo la potenza e l'indice per lo stesso valore diverso da zero.
+\end{proprietat}
+\[\sqrt[nk]{a^{mk}}=\sqrt[n]{a^m}\;  a\geq 0\forall\; n,m,k\in\Ni-\lbrace 0\rbrace\]
 \subsection{Riduzione allo stesso indice}
 \label{sec:RiduzioneAlloStessoIndice}
 
